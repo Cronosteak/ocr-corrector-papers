@@ -1,0 +1,32 @@
+# Configuración de consulta a OpenAlex API
+# Docs: https://docs.openalex.org/
+
+# Filtros de búsqueda
+filters:
+  # Concepto principal: Ingeniería Eléctrica
+  concept_id: "C39432304"  # Electrical Engineering en OpenAlex
+  
+  # Solo papers con acceso abierto (necesitamos el PDF)
+  is_oa: true
+  
+  # Rango de años de publicación
+  from_publication_date: "2018-01-01"
+  to_publication_date: "2026-03-31"
+  
+  # Idioma — filtrar por inglés
+  language: "en"
+
+# Paginación
+per_page: 50
+max_results: 500
+
+# Campos a recuperar de cada trabajo
+select_fields:
+  - id
+  - doi
+  - title
+  - abstract_inverted_index
+  - open_access
+  - publication_date
+  - language
+  - primary_location
