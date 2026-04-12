@@ -3,9 +3,16 @@
 
 # Filtros de búsqueda
 filters:
-  # Concepto principal: Ingeniería Eléctrica
-  concept_id: "C39432304"  # Electrical Engineering en OpenAlex
-  
+  # Conceptos: Ingeniería Eléctrica + áreas relacionadas con buena cobertura OA
+  # C39432304 = Electrical Engineering
+  # C41008148 = Computer Science
+  # C127413603 = Engineering
+  # C185592680 = Chemistry
+  concept_id: "C39432304"
+  extra_concept_ids:
+    - "C41008148"   # Computer Science
+    - "C127413603"  # Engineering
+
   # Solo papers con acceso abierto (necesitamos el PDF)
   is_oa: true
   
@@ -18,7 +25,7 @@ filters:
 
 # Paginación
 per_page: 50
-max_results: 500
+max_results: 1500  # Aumentado para obtener más papers
 
 # Campos a recuperar de cada trabajo
 select_fields:

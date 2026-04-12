@@ -2,29 +2,26 @@
 predict.py — Usa el modelo entrenado para corregir texto OCR ruidoso.
 """
 
-import argparse
 import logging
 from pathlib import Path
 
+import torch
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+
 logger = logging.getLogger(__name__)
+
+_PREFIX = "correct OCR: "
+_MAX_INPUT = 512
+_MAX_OUTPUT = 128
 
 
 def load_model(model_path: str):
-    """
-    Carga el modelo y tokenizer desde disco.
-
-    Args:
-        model_path: Ruta al modelo entrenado.
-
-    Returns:
-        Tupla (model, tokenizer).
-    """
-    # TODO: Implementar carga del modelo
-    # from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
-    # tokenizer = AutoTokenizer.from_pretrained(model_path)
-    # model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
-    # return model, tokenizer
-    raise NotImplementedError("Implementar carga del modelo")
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model.to(device)
+    model.eval()
+    return model, tokenizer
 
 
 def correct_text(text: str, model=None, tokenizer=None, model_path: str | None = None) -> str:
@@ -45,15 +42,45 @@ def correct_text(text: str, model=None, tokenizer=None, model_path: str | None =
             raise ValueError("Debe proporcionar model/tokenizer o model_path")
         model, tokenizer = load_model(model_path)
 
-    # TODO: Implementar inferencia
-    # input_text = f"correct OCR: {text}"
-    # inputs = tokenizer(input_text, return_tensors="pt", max_length=512, truncation=True)
-    # outputs = model.generate(**inputs, max_length=512)
-    # return tokenizer.decode(outputs[0], skip_special_tokens=True)
-    raise NotImplementedError("Implementar predicción del modelo")
+    device = next(model.parameters()).device
+    input_text = _PREFIX + text
+    inputs = tokenizer(
+        input_text,
+        return_tensors="pt",
+        max_length=_MAX_INPUT,
+        truncation=True,
+    ).to(device)
+    with torch.no_grad():
+        outputs = model.generate(**inputs, max_new_tokens=_MAX_OUTPUT, num_beams=4)
+    return tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+
+def correct_batch(
+    texts: list[str],
+    model,
+    tokenizer,
+    batch_size: int = 16,
+) -> list[str]:
+    device = next(model.parameters()).device
+    results = []
+    for i in range(0, len(texts), batch_size):
+        chunk = [_PREFIX + t for t in texts[i : i + batch_size]]
+        inputs = tokenizer(
+            chunk,
+            return_tensors="pt",
+            max_length=_MAX_INPUT,
+            truncation=True,
+            padding=True,
+        ).to(device)
+        with torch.no_grad():
+            outputs = model.generate(**inputs, max_new_tokens=_MAX_OUTPUT, num_beams=4)
+        results.extend(tokenizer.batch_decode(outputs, skip_special_tokens=True))
+    return results
 
 
 if __name__ == "__main__":
+    import argparse
+
     parser = argparse.ArgumentParser(description="Corregir texto OCR")
     parser.add_argument("--input", type=str, required=True, help="Texto OCR a corregir")
     parser.add_argument("--model", type=str, default="models/ocr-corrector", help="Ruta al modelo")

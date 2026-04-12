@@ -7,29 +7,18 @@ import json
 import logging
 from pathlib import Path
 
-from src.utils.metrics import calculate_cer, calculate_wer
+from src.utils.metrics import calculate_cer, calculate_improvement, calculate_wer
 
 logger = logging.getLogger(__name__)
 
 
 def evaluate_model(
-    pairs_path: str = "data/pairs/dataset.json",
+    pairs_path: str = "data/pairs/test.json",
     model_path: str | None = None,
 ) -> dict:
-    """
-    Evalúa el modelo comparando métricas antes y después de la corrección.
-
-    Args:
-        pairs_path: Ruta al dataset de pares.
-        model_path: Ruta al modelo entrenado. Si None, solo calcula baseline.
-
-    Returns:
-        Diccionario con métricas {baseline_cer, baseline_wer, corrected_cer, corrected_wer}.
-    """
     with open(pairs_path, "r", encoding="utf-8") as f:
         pairs = json.load(f)
 
-    # Baseline: métricas del OCR original vs ground truth
     ocr_texts = [p["ocr"] for p in pairs]
     gt_texts = [p["ground_truth"] for p in pairs]
 
@@ -37,22 +26,37 @@ def evaluate_model(
     baseline_wer = calculate_wer(ocr_texts, gt_texts)
 
     results = {
-        "baseline_cer": baseline_cer,
-        "baseline_wer": baseline_wer,
         "num_samples": len(pairs),
+        "baseline_cer": round(baseline_cer, 4),
+        "baseline_wer": round(baseline_wer, 4),
     }
 
     if model_path:
-        # TODO: Cargar modelo y generar correcciones
-        # corrected_texts = predict_batch(model_path, ocr_texts)
-        # results["corrected_cer"] = calculate_cer(corrected_texts, gt_texts)
-        # results["corrected_wer"] = calculate_wer(corrected_texts, gt_texts)
-        logger.warning("Evaluación post-modelo aún no implementada")
+        from src.model.predict import correct_batch, load_model
+
+        logger.info(f"Cargando modelo desde {model_path}...")
+        model, tokenizer = load_model(model_path)
+
+        logger.info(f"Generando correcciones para {len(ocr_texts)} ejemplos...")
+        corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)
+
+        corrected_cer = calculate_cer(corrected_texts, gt_texts)
+        corrected_wer = calculate_wer(corrected_texts, gt_texts)
+
+        results["cer"] = calculate_improvement(baseline_cer, corrected_cer)
+        results["wer"] = calculate_improvement(baseline_wer, corrected_wer)
 
     logger.info(f"Resultados: {results}")
     return results
 
 
 if __name__ == "__main__":
-    results = evaluate_model()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, default=None, help="Ruta al modelo entrenado")
+    parser.add_argument("--data", type=str, default="data/pairs/test.json")
+    args = parser.parse_args()
+
+    results = evaluate_model(pairs_path=args.data, model_path=args.model)
     print(json.dumps(results, indent=2))
