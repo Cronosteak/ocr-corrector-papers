@@ -13,8 +13,8 @@ prefix: "correct OCR: "
 batch_size: 8
 gradient_accumulation_steps: 2
 learning_rate: 5.0e-5
-num_epochs: 10
-warmup_steps: 200
+num_epochs: 50
+warmup_steps: 500
 weight_decay: 0.01
 seed: 42
 

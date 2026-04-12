@@ -127,6 +127,14 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
 
     trainer.save_model(output_dir)
     tokenizer.save_pretrained(output_dir)
+
+    # Guardar historial de pérdidas para gráficos
+    history_path = Path(output_dir) / "train_history.json"
+    history_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(history_path, "w") as f:
+        json.dump(trainer.state.log_history, f, indent=2)
+    logger.info(f"Historial guardado en {history_path}")
+
     logger.info(f"Modelo guardado en {output_dir}")
 
 
