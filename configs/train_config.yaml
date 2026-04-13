@@ -12,10 +12,11 @@ prefix: "correct OCR: "
 # Entrenamiento
 batch_size: 8
 gradient_accumulation_steps: 2
-learning_rate: 5.0e-5
-num_epochs: 50
-warmup_steps: 500
+learning_rate: 1.0e-4
+num_epochs: 20
+warmup_steps: 300
 weight_decay: 0.01
+max_grad_norm: 1.0
 seed: 42
 
 # Data splits

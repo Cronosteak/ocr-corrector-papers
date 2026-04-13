@@ -11,6 +11,7 @@ import json
 import logging
 import os
 import random
+import re
 from pathlib import Path
 
 import yaml
@@ -29,30 +30,91 @@ PAIRS_DIR = Path(os.getenv("PAIRS_DIR", "data/pairs"))
 OCR_DIR = Path(os.getenv("OCR_DIR", "data/ocr"))
 GROUND_TRUTH_DIR = Path(os.getenv("GROUND_TRUTH_DIR", "data/ground_truth"))
 
+# Confuciones de caracteres típicas en OCR
+_OCR_CONFUSIONS = {
+    "a": "o", "o": "0", "l": "1", "I": "l", "0": "O",
+    "e": "c", "n": "m", "h": "li", "rn": "m", "m": "rn",
+    "fi": "ﬁ", "s": "S", "g": "9", "b": "6",
+}
+
+_PUNCT_NOISE = [" ", "-", "", ","]
+
+
+def _inject_ocr_noise(text: str, rate: float = 0.08) -> str:
+    """Inyecta ruido OCR sintético en un texto limpio."""
+    random.seed(None)
+    chars = list(text)
+    i = 0
+    while i < len(chars):
+        if random.random() > rate:
+            i += 1
+            continue
+        action = random.randint(0, 3)
+        if action == 0 and chars[i] in _OCR_CONFUSIONS:
+            # sustitución de carácter
+            chars[i] = _OCR_CONFUSIONS[chars[i]]
+        elif action == 1 and chars[i] != " ":
+            # inserción de espacio o guión
+            chars.insert(i, random.choice([" ", "-"]))
+            i += 1
+        elif action == 2 and i + 1 < len(chars) and chars[i] == " ":
+            # eliminar espacio (palabras pegadas)
+            chars.pop(i)
+            continue
+        elif action == 3:
+            # duplicar carácter
+            chars.insert(i, chars[i])
+            i += 1
+        i += 1
+    return "".join(chars)
+
+
+def build_synthetic_pairs(gt_dir: Path, n_per_doc: int = 5) -> list[dict]:
+    """
+    Genera pares sintéticos: abstract limpio → versión con ruido OCR simulado.
+    Produce pares de alta calidad con alineación perfecta.
+    """
+    pairs = []
+    gt_files = sorted(gt_dir.glob("*.txt"))
+    for gt_file in gt_files:
+        text = gt_file.read_text(encoding="utf-8").strip()
+        if not text or len(text) < 40:
+            continue
+        # Dividir en oraciones
+        sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if len(s.strip()) > 30]
+        for sent in sentences[:n_per_doc]:
+            noisy = _inject_ocr_noise(sent, rate=0.08)
+            if noisy != sent:
+                pairs.append({"ocr": noisy, "ground_truth": sent})
+    return pairs
+
 
 def build_pairs(ocr_dir: Path, gt_dir: Path, output_dir: Path) -> int:
-    """
-    Construye pares alineados OCR ↔ ground truth para todos los archivos.
-
-    Returns:
-        Número total de pares generados.
-    """
     output_dir.mkdir(parents=True, exist_ok=True)
     all_pairs = []
 
+    # Pares reales (OCR extraído ↔ abstract)
     ocr_files = sorted(ocr_dir.glob("*.txt"))
     total = len(ocr_files)
-    print(f"Alineando {total} documentos...")
+    print(f"Alineando {total} documentos (pares reales)...")
 
     for i, ocr_file in enumerate(ocr_files, 1):
         gt_file = gt_dir / ocr_file.name
         if not gt_file.exists():
             print(f"[{i}/{total}] Sin ground truth: {ocr_file.name} — saltando")
             continue
-
         pairs = align_files(ocr_file, gt_file)
         all_pairs.extend(pairs)
         print(f"[{i}/{total}] {ocr_file.stem}: {len(pairs)} pares  (total acumulado: {len(all_pairs)})")
+
+    real_count = len(all_pairs)
+
+    # Pares sintéticos (abstract + ruido OCR simulado)
+    print(f"\nGenerando pares sintéticos desde {len(list(gt_dir.glob('*.txt')))} abstracts...")
+    synthetic = build_synthetic_pairs(gt_dir, n_per_doc=5)
+    all_pairs.extend(synthetic)
+    print(f"Pares sintéticos generados: {len(synthetic)}")
+    print(f"Total combinado: {len(all_pairs)} pares ({real_count} reales + {len(synthetic)} sintéticos)")
 
     # Split 80/10/10
     random.seed(42)
@@ -114,6 +176,7 @@ if __name__ == "__main__":
     with StepTimer("4_build_dataset") as t:
         total = build_pairs(OCR_DIR, GROUND_TRUTH_DIR, PAIRS_DIR)
         t.record("n_pairs_total", total)
+        t.record("n_pairs_real", len(list(OCR_DIR.glob("*.txt"))))
         t.record("n_docs", len(list(OCR_DIR.glob("*.txt"))))
         t.record("min_similarity_threshold", 0.4)
 

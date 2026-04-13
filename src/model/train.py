@@ -71,6 +71,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
     metric_for_best_model = config.get("metric_for_best_model", "eval_loss")
     fp16 = config.get("fp16", False) and torch.cuda.is_available()
     dataloader_num_workers = config.get("dataloader_num_workers", 2)
+    max_grad_norm = config.get("max_grad_norm", 1.0)
 
     logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16}")
 
@@ -110,6 +111,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
         logging_steps=50,
         seed=seed,
         dataloader_num_workers=dataloader_num_workers,
+        max_grad_norm=max_grad_norm,
         report_to="none",
     )
 
