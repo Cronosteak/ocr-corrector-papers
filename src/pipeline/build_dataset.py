@@ -112,11 +112,30 @@ def build_pairs(ocr_dir: Path, gt_dir: Path, output_dir: Path) -> int:
     # Pares sintéticos (abstract + ruido OCR simulado)
     print(f"\nGenerando pares sintéticos desde {len(list(gt_dir.glob('*.txt')))} abstracts...")
     synthetic = build_synthetic_pairs(gt_dir, n_per_doc=5)
-    all_pairs.extend(synthetic)
     print(f"Pares sintéticos generados: {len(synthetic)}")
+
+    # Split sintético separado 80/10/10 → para evaluación limpia (paper)
+    random.seed(42)
+    random.shuffle(synthetic)
+    n_s = len(synthetic)
+    n_s_train = int(n_s * 0.8)
+    n_s_val = int(n_s * 0.1)
+    synthetic_splits = {
+        "train": synthetic[:n_s_train],
+        "val": synthetic[n_s_train:n_s_train + n_s_val],
+        "test": synthetic[n_s_train + n_s_val:],
+    }
+    for split_name, split_data in synthetic_splits.items():
+        path = output_dir / f"synthetic_{split_name}.json"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(split_data, f, ensure_ascii=False, indent=2)
+        print(f"  synthetic_{split_name}: {len(split_data)} pares → {path}")
+
+    # Combinar para entrenamiento
+    all_pairs.extend(synthetic)
     print(f"Total combinado: {len(all_pairs)} pares ({real_count} reales + {len(synthetic)} sintéticos)")
 
-    # Split 80/10/10
+    # Split 80/10/10 combinado
     random.seed(42)
     random.shuffle(all_pairs)
     n = len(all_pairs)
@@ -129,7 +148,7 @@ def build_pairs(ocr_dir: Path, gt_dir: Path, output_dir: Path) -> int:
         "test": all_pairs[n_train + n_val:],
     }
 
-    print(f"\n--- Split 80/10/10 ---")
+    print(f"\n--- Split 80/10/10 combinado ---")
     for split_name, split_data in splits.items():
         split_path = output_dir / f"{split_name}.json"
         with open(split_path, "w", encoding="utf-8") as f:

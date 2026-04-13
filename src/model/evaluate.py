@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 
 
 def evaluate_model(
-    pairs_path: str = "data/pairs/test.json",
+    pairs_path: str = "data/pairs/synthetic_test.json",
     model_path: str | None = None,
 ) -> dict:
     with open(pairs_path, "r", encoding="utf-8") as f:
@@ -55,7 +55,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default=None, help="Ruta al modelo entrenado")
-    parser.add_argument("--data", type=str, default="data/pairs/test.json")
+    parser.add_argument("--data", type=str, default="data/pairs/synthetic_test.json")
     args = parser.parse_args()
 
     results = evaluate_model(pairs_path=args.data, model_path=args.model)
