@@ -88,9 +88,8 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
 
     # Tokenizar
     tokenize_fn = _build_tokenize_fn(tokenizer, prefix, max_input, max_output)
-    cols_to_remove = train_ds.column_names
-    train_ds = train_ds.map(tokenize_fn, batched=True, remove_columns=cols_to_remove)
-    val_ds = val_ds.map(tokenize_fn, batched=True, remove_columns=cols_to_remove)
+    train_ds = train_ds.map(tokenize_fn, batched=True, remove_columns=train_ds.column_names)
+    val_ds = val_ds.map(tokenize_fn, batched=True, remove_columns=val_ds.column_names)
 
     data_collator = DataCollatorForSeq2Seq(tokenizer, model=model, padding=True)
 
