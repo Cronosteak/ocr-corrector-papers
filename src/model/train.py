@@ -72,8 +72,9 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
     fp16 = config.get("fp16", False) and torch.cuda.is_available()
     dataloader_num_workers = config.get("dataloader_num_workers", 2)
     max_grad_norm = config.get("max_grad_norm", 1.0)
+    optim = config.get("optim", "adafactor")
 
-    logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16}")
+    logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16} | optim: {optim}")
 
     # Cargar tokenizer y modelo
     tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -112,6 +113,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
         seed=seed,
         dataloader_num_workers=dataloader_num_workers,
         max_grad_norm=max_grad_norm,
+        optim=optim,
         report_to="none",
     )
 
