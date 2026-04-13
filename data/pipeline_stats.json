@@ -1,0 +1,22 @@
+{
+  "1_fetch_openalex": {
+    "duration_seconds": 28.7,
+    "duration_human": "0m 28s",
+    "timestamp": "2026-04-12T16:32:29.819285"
+  },
+  "2_download_pdfs": {
+    "duration_seconds": 2274.6,
+    "duration_human": "37m 54s",
+    "timestamp": "2026-04-12T16:19:06.498774"
+  },
+  "3_ocr_extract": {
+    "duration_seconds": 8419.4,
+    "duration_human": "140m 19s",
+    "timestamp": "2026-04-12T18:49:59.084583"
+  },
+  "4_build_dataset": {
+    "duration_seconds": 4.5,
+    "duration_human": "0m 4s",
+    "timestamp": "2026-04-12T22:19:06.822286"
+  }
+}
