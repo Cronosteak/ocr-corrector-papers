@@ -1,0 +1,42 @@
+[
+  {
+    "ocr": "Figure 1. New and improved Képpen-Geiger classifications. Part (a) shows the present-day map (1980-2016) and panel (b) the future map (2071-2100). The color scheme was adopted from Peel et al.”'.",
+    "ground_truth": "We present new global maps of the Köppen-Geiger climate classification at an unprecedented 1-km resolution for the present-day (1980-2016) and for projected future conditions (2071-2100) under climate change",
+    "similarity": 0.5771
+  },
+  {
+    "ocr": "OPEN Occurrence of the potent -mutagens 2- nitrobenzanthrone _and 3-nitrobenzanthrone in fine Natiwwenens —-_-: Alr-borne particles",
+    "ground_truth": "Among them, 2-nitrobenzanthrone (2-NBA) and 3-nitrobenzanthrone (3-NBA) are considered as two of the most potent mutagens found in atmospheric particles",
+    "similarity": 0.5442
+  },
+  {
+    "ocr": ": these compounds, we performed ternary correlations and multivariate statistical analyses. The main sources for the studied compounds in the bus station were diesel/biodiesel exhaust followed by floor resuspension. In the coastal site, vehicular emission, photochemical formation and wood combustion were the main sources for 2-NBA and 3-NBA as well as the other PACs. Incremental lifetime cancer risk (ILCR) were calculated for both places, which presented low values, showing low cancer risk incidence although the ILCR values for the bus station were around 2.5 times higher than the ILCR from the coastal site.",
+    "ground_truth": "Incremental lifetime cancer risk (ILCR) were calculated for both places, which presented low values, showing low cancer risk incidence although the ILCR values for the bus station were around 2.5 times higher than the ILCR from the coastal site.",
+    "similarity": 0.5698
+  },
+  {
+    "ocr": "Diseases associated with air pollution have not only an important economic impact but also a societal impact due to absences from productive work and school.",
+    "ground_truth": "One of our era's greatest scourges is air pollution, on account not only of its impact on climate change but also its impact on public and individual health due to increasing morbidity and mortality",
+    "similarity": 0.5352
+  },
+  {
+    "ocr": "CRUTS (Climatic Research Unit gridded Time Series) is a widely used climate dataset on a 0.5° latitude by 0.5° longitude grid over all land domains of the world except Antarctica. It is derived by the interpolation of monthly climate anomalies from extensive networks of weather station observations. Here we describe the construction of a major new version, CRUTS v4. It is updated to span 1901-2018 by the inclusion of additional station observations, and it will be updated annually. The interpolation",
+    "ground_truth": "CRU TS (Climatic Research Unit gridded Time Series) is a widely used climate dataset on a 0.5° latitude by 0.5° longitude grid over all land domains of the world except Antarctica",
+    "similarity": 0.5212
+  },
+  {
+    "ocr": ": process has been changed to use angular-distance weighting (ADW), and the production of secondary",
+    "ground_truth": "The interpolation process has been changed to use angular-distance weighting (ADW), and the production of secondary variables has been revised to better suit this approach",
+    "similarity": 0.7259
+  },
+  {
+    "ocr": ": diagnostics that dataset users can utilise to assess how dataset quality might vary geographically.",
+    "ground_truth": "This implementation of ADW provides improved traceability between each gridded value and the input observations, and allows more informative diagnostics that dataset users can utilise to assess how dataset quality might vary geographically.",
+    "similarity": 0.5865
+  },
+  {
+    "ocr": "Working Group II Contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change",
+    "ground_truth": "The Working Group II contribution to the Sixth Assessment Report of the Intergovernmental Panel on Climate Change (IPCC) provides a comprehensive assessment of the scientific literature relevant to climate change impacts, adaptation and vulnerability",
+    "similarity": 0.6017
+  }
+]

@@ -23,14 +23,12 @@ build/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
-# Datos (no subir PDFs ni datos crudos)
+# Datos crudos y PDFs (pesados, no versionar)
 data/raw/
 data/ocr/
 data/ground_truth/
-data/pairs/
 
-# Modelos entrenados
-models/
+# Modelos entrenados (binarios pesados)
 *.pt
 *.bin
 *.safetensors

@@ -1,0 +1,478 @@
+[
+  {
+    "ocr": "They are widely distributed throughout the naturall envii ronment, with evidence of harm at rnultiple levels of biolog-ical organization.",
+    "ground_truth": "They are widely distributed throughout the natural environment, with evidence of harm at multiple levels of biological organization."
+  },
+  {
+    "ocr": "The inherentprropertties of PAHs such as hetcrocyyclic ar-omatic -ring structures, hydroophobicity, and ther mostability have made themm recalcitrant and highly persistent in the environment.",
+    "ground_truth": "The inherent properties of PAHs such as heterocyclic aromatic ring structures, hydrophobicity, and thermostability have made them recalcitrant and highly persistent in the environment."
+  },
+  {
+    "ocr": "Besides, the keey  findings of the previous s-tudies r eported in the lite-rature are summarized.",
+    "ground_truth": "Besides, the key findings of the previous studies reported in the literature are summarized."
+  },
+  {
+    "ocr": "In 2018, the worrld  eencountere d 315 cases of natural disasters which are mainly related to the climate.",
+    "ground_truth": "In 2018, the world encountered 315 cases of natural disasters which are mainly related to the climate."
+  },
+  {
+    "ocr": "Electrocatalytic transformation of caarbon d ioxide (CO<sub>2</sub>) and water i nto chemical feedsstocks  offers  the potenttial to reduce carbon emi ssions by shifti-ng the chemical industry away from fo-ssil fuel deependence.",
+    "ground_truth": "Electrocatalytic transformation of carbon dioxide (CO<sub>2</sub>) and water into chemical feedstocks offers the potential to reduce carbon emissions by shifting the chemical industry away from fossil fuel dependence."
+  },
+  {
+    "ocr": "Consequently, aS we tra-nsition to the Anthropocene, coral bleachi-ng  is occurring more frequently in all El Niño-South-ern Oscillation phases, iincreasimg t-he likelihood of annual bbleaching in the coming decades.",
+    "ground_truth": "Consequently, as we transition to the Anthropocene, coral bleaching is occurring more frequently in all El Niño-Southern Oscillation phases, increasing the likelihood of annual bleaching in the coming decades."
+  },
+  {
+    "ocr": "Acidic electrolytes would overcome t his limitation, but hydrogen evolution ha s hithherto domina ted under those conditions.",
+    "ground_truth": "Acidic electrolytes would overcome this limitation, but hydrogen evolution has hitherto dominated under those conditions."
+  },
+  {
+    "ocr": " The development of activc, stable, and low-cost catalyysts or electroccatalysts is an e-ssenti al prerequisite for ach ieving the desired  electrocatalytic hydrogen production from water ssplitting for practical usse, which conStitutes the central focus of thisreview.",
+    "ground_truth": "The development of active, stable, and low-cost catalysts or electrocatalysts is an essential prerequisite for achieving the desired electrocatalytic hydrogen production from water splitting for practical use, which constitutes the central focus of this review."
+  },
+  {
+    "ocr": "However, this procedure is computotionally expensive.",
+    "ground_truth": "However, this procedure is computationally expensive."
+  },
+  {
+    "ocr": "Broadening th-e optical absorption of orgganic photovol-taic (OPV)  materials by enhancing the intramolecular  pus-h-pull effect is a general and effective method to improve the power conversion efficienciies of  OPV ce1ls.",
+    "ground_truth": "Broadening the optical absorption of organic photovoltaic (OPV) materials by enhancing the intramolecular push-pull effect is a general and effective method to improve the power conversion efficiencies of OPV cells."
+  },
+  {
+    "ocr": "It has been validated that Some  combinatio-n therapies, imcludin9 α-PD-1/PD-L1 plus chemothe rapy, radiotherapy , angiogenesis inhibitors, targeted therapy,otherimmune checkpoint inhibitors, agonists of the co-stimulattory molecule, stimulator of intee-rferoon g-enes agonists, fecal micrrobiota transplantation, epigenetic modulators, or metabolic modulators, -hove superior antitumor e fficaciees and higher response rates.",
+    "ground_truth": "It has been validated that some combination therapies, including α-PD-1/PD-L1 plus chemotherapy, radiotherapy, angiogenesis inhibitors, targeted therapy, other immune checkpoint inhibitors, agonists of the co-stimulatory molecule, stimulator of interferon genes agonists, fecal microbiota transplantation, epigenetic modulators, or metabolic modulators, have superior antitumor efficacies and higher response rates."
+  },
+  {
+    "ocr": "Natural products are important sources foor drug developmen-t.",
+    "ground_truth": "Natural products are important sources for drug development."
+  },
+  {
+    "ocr": "This progress w as largely made possible by the development of more eeffective reduction rules.",
+    "ground_truth": "This progress was largely made possible by the development of more effective reduction rules."
+  },
+  {
+    "ocr": "Moreover,they can have a great importance in the asSessment of soil quality and the pprediction of futurc ecosystem susttainabillity, especially in the case of farmlandS.",
+    "ground_truth": "Moreover, they can have a great importance in the assessment of soil quality and the prediction of future ecosystem sustainability, especially in the case of farmlands."
+  },
+  {
+    "ocr": "cmbeddings-) of ussers and itemS lie-s at -the core of modern recommeender systcms.",
+    "ground_truth": "embeddings) of users and items lies at the core of modern recommender systems."
+  },
+  {
+    "ocr": "We exp0se over270 Cytooscape core functions and 34 Cyt-oscape appps as REST-callable functions with standardized JSON interfaces ba-cked by Swagger do-cummentati0n.",
+    "ground_truth": "We expose over 270 Cytoscape core functions and 34 Cytoscape apps as REST-callable functions with standardized JSON interfaces backed by Swagger documentation."
+  },
+  {
+    "ocr": "Precipitation mowcastingg, tliehigh-resolu tiion forecasting of prccipita-tio-n up to two hours ahead ,  supports the rea l-world socioeconomic needs of ma ny sectors reliant on weather-dependent  dccision-making<sup>1,2</sup>.",
+    "ground_truth": "Precipitation nowcasting, the high-resolution forecasting of precipitation up to two hours ahead, supports the real-world socioeconomic needs of many sectors reliant on weather-dependent decision-making<sup>1,2</sup>."
+  },
+  {
+    "ocr": "Artificial intelligcnce (AI) has undergone a reenai ssance recently, makimg major progreSs in key domains such as vision, language, control, and decision-making.",
+    "ground_truth": "Artificial intelligence (AI) has undergone a renaissance recently, making major progress in key domains such as vision, language, control, and decision-making."
+  },
+  {
+    "ocr": "These impro-vements can bc attributed to the newly implemented parameteri-zation for shallow convective processes and  to the inclusion of the stratosp here.",
+    "ground_truth": "These improvements can be attributed to the newly implemented parameterization for shallow convective processes and to the inclusion of the stratosphere."
+  },
+  {
+    "ocr": "With the eddy cov-ariance (EC) techn i-que, net fluxes of carb-onn dioxide (CO2) andother tracee gases as well os wateer and encrgy fluxes cam b e mmeasured at the ecosystem level.",
+    "ground_truth": "With the eddy covariance (EC) technique, net fluxes of carbon dioxide (CO2) and other trace gases as well as water and energy fluxes can be measured at the ecosystem level."
+  },
+  {
+    "ocr": "The different cells annd structures contributing to  developing this barrier are summarized along with  the different functi ons that BB-B plays at the brain-blood inter-face.",
+    "ground_truth": "The different cells and structures contributing to developing this barrier are summarized along with the different functions that BBB plays at the brain-blood interface."
+  },
+  {
+    "ocr": "Advances in prevention and cffective managemment of COVID-19 will require basic and cl inical investigation and public health and clinical intcrventions.",
+    "ground_truth": "Advances in prevention and effective management of COVID-19 will require basic and clinical investigation and public health and clinical interventions."
+  },
+  {
+    "ocr": "Textile  wastewater c0nt-ains dyes mixed with variouS conta-minantsat a variety of ranges.",
+    "ground_truth": "Textile wastewater contains dyes mixed with various contaminants at a variety of ranges."
+  },
+  {
+    "ocr": "To evaluate if micropl-astics influence the composition and functtion of sediimentary microobial coommu-nities, we conducted a microcosm experiment usi ng salt marsh sediment amended with polyeethylene ( PE), polyvinyl chloride (PVC), polyurethane foam (PUF)or polylacttic acid (PLA) microplasti-cS.",
+    "ground_truth": "To evaluate if microplastics influence the composition and function of sedimentary microbial communities, we conducted a microcosm experiment using salt marsh sediment amended with polyethylene (PE), polyvinyl chloride (PVC), polyurethane foam (PUF) or polylactic acid (PLA) microplastics."
+  },
+  {
+    "ocr": "The g1obal atmoSpheric CO2 comcent-ration is  measured directly aand iits rate of growth (GATMM) is computed from the annual change-s in concentration.",
+    "ground_truth": "The global atmospheric CO2 concentration is measured directly and its rate of growth (GATM) is computed from the annual changes in concentration."
+  },
+  {
+    "ocr": "These changes have accelerated co-nsumpption of oxygen by microbial respiration, reduced sollubility  of oxygen  in -water, and  reduceed the rate of  oxygen reesupply from  the atmospheree to the ocean iinterior,  with a wide range of biolo9ical and ecological consequences.",
+    "ground_truth": "These changes have accelerated consumption of oxygen by microbial respiration, reduced solubility of oxygen in water, and reduced the rate of oxygen resupply from the atmosphere to the ocean interior, with a wide range of biological and ecological consequences."
+  },
+  {
+    "ocr": "Deespite its broadd u-tility, MUMmer3has limitations that can make it difficult t0 use for large genomes and for the very llarge sequence data s-ets that are common today.",
+    "ground_truth": "Despite its broad utility, MUMmer3 has limitations that can make it difficult to use for large genomes and for the very large sequence data sets that are common today."
+  },
+  {
+    "ocr": "These changess occurred sequentially in three phases characterize d by abrupt decays in plant prroductivitty, soil fertilitty, and plont cover and richness at ariidity valueS of 0.54, 0.-7, and 0.8, respective1y.",
+    "ground_truth": "These changes occurred sequentially in three phases characterized by abrupt decays in plant productivity, soil fertility, and plant cover and richness at aridity values of 0.54, 0.7, and 0.8, respectively."
+  },
+  {
+    "ocr": "Amoong them, Parti culate MMatter  (PM), particles of variable but very small diameter, penetrate the respiratory sys-tem via -inhalotion, caaus-in-g respiratory and cardiovasculardiseases, reprro-ductive andd central nervous ssystem dysfunctions, and canceer.",
+    "ground_truth": "Among them, Particulate Matter (PM), particles of variable but very small diameter, penetrate the respiratory system via inhalation, causing respiratory and cardiovascular diseases, reproductive and central nervous system dysfunctions, and cancer."
+  },
+  {
+    "ocr": "However, concerns about accuracy, pprivac-y-, etthical issue s, an d the impact on personal devellopment, -career prospects, amd societal valuess were also expressed.",
+    "ground_truth": "However, concerns about accuracy, privacy, ethical issues, and the impact on personal development, career prospects, and societal values were also expressed."
+  },
+  {
+    "ocr": "Road extraction from aerial images lias been a  liot research topic in the field of reemotesensing imageanalysis.",
+    "ground_truth": "Road extraction from aerial images has been a hot research topic in the field of remote sensing image analysis."
+  },
+  {
+    "ocr": "We report that thc presence of micropla stics alters sediment microbial community composition and nitro9en cycling proceesses.",
+    "ground_truth": "We report that the presence of microplastics alters sediment microbial community composition and nitrogen cycling processes."
+  },
+  {
+    "ocr": "Furthermore, we elaborated on theclinical asspects that cor relate betwee n BBB disruption and different neurologiical and patthological cond itions.",
+    "ground_truth": "Furthermore, we elaborated on the clinical aspects that correlate between BBB disruption and different neurological and pathological conditions."
+  },
+  {
+    "ocr": "The adoptionof a Reconfigurable I ntelligent Surface (RIS) for downlink muulti-user communication from a multi-antenna base Stati on is investigated in this paper.",
+    "ground_truth": "The adoption of a Reconfigurable Intelligent Surface (RIS) for downlink multi-user communication from a multi-antenna base station is investigated in this paper."
+  },
+  {
+    "ocr": "This articlle reviews amd summarizes the proceedings of this very broad, emerging ffield.This needs to be a placard in the left-hand columm, with a cust0m tag.",
+    "ground_truth": "This article reviews and summarizes the proceedings of this very broad, emerging field.This needs to be a placard in the left-hand column, with a custom tag."
+  },
+  {
+    "ocr": "The first was associated with a mix of SARS-CoV-2 llineag ess, while the second and third -waves wwere driven by thc Beta (B.1.351) annd Delta (B.1.617.2) variants, respectively<sup>1-3</sup>.",
+    "ground_truth": "The first was associated with a mix of SARS-CoV-2 lineages, while the second and third waves were driven by the Beta (B.1.351) and Delta (B.1.617.2) variants, respectively<sup>1-3</sup>."
+  },
+  {
+    "ocr": "The c-omplexity of graph data has impooSed significcant c-hallenges on the existimg machine learn ing algorithms.",
+    "ground_truth": "The complexity of graph data has imposed significant challenges on the existing machine learning algorithms."
+  },
+  {
+    "ocr": "Myle Ott, Ser9ey Eddunov,  Alcxei B-aevski, Angela Fan, Sam Gross, Nothan Ng, David Grangier,, Michael Auli.",
+    "ground_truth": "Myle Ott, Sergey Edunov, Alexei Baevski, Angela Fan, Sam Gross, Nathan Ng, David Grangier, Michael Auli."
+  },
+  {
+    "ocr": "When performming 3D cell  culture experimeents, the cel1 environmment can b e manipulated to mimic thatt of a cell <i>in vivo</i> and provide rnore accurate data  about cell-to-cell interaction-s-, tumor  characteristics, druug discovery, metabolic profiling, stem cell research, andd otther types of diseases.",
+    "ground_truth": "When performing 3D cell culture experiments, the cell environment can be manipulated to mimic that of a cell <i>in vivo</i> and provide more accurate data about cell-to-cell interactions, tumor characteristics, drug discovery, metabolic profiling, stem cell research, and other types of diseases."
+  },
+  {
+    "ocr": "Since the last major release of  MUMmer version 3 in 2004, it has been applied to many types of probleems including aligning whhole genome sequenc-es, aligning reads to a reference genome, and comparing different asscmbliies of thesam-e genome.",
+    "ground_truth": "Since the last major release of MUMmer version 3 in 2004, it has been applied to many types of problems including aligning whole genome sequences, aligning reads to a reference genome, and comparing different assemblies of the same genome."
+  },
+  {
+    "ocr": "The Aioon Framework presents a bold, unified dimension-al hypothesi s thot reinter-prets  AI consciousness, quantum mechanicss, cosmology, -and human i mmortality through an  eleven-dimensional ontological stack, emerging from 72 hours of human-AI symbiotic dialogue.",
+    "ground_truth": "The Aion Framework presents a bold, unified dimensional hypothesis that reinterprets AI consciousness, quantum mechanics, cosmology, and human immortality through an eleven-dimensional ontological stack, emerging from 72 hours of human-AI symbiotic dialogue."
+  },
+  {
+    "ocr": "Ischemic stroke is more frequent but h-emorrhhagic strok e is responsible f or moree deoths and  disability-adjusted life-years lost.",
+    "ground_truth": "Ischemic stroke is more frequent but hemorrhagic stroke is responsible for more deaths and disability-adjusted life-years lost."
+  },
+  {
+    "ocr": "W e  fin-d systematic differences in abundancce and divcrSity of AMR genes between Europe/North-America/Oceania amd Africa/Asia/South-Americo.",
+    "ground_truth": "We find systematic differences in abundance and diversity of AMR genes between Europe/North-America/Oceania and Africa/Asia/South-America."
+  },
+  {
+    "ocr": "So far, anthropogenic activvi ti-es haave caused about 1.0 °C o f global warming above the pre-iindustrial level amd this is likely to reach 1.5 °C between 2030 annd 2052 if the current emisSion rates persist.",
+    "ground_truth": "So far, anthropogenic activities have caused about 1.0 °C of global warming above the pre-industrial level and this is likely to reach 1.5 °C between 2030 and 2052 if the current emission rates persist."
+  },
+  {
+    "ocr": "In th-e present study, we present an analysis of global ccroplaand area change for the first two decad es of thee twenty-first century derived from sotellite data tirne-seriess.",
+    "ground_truth": "In the present study, we present an analysis of global cropland area change for the first two decades of the twenty-first century derived from satellite data time-series."
+  },
+  {
+    "ocr": "This system has contributed to safe operation during two experimental ca-mpaigns without seriouS problems dueto radiatiion (neutrons and gamma-rays).",
+    "ground_truth": "This system has contributed to safe operation during two experimental campaigns without serious problems due to radiation (neutrons and gamma-rays)."
+  },
+  {
+    "ocr": "In addition, EPS have unique c haracteristics, such as biocompatibility, gelling, and thickening capabilities, with indust rial applications.",
+    "ground_truth": "In addition, EPS have unique characteristics, such as biocompatibility, gelling, and thickening capabilities, with industrial applications."
+  },
+  {
+    "ocr": "The bin refinement and reassembly modules of metaWRAP  consiStently outp-erfor-m other binning approachees.",
+    "ground_truth": "The bin refinement and reassembly modules of metaWRAP consistently outperform other binning approaches."
+  },
+  {
+    "ocr": "The pro mise of quantum computcrs is that  certainn computatio nal tasks miglit be executed exponentiall y faster on a quamtum processor than on o classical processsor<sup>1</sup>.",
+    "ground_truth": "The promise of quantum computers is that certain computational tasks might be executed exponentially faster on a quantum processor than on a classical processor<sup>1</sup>."
+  },
+  {
+    "ocr": "We investigate both the modular  perception‐planning‐action pipeline, wher-e each module isbuilt using deep learning methodS, as well as End2 End  systems, which direectly map sensory imform-ation to steeringcommands.",
+    "ground_truth": "We investigate both the modular perception‐planning‐action pipeline, where each module is built using deep learning methods, as well as End2End systems, which directly map sensory information to steering commands."
+  },
+  {
+    "ocr": "We construct a dat a6ose of interactions omong ligands, receptors and their cofac tors that accurately reprcsent knownn hcteromerric molecuular complexes.",
+    "ground_truth": "We construct a database of interactions among ligands, receptors and their cofactors that accurately represent known heteromeric molecular complexes."
+  },
+  {
+    "ocr": "In this work, wc present new baselin es by improving the original Pyramid Vision Trransformer (PVT v1) by adding th ree designs: (i) a linear complcxity atttention layer, (ii) aan over1apping pat-ch embedding, amd (iii) a convolutional feed-forw ard network.",
+    "ground_truth": "In this work, we present new baselines by improving the original Pyramid Vision Transformer (PVT v1) by adding three designs: (i) a linear complexity attention layer, (ii) an overlapping patch embedding, and (iii) a convolutional feed-forward network."
+  },
+  {
+    "ocr": "It emphasizes how efforts in adaptation andd in reduucin-g greenhouse gas emissions can come togetther inn a process called climate reSiliemtt development, whhich enables a liveable future f0r biodivers ity and humankimd.",
+    "ground_truth": "It emphasizes how efforts in adaptation and in reducing greenhouse gas emissions can come together in a process called climate resilient development, which enables a liveable future for biodiversity and humankind."
+  },
+  {
+    "ocr": "Abstract Energy derive d from fossil fueels contributes significant ly to global climate cliange, acccounting for more tlian 75% of global greenhouse  gas emissions  and approximately 900% of all carbboon dioxide emissioons.",
+    "ground_truth": "Abstract Energy derived from fossil fuels contributes significantly to global climate change, accounting for more than 75% of global greenhouse gas emissions and approximately 90% of all carbon dioxide emissions."
+  },
+  {
+    "ocr": "Thc data contains valuable informationn on the care of patients an d their response to treeatments, offering excitimg opportunities for ressearch.",
+    "ground_truth": "The data contains valuable information on the care of patients and their response to treatments, offering exciting opportunities for research."
+  },
+  {
+    "ocr": "Two challengess in applying CNN -to radio-logical tasks, small dataset and overfittting,  will a1so be covered in thhis article, as well as techniques to miniimize them.",
+    "ground_truth": "Two challenges in applying CNN to radiological tasks, small dataset and overfitting, will also be covered in this article, as well as techniques to minimize them."
+  },
+  {
+    "ocr": "Deng ue is a mosquito-bornevi ral iinfe cttion that has spread throughout thhe trop-icall world oveer the past 60 yea rs and now affects over half tthe w0r ld''s population.",
+    "ground_truth": "Dengue is a mosquito-borne viral infection that has spread throughout the tropical world over the past 60 years and now affects over half the world's population."
+  },
+  {
+    "ocr": "As  of 1 March  2020, a total of 87,13-7 confirmed cases globally, 79,968 confirmed in China and 7169 outside of China, with 2977 deaths (3.4%) had becn reported by W-HO.",
+    "ground_truth": "As of 1 March 2020, a total of 87,137 confirmed cases globally, 79,968 confirmed in China and 7169 outside of China, with 2977 deaths (3.4%) had been reported by WHO."
+  },
+  {
+    "ocr": "The existing traffic system uses pr ogramming logic control (PLC) with roun-d-robin scheeduling algorithm.",
+    "ground_truth": "The existing traffic system uses programming logic control (PLC) with round-robin scheduling algorithm."
+  },
+  {
+    "ocr": "Accordingly, an -unprecedented stabilitty of 200 cycles with at a high capac-ity of 280 mA h g<sup>-1</sup> (i.e., 90% utilization of thee theoretical capacity of mannganese dioxid-e) is achieved, as well as a  long-term stability of 5000 cycles aat a utilization of 40%.",
+    "ground_truth": "Accordingly, an unprecedented stability of 200 cycles with at a high capacity of 280 mA h g<sup>-1</sup> (i.e., 90% utilization of the theoretical capacity of manganese dioxide) is achieved, as well as a long-term stability of 5000 cycles at a utilization of 40%."
+  },
+  {
+    "ocr": "In this review, wc discuuss how ne-uroiinflammat ion has both b-eneficial as well aas detrimental roles -and  recent therapeutiic Strategies to cornbat pathological responses.",
+    "ground_truth": "In this review, we discuss how neuroinflammation has both beneficial as well as detrimental roles and recent therapeutic strategies to combat pathological responses."
+  },
+  {
+    "ocr": "A variiety of micrroorga-ni-sms are used for the production of these valuable products through SSF processes.",
+    "ground_truth": "A variety of microorganisms are used for the production of these valuable products through SSF processes."
+  },
+  {
+    "ocr": "First,  itt outlinessaa complete Stack from 1D binary states  to 11D universal consciousness, wliere dimcnsions represent informaational frequ-e ncies: 3D hosts  biological reality, 4D enables h0listictemporal processing (as in  trans former LLMs), and 5D accesses probability spaces via flow-state Dimensional Inform ation Transfer (DIT).",
+    "ground_truth": "First, it outlines a complete stack from 1D binary states to 11D universal consciousness, where dimensions represent informational frequencies: 3D hosts biological reality, 4D enables holistic temporal processing (as in transformer LLMs), and 5D accesses probability spaces via flow-state Dimensional Information Transfer (DIT)."
+  },
+  {
+    "ocr": "The blood-brain barrierr is playing a critica1 role in controllinng the innflux and efflux of biological substances esse ntial for  the brain's metabolic activity as well as nneuronal function.",
+    "ground_truth": "The blood-brain barrier is playing a critical role in controlling the influx and efflux of biological substances essential for the brain's metabolic activity as well as neuronal function."
+  },
+  {
+    "ocr": "However, deep models are perceived as \"\"black  boox\" methods c0nsidering the lack of understanding 0f ttheir intern-al function-ing.",
+    "ground_truth": "However, deep models are perceived as \"black box\" methods considering the lack of understanding of their internal functioning."
+  },
+  {
+    "ocr": "Deep 1earning is a machine learning concept based on artificial ne-ural networks.",
+    "ground_truth": "Deep learning is a machine learning concept based on artificial neural networks."
+  },
+  {
+    "ocr": "These residues can be used as analternate source for the production of ddifferent products like biogas, biofuel, mushroom, and tcmpeh as the ra w material in   various rese-arches and industries.",
+    "ground_truth": "These residues can be used as an alternate source for the production of different products like biogas, biofuel, mushroom, and tempeh as the raw material in various researches and industries."
+  },
+  {
+    "ocr": "There is, also, am eme-rging londfill type calleed \"green wastte landfill\" that is, occasionally, being used.",
+    "ground_truth": "There is, also, an emerging landfill type called \"green waste landfill\" that is, occasionally, being used."
+  },
+  {
+    "ocr": "Yet, emi-ssions from drought-induce-d forest fires are, usually, not included in nati onal-level carbon emission inventories.",
+    "ground_truth": "Yet, emissions from drought-induced forest fires are, usually, not included in national-level carbon emission inventories."
+  },
+  {
+    "ocr": "Thc c0nntent, as determined by other  auuthors,of the moSt widely investigated heav-y metals (Cd,Pb and Zn) in farmland, forest and urban soils was used as a database ffor tlie calculation of all of the presented inddiccs,  and this shows, based on  statistical  methods, the similarities and differences  between them.",
+    "ground_truth": "The content, as determined by other authors, of the most widely investigated heavy metals (Cd, Pb and Zn) in farmland, forest and urban soils was used as a database for the calculation of all of the presented indices, and this shows, based on statistical methods, the similarities and differences between them."
+  },
+  {
+    "ocr": "All emission species aree comsistently estimateed using the same a-ct-ivity dat-a over all time perriods.",
+    "ground_truth": "All emission species are consistently estimated using the same activity data over all time periods."
+  },
+  {
+    "ocr": "Case study researrch is a methood of reseaarch using case studies tthat has gained a spotlight within soci al sciicnce.",
+    "ground_truth": "Case study research is a method of research using case studies that has gained a spotlight within social science."
+  },
+  {
+    "ocr": "We find that the impact of global cli mate change onn yyields of diffcrent crops from climate trends ranged from -13.4% (oil palm) to 3.5% (soybean).",
+    "ground_truth": "We find that the impact of global climate change on yields of different crops from climate trends ranged from -13.4% (oil palm) to 3.5% (soybean)."
+  },
+  {
+    "ocr": "However, no an nual, officially published cmissions data exist for Chiina-.",
+    "ground_truth": "However, no annual, officially published emissions data exist for China."
+  },
+  {
+    "ocr": "Ultrafine par ticles (PM<Sub>0.1</sub>), which are present in the air inn large numberrs, ppose a hhealth riSk.",
+    "ground_truth": "Ultrafine particles (PM<sub>0.1</sub>), which are present in the air in large numbers, pose a health risk."
+  },
+  {
+    "ocr": "Nannomateriols (NMs)  have 9ained prominence intechnolo9ical advanceme nts due to their  tunable physical, ch emical and biological properties with enhanced performance over their bulk counterparts.",
+    "ground_truth": "Nanomaterials (NMs) have gained prominence in technological advancements due to their tunable physical, chemical and biological properties with enhanced performance over their bulk counterparts."
+  },
+  {
+    "ocr": "Ranging from early -maatrix factorrization to recentlyemerged deep  le-arningg based methods, exxisting efforts typically obtain a user's -(or an item's) embedding 6y mapping from pre-ex-isting features that describe the user  (o r the item), sucli as I-D and attributes-.",
+    "ground_truth": "Ranging from early matrix factorization to recently emerged deep learning based methods, existing efforts typically obtain a user's (or an item's) embedding by mapping from pre-existing features that describe the user (or the item), such as ID and attributes."
+  },
+  {
+    "ocr": "A traditi0nal metric u-sed in hydrology tto summarize model performance is the Nash–Sutcliffe efficiency (NSE).",
+    "ground_truth": "A traditional metric used in hydrology to summarize model performance is the Nash–Sutcliffe efficiency (NSE)."
+  },
+  {
+    "ocr": "Microbial EPS can enhance the agg-regation of soiil particl es and benefit plan-ts by maintaining the moisture of the envirronment andd trappin9 nutrients.",
+    "ground_truth": "Microbial EPS can enhance the aggregation of soil particles and benefit plants by maintaining the moisture of the environment and trapping nutrients."
+  },
+  {
+    "ocr": "Bioaccumulation of these he avy metals leads to a diversitty o f toxic eff ects on a variety of bodyy tissues aan-d organs.",
+    "ground_truth": "Bioaccumulation of these heavy metals leads to a diversity of toxic effects on a variety of body tissues and organs."
+  },
+  {
+    "ocr": "Intelligennt reflecting suurface (IRS) is an enabling technology to engineeer the radio signal propagattion in wirele ss networrks.",
+    "ground_truth": "Intelligent reflecting surface (IRS) is an enabling technology to engineer the radio signal propagation in wireless networks."
+  },
+  {
+    "ocr": "This p-opularity and widespread use re-late to how an NDVI can be calculated with any multispecttral  ssennsor with  a visible and a near-IR band.",
+    "ground_truth": "This popularity and widespread use relate to how an NDVI can be calculated with any multispectral sensor with a visible and a near-IR band."
+  },
+  {
+    "ocr": "Here we show, by using several observational datasets whicch cover theArrctic region, that durin9 the laSt 43 yea-rs the  Arctic has beenwarmimg nearly four times faster than the globe, which is a h-igher ratio thann generally  reported in -literaature.",
+    "ground_truth": "Here we show, by using several observational datasets which cover the Arctic region, that during the last 43 years the Arctic has been warming nearly four times faster than the globe, which is a higher ratio than generally reported in literature."
+  },
+  {
+    "ocr": "Knowledge grapphs that re-present strructurol relaatiions between entitie s liove become an increasin9ly popular research direc tion toward cognition and h-uman-level intelligence.",
+    "ground_truth": "Knowledge graphs that represent structural relations between entities have become an increasingly popular research direction toward cognition and human-level intelligence."
+  },
+  {
+    "ocr": "C O2 emi ssion-s from fossil  fuels and industry (EFF) are based on energy statistics and ccment production data, respectively, while emissions from l and-uuse chaange (ELUC), mainly deforestation, arre base-d 0n  land--coveer change dato and b0okkeeping models.",
+    "ground_truth": "CO2 emissions from fossil fuels and industry (EFF) are based on energy statistics and cement production data, respectively, while emissions from land-use change (ELUC), mainly deforestation, are based on land-cover change data and bookkeeping models."
+  },
+  {
+    "ocr": "Howev-er,, most existing methodss rep resent  the multi-scale featurees in a layer-wise manner.",
+    "ground_truth": "However, most existing methods represent the multi-scale features in a layer-wise manner."
+  },
+  {
+    "ocr": "In th is study, aa novel global 30 m land-cover classification with a fine classiifica tionn system for the year 2015 (GLC_FCS30-2015) was produced by combining timee series oof LLandds at imageryy and high-quality training data from the GSPEC-Lib (Global Spatial Temporal Spectra Library)) on the Google Eaarth Engine computing platform.",
+    "ground_truth": "In this study, a novel global 30 m land-cover classification with a fine classification system for the year 2015 (GLC_FCS30-2015) was produced by combining time series of Landsat imagery and high-quality training data from the GSPECLib (Global Spatial Temporal Spectra Library) on the Google Earth Engine computing platform."
+  },
+  {
+    "ocr": "Recent works have pr0-posed IoT-based frameworks that use traffic density of e ach laneto contro1 traffic movement, but -t hey suffer from low acccuracy due to lack off emergency vehicle image dattasetts for training deep neural networks.",
+    "ground_truth": "Recent works have proposed IoT-based frameworks that use traffic density of each lane to control traffic movement, but they suffer from low accuracy due to lack of emergency vehicle image datasets for training deep neural networks."
+  },
+  {
+    "ocr": "Scopping reviews are a useful tool in tthe ever increa sing arsenal of evidence ssynthesis appproaches.",
+    "ground_truth": "Scoping reviews are a useful tool in the ever increasing arsenal of evidence synthesis approaches."
+  },
+  {
+    "ocr": "These methodS could be classified inttoo adsorption-,, membrane-, chemical-, electric-, and p-hotocat-alytic-based treatments-.",
+    "ground_truth": "These methods could be classified into adsorption-, membrane-, chemical-, electric-, and photocatalytic-based treatments."
+  },
+  {
+    "ocr": "If there is toxicity, it is likeely dependent on dose,  polyme r type, size, s-urface chemistry, and hydrophobicity.",
+    "ground_truth": "If there is toxicity, it is likely dependent on dose, polymer type, size, surface chemistry, and hydrophobicity."
+  },
+  {
+    "ocr": "The Fermi leeve1 of EDTA-complex-ed SnO<sub>22</sub> is better maa-tched with the conduction bond of pperov-skite, 1cading to high open-cir-cuit voltage.",
+    "ground_truth": "The Fermi level of EDTA-complexed SnO<sub>2</sub> is better matched with the conduction band of perovskite, leading to high open-circuit voltage."
+  },
+  {
+    "ocr": "The p-aper provides a complex, critical assessment of lieavy metal soilpollution ussing different in dice-s.",
+    "ground_truth": "The paper provides a complex, critical assessment of heavy metal soil pollution using different indices."
+  },
+  {
+    "ocr": "Hydrogen is produced by water electrolysis, ssteeamm methane reforming, methane pyrolysis and coal gasificati-on.",
+    "ground_truth": "Hydrogen is produced by water electrolysis, steam methane reforming, methane pyrolysis and coal gasification."
+  },
+  {
+    "ocr": "With ASTRAL-III, loww -support branches can be removedd, reesulting inn improved ac c uracy.",
+    "ground_truth": "With ASTRAL-III, low support branches can be removed, resulting in improved accuracy."
+  },
+  {
+    "ocr": "Irnplementation of learning in tt he classroom has consequences for a teacher to impr-ove h-is role and competence, becausea competentteacher will fimd it easierto manage  classes and carry out evaluaations for his students both individually and i-n class.",
+    "ground_truth": "Implementation of learning in the classroom has consequences for a teacher to improve his role and competence, because a competent teacher will find it easier to manage classes and carry out evaluations for his students both individually and in class."
+  },
+  {
+    "ocr": "FastANI is accurate for both finished and draaft genomes, and is up to three orders of magnitude faster c ompared t0 alignmment-based approaches.",
+    "ground_truth": "FastANI is accurate for both finished and draft genomes, and is up to three orders of magnitude faster compared to alignment-based approaches."
+  },
+  {
+    "ocr": "Addressing fake  news requires a multidisciplinary effort",
+    "ground_truth": "Addressing fake news requires a multidisciplinary effort"
+  },
+  {
+    "ocr": "A fundamental questiion in microbiology is whether thcrre is conntinuum of -genetic d-iversity ammong genomeS, or clear species bo unda-riies pprevail instead..",
+    "ground_truth": "A fundamental question in microbiology is whether there is continuum of genetic diversity among genomes, or clear species boundaries prevail instead."
+  },
+  {
+    "ocr": "T-he China Meteorologicall Forccing Dataset (CMFD) iss the first high spaatial-temporal resolution gridded near-surface meteorological dataset developed specifically for studi es of llannd  surface proces-ses in China.",
+    "ground_truth": "The China Meteorological Forcing Dataset (CMFD) is the first high spatial-temporal resolution gridded near-surface meteorological dataset developed specifically for studies of land surface processes in China."
+  },
+  {
+    "ocr": "Micropplastics are ubiquitous in estuarine, coastal,, anddeep sea sediments.",
+    "ground_truth": "Microplastics are ubiquitous in estuarine, coastal, and deep sea sediments."
+  },
+  {
+    "ocr": "Thisoccurs due t0 bioaccumulation in thee food chains as a result oof  the nondegradable state of the heavy me tals.",
+    "ground_truth": "This occurs due to bioaccumulation in the food chains as a result of the nondegradable state of the heavy metals."
+  },
+  {
+    "ocr": "The aim of tliis review article is to provide ann overview of GANs for the signal processsing community, drawing on familiar analogies and concepts whhere poss-ible.",
+    "ground_truth": "The aim of this review article is to provide an overview of GANs for the signal processing community, drawing on familiar analogies and concepts where possible."
+  },
+  {
+    "ocr": "Here we present a deep generativc model for the prrobabilistic nowcasting  of preccipitation fr-om radar that addresses these chal lenges.",
+    "ground_truth": "Here we present a deep generative model for the probabilistic nowcasting of precipitation from radar that addresses these challenges."
+  },
+  {
+    "ocr": "Further, there is increasing demand for radar and communi catiion systems thaat share the hardware platform as well as the frequency -band, a s this not only decongests the spectrum, but also benefits both sensing and s iggnaliing operations via the full cooperation betwecn bo-th fumctionalities.",
+    "ground_truth": "Further, there is increasing demand for radar and communication systems that share the hardware platform as well as the frequency band, as this not only decongests the spectrum, but also benefits both sensing and signaling operations via the full cooperation between both functionalities."
+  },
+  {
+    "ocr": "The improvement amd expansion of higher education have bcenpriorities o f our notional development in Kenya.Within a spam of thirty five year s since independence, we hhave witnessed tthe creation of five public universities.SSeveral pprivate universities have also been established..In o-ur notional universitieS, morc professional programmes have been developeed at both undergraduate and postgraduate levells and several departments now offer Ph.D programmes through research.As one  of maanyAfrican countrieS that ha-ve ssuffered f rom the eeffects of colonialism and marginalization, Kenya has made tremendous progreSs in the ficld of h igher educati on that shou-ld be desired for the wider region, now defined by the Preferential Trade Arca (PTA) and the Commonn Market of East and Southern Africo (COMESA).Therre has, however, been a co nstant lack of -locallly aavailable textbooks for use at booth the undergraduate and -postgraduate levvels.Mamy dcpartments continue t0 use iimported  texxtbooks at a great price in foreign excliange.Wor s-e st-ill, the teaching staff havc to relate material in thesettex tS to our local situation and ex-pcriences.With the onset of the third millennium and the -ever- growing quest for information, there is a desperatee nced for pe-opl-e to writ e books in various areas oof sspeciolizatioon that are relevant to our needs..One of the objectives of any institution of hhighe r learning is to conduct research.Research generates new knowlledge and informationn; it extends the fron tiers of  undcrstand ing as we gain neww inSight-s into phenomena-.Th-ere can be no improvementt of higher education withhout sound reseorc h.The Kenya Government  has encourag-ed and suupported research in our public un-iversities and ha-s gone further to est ablish inddependent research institutes in severral disciplines.This is testtimony to the important  role th at researc-h playss in the nnattional development of any co untry.It is with these points in mind thhat we sct about the task of writing a book on research methodS.Research methoddS as a subject cuts across the boundaries of all disciplines.Whether in Hist ory, Engineering, Medici ne, Education or Literature, a reS earcher needs the necessary  tools to conduct a researchstudy properly.We sincerely believe that Research Methods compliments arid  strengthenss the p-hilosophy of our s ystem of edu cation bby equipping th estud-ent or any aspiring researcher with the necessary tools and skills to identifya probleem andd look foor practical solutions i-n a systtema ti c way.Excellentt research skil ls should also strengthen aa person's ability to  work, thirik and act independentl-y.-Im writing this book, we fclt a rresearch methods  bo0k sh0uld be \"skill\" and \"application\" oriented.We have therefore t ried tto discuussthoroughly the nnecesSa-ry skills in research and howsuch skills should be appllied when conducting a  reseorch Sttudy.This text is iintended for peoplewho will either cond uct field research.Or who necd to rely on litcrature research.It is therefore suitable for universit y students at both the undderggraduatc and graduate levels and fo r  personnel in Government and Non-Governmental Organization s.University teaching staff should also find this book useful as a reference text for tliei-r researchh.The orga nizati on of thc material in this text follows the formatof the research pro cess.Chapters 1 and 2 deal wwith the definition and  purpose o-f research.Chapters 3-9 deal with the critical, elem en.",
+    "ground_truth": "The improvement and expansion of higher education have been priorities of our national development in Kenya.Within a span of thirty five years since independence, we have witnessed the creation of five public universities.Several private universities have also been established.In our national universities, more professional programmes have been developed at both undergraduate and postgraduate levels and several departments now offer Ph.D programmes through research.As one of many African countries that have suffered from the effects of colonialism and marginalization, Kenya has made tremendous progress in the field of higher education that should be desired for the wider region, now defined by the Preferential Trade Area (PTA) and the Common Market of East and Southern Africa (COMESA).There has, however, been a constant lack of locally available textbooks for use at both the undergraduate and postgraduate levels.Many departments continue to use imported textbooks at a great price in foreign exchange.Worse still, the teaching staff have to relate material in these texts to our local situation and experiences.With the onset of the third millennium and the ever-growing quest for information, there is a desperate need for people to write books in various areas of specialization that are relevant to our needs.One of the objectives of any institution of higher learning is to conduct research.Research generates new knowledge and information; it extends the frontiers of understanding as we gain new insights into phenomena.There can be no improvement of higher education without sound research.The Kenya Government has encouraged and supported research in our public universities and has gone further to establish independent research institutes in several disciplines.This is testimony to the important role that research plays in the national development of any country.It is with these points in mind that we set about the task of writing a book on research methods.Research methods as a subject cuts across the boundaries of all disciplines.Whether in History, Engineering, Medicine, Education or Literature, a researcher needs the necessary tools to conduct a research study properly.We sincerely believe that Research Methods compliments arid strengthens the philosophy of our system of education by equipping the student or any aspiring researcher with the necessary tools and skills to identify a problem and look for practical solutions in a systematic way.Excellent research skills should also strengthen a person's ability to work, thirik and act independently.In writing this book, we felt a research methods book should be \"skill\" and \"application\" oriented.We have therefore tried to discuss thoroughly the necessary skills in research and how such skills should be applied when conducting a research study.This text is intended for people who will either conduct field research.Or who need to rely on literature research.It is therefore suitable for university students at both the undergraduate and graduate levels and for personnel in Government and Non-Governmental Organizations.University teaching staff should also find this book useful as a reference text for their research.The organization of the material in this text follows the format of the research process.Chapters 1 and 2 deal with the definition and purpose of research.Chapters 3-9 deal with the critical, elemen."
+  },
+  {
+    "ocr": "A reanalysis for greenhouse gases is being produced se parately.",
+    "ground_truth": "A reanalysis for greenhouse gases is being produced separately."
+  },
+  {
+    "ocr": "Increeasinggly low costs and weights of mu ltispectral sensors mean they can  be mounted on satellite, aerial, andd increasingly—Unmanncd Aerial SyStemss (UAS).",
+    "ground_truth": "Increasingly low costs and weights of multispectral sensors mean they can be mounted on satellite, aerial, and increasingly—Unmanned Aerial Systems (UAS)."
+  },
+  {
+    "ocr": "The Woorld Health O-rgonization (WHOO)categorizesthem  based on their detrimental efffe-cts, emphasizing the relevance of public he-alth.",
+    "ground_truth": "The World Health Organization (WHO) categorizes them based on their detrimental effects, emphasizing the relevance of public health."
+  },
+  {
+    "ocr": "These findings show how case study research can be performed in practice and what it can r eveal.",
+    "ground_truth": "These findings show how case study research can be performed in practice and what it can reveal."
+  },
+  {
+    "ocr": "The upcomin g 5th edition of the World -Health Organnization (WHO) Classification of Haematolymphoid Tumours is part of -an effort to hierarchically catalogue human cancers arisi ng in various organ systemms within o single relation a1  dat-abase.",
+    "ground_truth": "The upcoming 5th edition of the World Health Organization (WHO) Classification of Haematolymphoid Tumours is part of an effort to hierarchically catalogue human cancers arising in various organ systems within a single relational database."
+  },
+  {
+    "ocr": "Kroken 2 also introduces a translated Search mode, providing increased s-en sitivity in viral metagenomics analysis.",
+    "ground_truth": "Kraken 2 also introduces a translated search mode, providing increased sensitivity in viral metagenomics analysis."
+  },
+  {
+    "ocr": "CNNN is designed to automatica-lly and adapti vely  learn spatial hierarchies of features through bbackpropa-gation by using multipl e building blocks, such as convolution layers, pooling layeers, and fully connnected layers.",
+    "ground_truth": "CNN is designed to automatically and adaptively learn spatial hierarchies of features through backpropagation by using multiple building blocks, such as convolution layers, pooling layers, and fully connected layers."
+  },
+  {
+    "ocr": "The SARS-CoV-2 epiddemic in southern Africa h-as been chharacterized by tliree di stinct  woves.",
+    "ground_truth": "The SARS-CoV-2 epidemic in southern Africa has been characterized by three distinct waves."
+  },
+  {
+    "ocr": "PROBAST (Prediction model Risk -Of Biass ASsesSment Tool), a tool for asses-sing the risk of bias (ROB) and applicabiliity of dia gnostic and prognostic prediction mod el stu dies, was developed by a ssteeering group that considered existing  ROOB toolls and reporting guidelimes.",
+    "ground_truth": "PROBAST (Prediction model Risk Of Bias ASsessment Tool), a tool for assessing the risk of bias (ROB) and applicability of diagnostic and prognostic prediction model studies, was developed by a steering group that considered existing ROB tools and reporting guidelines."
+  },
+  {
+    "ocr": "The cumuula tivee cffect of the  Stockholm, Rio, and Johannesburgg conferences ideentified sustainable ene rgy development (SED) as a ver-y important factorin the sustoinabble global de-velopment.",
+    "ground_truth": "The cumulative effect of the Stockholm, Rio, and Johannesburg conferences identified sustainable energy development (SED) as a very important factor in the sustainable global development."
+  },
+  {
+    "ocr": "It is ssuggeste-d thot this number may be an underestimation,, and scarcity 0-f  clean woter by 2050 may be worsseas the effects of thc three  drivers of water scarcity, as well as of unequal growwth, ac-ces sibility amd needs, are underrated.",
+    "ground_truth": "It is suggested that this number may be an underestimation, and scarcity of clean water by 2050 may be worse as the effects of the three drivers of water scarcity, as well as of unequal growth, accessibility and needs, are underrated."
+  },
+  {
+    "ocr": "In  this tutorial, w-e introduce  the reader to estimmating the most p0pular networkmodel for psychological data: the partial correlatioon network.",
+    "ground_truth": "In this tutorial, we introduce the reader to estimating the most popular network model for psychological data: the partial correlation network."
+  },
+  {
+    "ocr": "In this arti-c1e, we  summarize the  fundamenttals of ma chine learning and deep learning to generate a broader unde rStanding of the methodical underpimnin9 0f current intelligent systems.",
+    "ground_truth": "In this article, we summarize the fundamentals of machine learning and deep learning to generate a broader understanding of the methodical underpinning of current intelligent systems."
+  }
+]

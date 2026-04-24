@@ -1,0 +1,1347 @@
+[
+  {
+    "ocr": "CONCLUSIONS AND RELEVANCE As of July 1, 2020, more than 10 million people worldwide had been infected with SARS-CoV-2. Many aspects of transmission, infection, and treatment remain unclear. Advances in prevention and effective management of COVID-19 will require basic and clinical investigation and public health and clinical interventions.",
+    "ground_truth": "As of July 1, 2020, more than 10 million people worldwide had been infected with SARS-CoV-2. Many aspects of transmission, infection, and treatment remain unclear. Advances in prevention and effective management of COVID-19 will require basic and clinical investigation and public health and clinical interventions.",
+    "similarity": 0.9604
+  },
+  {
+    "ocr": "About 34% of tlie emitted coarse TWPs and 30%  of the emitt ed coarse BWPs (100 kt yr<sup>-1</sup> amd 40 kt yr<sup>-1</ssuup> respectively) weree dep osited in the World Ocean.",
+    "ground_truth": "About 34% of the emitted coarse TWPs and 30% of the emitted coarse BWPs (100 kt yr<sup>-1</sup> and 40 kt yr<sup>-1</sup> respectively) were deposited in the World Ocean."
+  },
+  {
+    "ocr": "Percentage sampled contaminated",
+    "ground_truth": "245 surface samples are collected",
+    "similarity": 0.5
+  },
+  {
+    "ocr": "2. Set the child’s parameters to the larger of the parents’ values.",
+    "ground_truth": "Until recently, the most widely used strategy was to choose the vertex of the highest degree",
+    "similarity": 0.4906
+  },
+  {
+    "ocr": "°We performed these analyses using R version 3.5.0, bootnet version 1.0.1 and ggraph version 1.4.4, using OSX version 10.11.6.",
+    "ground_truth": "We show how to perform these analyses in R and demonstrate the method in an empirical example on posttraumatic stress disorder data",
+    "similarity": 0.4669
+  },
+  {
+    "ocr": "standard landfills and transfer stations are not accepting organic waste like fruits and vegetables.",
+    "ground_truth": "However, illegal and uncontrolled \"landfills\" (mostly known as open dumpsites) are, unfortunately, prevalent in many developing countries",
+    "similarity": 0.4388
+  },
+  {
+    "ocr": "Abstract: Electrocatalytic transformation of CO2 and H20 into chemical feedstocks offers the potential to reduce carbon emissions by shifting the chemical industry away from fossil fuel dependence. We provide a technoeconomic and carbon emission analysis of possible products, offering targets that would need to be met for economically compelling industrial implementation to be achieved. We provide a comparison of the projected costs and CQ2 emissions across electrocatalytic, biocatalytic, and fossil-fuel derived production of chemical feedstocks. We find that, for electrosynthesis to become competitive with fossil-fuel derived feedstocks, electrical-to-chemical conversion efficiencies need to reach at least 60%, and renewable electricity prices need to fall below 4 cents/kWh. We discuss the possibility of combining electro- and bio-catalytic processes, using sequential upgrading of CO2 as a representative case. We describe the technical challenges and economic barriers to marketable electrosynthesized chemicals.",
+    "ground_truth": "Electrocatalytic transformation of carbon dioxide (CO<sub>2</sub>) and water into chemical feedstocks offers the potential to reduce carbon emissions by shifting the chemical industry away from fossil fuel dependence. We provide a technoeconomic and carbon emission analysis of possible products, offering targets that would need to be met for economically compelling industrial implementation to be achieved. We also provide a comparison of the projected costs and CO<sub>2</sub> emissions across electrocatalytic, biocatalytic, and fossil fuel-derived production of chemical feedstocks. We find that for electrosynthesis to become competitive with fossil fuel-derived feedstocks, electrical-to-chemical conversion efficiencies need to reach at least 60%, and renewable electricity prices need to fall below 4 cents per kilowatt-hour. We discuss the possibility of combining electro- and biocatalytic processes, using sequential upgrading of CO<sub>2</sub> as a representative case. We describe the technical challenges and economic barriers to marketable electrosynthesized chemicals.",
+    "similarity": 0.9513
+  },
+  {
+    "ocr": "shows the problems of RNNs with long-term dependencies, we can conclude that traditional RNNs should not be used if (e.g. daily) discharge is predicted only from meteorological observations.",
+    "ground_truth": "The advantage of the LSTM is its ability to learn long-term dependencies between the provided input and output of the network, which are essential for modelling storage effects in e.g",
+    "similarity": 0.4665
+  },
+  {
+    "ocr": "Competing interests: The authors have declared that no competing interests exist. Performance of ChatGPT on USMLE: Potential for Al-assisted medical education using large language models",
+    "ground_truth": "These results suggest that large language models may have the potential to assist with medical education, and potentially, clinical decision-making.",
+    "similarity": 0.485
+  },
+  {
+    "ocr": "(000 Integrated precipitation in extreme events [mm] Integrated precipitation in extreme events [mm]",
+    "ground_truth": "This shift towards stronger total precipitation from extreme events is seen in observations and climate models, and increases with the strength - and hence the rareness - of the event",
+    "similarity": 0.4594
+  },
+  {
+    "ocr": "Existing  global climate studies rarely consider Such patteerns from noon-parametr-ic stattistiical stand-point.",
+    "ground_truth": "Existing global climate studies rarely consider such patterns from non-parametric statistical standpoint."
+  },
+  {
+    "ocr": "Herewe empiriically test the link betweeen microbial ecophysiological traits and topso-il carbon content a cross geographically distribut-ed soils and land usec0ntrasts.",
+    "ground_truth": "Here we empirically test the link between microbial ecophysiological traits and topsoil carbon content across geographically distributed soils and land use contrasts."
+  },
+  {
+    "ocr": "First published 2022 Printed in the United Kingdom by TJ Books Limited, Padstow Cornwall A catalogue record for this publication is available from the British Library.",
+    "ground_truth": "IPCC reports are produced in comprehensive, objective and transparent ways, ensuring they reflect the full range of views in the scientific literature",
+    "similarity": 0.4101
+  },
+  {
+    "ocr": "Predicts digital DDH values and Infers whole-genome and 16S rDNA gene GBDP trees",
+    "ground_truth": "Yet such analyses can be complex and require expert knowledge",
+    "similarity": 0.4255
+  },
+  {
+    "ocr": "Air pollution has various health effects. The health of susceptible and sensitive individuals can be impacted even on low air pollution days. Short-term exposure to air pollutants is closely related to COPD (Chronic Obstructive Pulmonary Disease), cough, shortness of breath, wheezing, asthma, respiratory disease, and high rates of hospitalization (a measurement of morbidity).",
+    "ground_truth": "Diseases occurring from the aforementioned substances include principally respiratory problems such as Chronic Obstructive Pulmonary Disease (COPD), asthma, bronchiolitis, and also lung cancer, cardiovascular events, central nervous system dysfunctions, and cutaneous diseases",
+    "similarity": 0.4465
+  },
+  {
+    "ocr": "The results of this study show that the Al system in a primary care setting robustly exceeded the pre-specified primary endpoint goals with a sensitivity of 87.2% (>85%), a specificity of 90.7% (>82.5%), and an imageability rate of 96.1%. Sensitivity is a patient",
+    "ground_truth": "The AI system exceeded all pre-specified superiority endpoints at sensitivity of 87.2% (95% CI, 81.8-91.2%) (>85%), specificity of 90.7% (95% CI, 88.3-92.7%) (>82.5%), and imageability rate of 96.1% (95% CI, 94.6-97.3%), demonstrating AI's ability to bring specialty-level diagnostics to primary care settings",
+    "similarity": 0.5804
+  },
+  {
+    "ocr": "related CO, emissions were allocated to the sector ‘Non-metal Mineral Products’ in the final emission inventories. Comparison of the sectoral- and reference-approach emission inventories",
+    "ground_truth": "We followed the Intergovernmental Panel on Climate Change (IPCC) emissions accounting method with a territorial administrative scope",
+    "similarity": 0.4528
+  },
+  {
+    "ocr": "The AERONET Version 3 (V3) algorithhm provides fully automatic cloud screening and imstrurnent annomaly quality controls.",
+    "ground_truth": "The AERONET Version 3 (V3) algorithm provides fully automatic cloud screening and instrument anomaly quality controls."
+  },
+  {
+    "ocr": "In addition to ionic strength, homo-aggregation is also influenced by a range of environmental variables. The Bundschuh et al. Environ Sci Eur (2018) 30:6",
+    "ground_truth": "This economic success comes along with their presence in the environment and the risk of potentially adverse effects in natural systems",
+    "similarity": 0.4221
+  },
+  {
+    "ocr": "FIGURE 4 | Comparison of counts using the “Galaxy Count” software relative to the known number of microplastic particles within four test solutions.",
+    "ground_truth": "Of the 259 total bottles processed, 93% showed some sign of microplastic contamination",
+    "similarity": 0.4274
+  },
+  {
+    "ocr": "Representing features aat multi plc scales is 0f great importance for numerouus vision task s.",
+    "ground_truth": "Representing features at multiple scales is of great importance for numerous vision tasks."
+  },
+  {
+    "ocr": "Itis derived by the interpolation of monthly climate anomalies from extensive networks of weather station observation s.",
+    "ground_truth": "It is derived by the interpolation of monthly climate anomalies from extensive networks of weather station observations."
+  },
+  {
+    "ocr": "Plastic pollution has been well documented in natural environments, including the open waters and sediments within lakes and rivers, the open ocean and even the air, but less attention has been paid to synthetic polymers in human consumables. Since multiple toxicity studies indicate risks to human health when plastic particles are ingested, more needs to be known about the presence and abundance of anthropogenic particles in human foods and beverages. This study investigates the presence of anthropogenic particles in 159 samples of globally sourced tap water, 12 brands of Laurentian Great Lakes beer, and 12 brands of commercial sea salt. Of the tap water samples analyzed, 81% were found to contain anthro- pogenic particles. The majority of these particles were fibers (98.3%) between 0.1—5 mm in length. The range was 0 to 61 particles/L, with an overall mean of 5.45 particles/L. Anthropo- genic debris was found in each brand of beer and salt. Of the extracted particles, over 99% were fibers. After adjusting for particles found in lab blanks for both salt and beer, the aver- age number of particles found in beer was 4.05 particles/L with a range of 0 to 14.3 particles/ L and the average number of particles found in each brand of salt was 212 particles/kg with a range of 46.7 to 806 particles/kg. Based on consumer guidelines, our results indicate the average person ingests over 5,800 particles of synthetic debris from these three sources annually, with the largest contribution coming from tap water (88%).",
+    "ground_truth": "Plastic pollution has been well documented in natural environments, including the open waters and sediments within lakes and rivers, the open ocean and even the air, but less attention has been paid to synthetic polymers in human consumables. Since multiple toxicity studies indicate risks to human health when plastic particles are ingested, more needs to be known about the presence and abundance of anthropogenic particles in human foods and beverages. This study investigates the presence of anthropogenic particles in 159 samples of globally sourced tap water, 12 brands of Laurentian Great Lakes beer, and 12 brands of commercial sea salt. Of the tap water samples analyzed, 81% were found to contain anthropogenic particles. The majority of these particles were fibers (98.3%) between 0.1-5 mm in length. The range was 0 to 61 particles/L, with an overall mean of 5.45 particles/L. Anthropogenic debris was found in each brand of beer and salt. Of the extracted particles, over 99% were fibers. After adjusting for particles found in lab blanks for both salt and beer, the average number of particles found in beer was 4.05 particles/L with a range of 0 to 14.3 particles/L and the average number of particles found in each brand of salt was 212 particles/kg with a range of 46.7 to 806 particles/kg. Based on consumer guidelines, our results indicate the average person ingests over 5,800 particles of synthetic debris from these three sources annually, with the largest contribution coming from tap water (88%).",
+    "similarity": 0.997
+  },
+  {
+    "ocr": "Peer review information Nature Communications thanks the anonymous reviewer(s) for their contribution to the peer review of this work.",
+    "ground_truth": "Basic science research, involving solid-state chemistry and physics, has been at the center of this endeavor, particularly during the 1970s and 1980s",
+    "similarity": 0.417
+  },
+  {
+    "ocr": "In this paper, we question if self-supervis ed learning provides new proper-ties to Vision Transformer (VViT) [166] that stand outcommpared to connvolutioonal networks (convnets).",
+    "ground_truth": "In this paper, we question if self-supervised learning provides new properties to Vision Transformer (ViT) [16] that stand out compared to convolutional networks (convnets)."
+  },
+  {
+    "ocr": "Consequently, aS we tra-nsition to the Anthropocene, coral bleachi-ng  is occurring more frequently in all El Niño-South-ern Oscillation phases, iincreasimg t-he likelihood of annual bbleaching in the coming decades.",
+    "ground_truth": "Consequently, as we transition to the Anthropocene, coral bleaching is occurring more frequently in all El Niño-Southern Oscillation phases, increasing the likelihood of annual bleaching in the coming decades."
+  },
+  {
+    "ocr": "Most of the research done in applying GANs to Data Augmentation and reporting the resulting classification performance has been done in biomedical image analysis",
+    "ground_truth": "Unfortunately, many application domains do not have access to big data, such as medical image analysis",
+    "similarity": 0.4943
+  },
+  {
+    "ocr": " Stroke is the second leadiing cause of death and a major cause of disability  worldwide.",
+    "ground_truth": "Stroke is the second leading cause of death and a major cause of disability worldwide."
+  },
+  {
+    "ocr": "Water use efficiency (WUE) is defined as the amount of carbon assimilated as biomass or grain produced per unit of water used by the crop. One of the primary questions being asked is how plants will resoond to a changing climate with changes in temperature, precipitation, and carbon dioxide (COz) that affect their WUE At the leaf level, increasing COz increases WUE until the leaf is exposed to temperatures exceeded the optimum for growth (i.e., heat stress) and then WUE begins to decline. Leaves subjected to water deficits (i.e., drought stress) show varying responses in WUE. The response of WUE at the leaf level is directly related to the physiological processes controlling the gradients of COs and H2O, e.g., leaf:air vapor pressure deficits, between the leaf and air surrounding the leaf. There a variety of methods available to screen genetic material for enhanced WUE under scenarios of climate change. When we extend from the leaf to the canopy, then the dynamics of crop water use and biomass accumulation have to consider soil water evaporation rate, transpiration from the leaves, and the growth pattern of the crop. Enhancing WUE at the canopy level can be achieved by adopting practices that reduce the soil water evaporation component and divert more water into transpiration which can be through crop residue management, mulching, row spacing, and irrigation. Climate change will affect plant growth, but we have opportunities to enhance WUE through crop selection and cultural practices to offset the impact of a changing climate.",
+    "ground_truth": "Water use efficiency (WUE) is defined as the amount of carbon assimilated as biomass or grain produced per unit of water used by the crop. One of the primary questions being asked is how plants will respond to a changing climate with changes in temperature, precipitation, and carbon dioxide (CO<sub>2</sub>) that affect their WUE At the leaf level, increasing CO<sub>2</sub> increases WUE until the leaf is exposed to temperatures exceeded the optimum for growth (i.e., heat stress) and then WUE begins to decline. Leaves subjected to water deficits (i.e., drought stress) show varying responses in WUE. The response of WUE at the leaf level is directly related to the physiological processes controlling the gradients of CO<sub>2</sub> and H<sub>2</sub>O, e.g., leaf:air vapor pressure deficits, between the leaf and air surrounding the leaf. There a variety of methods available to screen genetic material for enhanced WUE under scenarios of climate change. When we extend from the leaf to the canopy, then the dynamics of crop water use and biomass accumulation have to consider soil water evaporation rate, transpiration from the leaves, and the growth pattern of the crop. Enhancing WUE at the canopy level can be achieved by adopting practices that reduce the soil water evaporation component and divert more water into transpiration which can be through crop residue management, mulching, row spacing, and irrigation. Climate change will affect plant growth, but we have opportunities to enhance WUE through crop selection and cultural practices to offset the impact of a changing climate.",
+    "similarity": 0.9841
+  },
+  {
+    "ocr": "RRebuilding marine liffe represents a doable Grand Challenge for humanity, an eth ical obligation and a smart economic objeective to achicve a sustainable futur-e.",
+    "ground_truth": "Rebuilding marine life represents a doable Grand Challenge for humanity, an ethical obligation and a smart economic objective to achieve a sustainable future."
+  },
+  {
+    "ocr": "The ellectrochemica1 redduction of carbon dioxide (CCO2) has received significant atten tion in academic research, although the techno-economic prospects of the techno1ogy for the large-sca1e productio n of chemicals aree uncle a r.",
+    "ground_truth": "The electrochemical reduction of carbon dioxide (CO2) has received significant attention in academic research, although the techno-economic prospects of the technology for the large-scale production of chemicals are unclear."
+  },
+  {
+    "ocr": "Emissions are provided on an annual basis at the level oof couu ntrry and sector a-nd gridded with monthly seas-onality.",
+    "ground_truth": "Emissions are provided on an annual basis at the level of country and sector and gridded with monthly seasonality."
+  },
+  {
+    "ocr": "11. United Nations World Water Assessment Programme (WWAP). The United Nations World Water Development Report 2014 (Water and Energy. Paris, UNESCO, 2014). unesdoc.unesco.org/images/0022/002257/225741E.pdf.",
+    "ground_truth": "Abstract The 2018 edition of the United Nations World Water Development Report stated that nearly 6 billion peoples will suffer from clean water scarcity by 2050",
+    "similarity": 0.485
+  },
+  {
+    "ocr": "FL comprises a paradigm shift from centralised data lakes and it is important to understand its impact on the various stakeholders in a FL ecosystem.",
+    "ground_truth": "Existing medical data is not fully exploited by ML primarily because it sits in data silos and privacy concerns restrict access to this data",
+    "similarity": 0.4152
+  },
+  {
+    "ocr": ": algorithm may yield arbitrarily badly connected communities. In the worst case, communities may : even be disconnected, especially when running the algorithm iteratively. In our experimental analysis,",
+    "ground_truth": "In the worst case, communities may even be disconnected, especially when running the algorithm iteratively",
+    "similarity": 0.6883
+  },
+  {
+    "ocr": "and infrastructure, and increasing sludge production'®°. Accord- ingly, the EC process is still not fully mature applications.",
+    "ground_truth": "Future research studies should focus on eco-friendly, cost-effective, and sustainable materials and methods.",
+    "similarity": 0.453
+  },
+  {
+    "ocr": "5. Which of the following is NOT a way that teachers can use educational technology in a) As a supplement to traditional teaching methods",
+    "ground_truth": "The second stage of the study examines the case of ChatGPT through lenses of educational transformation, response quality, usefulness, personality and emotion, and ethics",
+    "similarity": 0.4821
+  },
+  {
+    "ocr": "21 To equip with sufficient information to appreciate how qualitative research is undertaken. 7 =To highlight different types of qualitative research.",
+    "ground_truth": "The purpose of this study is to provide inspirations to the new researchers for the development of their qualitative articles",
+    "similarity": 0.5091
+  },
+  {
+    "ocr": "Frontiers in Chemistry | www.frontiersin.org",
+    "ground_truth": "Fragments were the most common morphology (66%) followed by fibers",
+    "similarity": 0.4
+  },
+  {
+    "ocr": "The relative change rattes of  China's anthropogenic emissions durring 2010–2017 are eStimated a s foollows: −62 % for SO2, −17 % for NOx, +11% for nonmethane volatile organic compounds (NMVOCS), +1 % for NH3, −−27 %for CO, −38 % for PM10, -−3 5 % for PM2 .5, −27 % for BC, −35 % for OC, and +16 % for CO2.",
+    "ground_truth": "The relative change rates of China's anthropogenic emissions during 2010–2017 are estimated as follows: −62 % for SO2, −17 % for NOx, +11 % for nonmethane volatile organic compounds (NMVOCs), +1 % for NH3, −27 % for CO, −38 % for PM10, −35 % for PM2.5, −27 % for BC, −35 % for OC, and +16 % for CO2."
+  },
+  {
+    "ocr": "error; this also partly explains the experimental performance degradation of the handwritten digit classification network reported earlier. This point will be further discussed in the next section.",
+    "ground_truth": "We created 3D-printed D<sup>2</sup>NNs that implement classification of images of handwritten digits and fashion products, as well as the function of an imaging lens at a terahertz spectrum",
+    "similarity": 0.4611
+  },
+  {
+    "ocr": "From 1 January 2020, the data capture governnmennt poliicies relate-d to  c1osure and containment, health and economic pol-icy for more thaan 180 countries, plus seeveral  countries' subnational jurisdictions.",
+    "ground_truth": "From 1 January 2020, the data capture government policies related to closure and containment, health and economic policy for more than 180 countries, plus several countries' subnational jurisdictions."
+  },
+  {
+    "ocr": "Automated and human evaluation Flan-PaLM",
+    "ground_truth": "However, human evaluation reveals key gaps",
+    "similarity": 0.5366
+  },
+  {
+    "ocr": "Hoowever, the fraction of input CO<sub>2</sub> that is productively reduced haS typically been very low, <2% for multicarbonn products; the baalance reacts with hydroxide to form carbonaat e in both alkaaline ond neutral reactors.",
+    "ground_truth": "However, the fraction of input CO<sub>2</sub> that is productively reduced has typically been very low, <2% for multicarbon products; the balance reacts with hydroxide to form carbonate in both alkaline and neutral reactors."
+  },
+  {
+    "ocr": "The combination therapy of STING agonist and a-PD-1/ PD-L1 simultaneously boosts innate immunity and adaptive immunity, effectively overcoming resistance to",
+    "ground_truth": "These combination strategies simultaneously boost multiple processes in cancer-immunity cycle, remove immunosuppressive brakes, and orchestrate an immunosupportive tumor microenvironment",
+    "similarity": 0.5088
+  },
+  {
+    "ocr": "Sliingshot iS a uniquely robust and flexible tool which combines the highly stable techniques necessory for noisy single-cell dato with t-he ability to id-enttify multiple trajectories.",
+    "ground_truth": "Slingshot is a uniquely robust and flexible tool which combines the highly stable techniques necessary for noisy single-cell data with the ability to identify multiple trajectories."
+  },
+  {
+    "ocr": "Land use histories of the 21 paired low- and high-intensity contrasts and their mean soil pH and carbon concentrations Pairs used for metaproteomic analysis This contrast was not local; 4km apart from each other",
+    "ground_truth": "Land use intensification in low-pH soils that increased the pH above a threshold (~6.2) leads to carbon loss through increased decomposition, following alleviation of acid retardation of microbial growth",
+    "similarity": 0.4686
+  },
+  {
+    "ocr": "Environment, economics, and the society: three pillars of sustainability emerge?",
+    "ground_truth": "With a view of identifying the genesis and theoretical foundations of this conception, this paper reviews and discusses relevant historical sustainability literature",
+    "similarity": 0.4571
+  },
+  {
+    "ocr": "Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence (IJCAI-19) Graph WaveNet for Deep Spatial-Temporal Graph Modeling",
+    "ground_truth": "To overcome these limitations, we propose in this paper a novel graph neural network architecture, {Graph WaveNet}, for spatial-temporal graph modeling",
+    "similarity": 0.5407
+  },
+  {
+    "ocr": "Global weather forecasting with 3D networks",
+    "ground_truth": "Weather forecasting is important for science and society",
+    "similarity": 0.5253
+  },
+  {
+    "ocr": "AbStract As a ppowerful means of theory bbuilding, conceptual articlcs are increas i ngly co lled for in marketing academia.",
+    "ground_truth": "Abstract As a powerful means of theory building, conceptual articles are increasingly called for in marketing academia."
+  },
+  {
+    "ocr": "Fig. 8 Smudgeplots on real datasets. Smudgeplots for (a) the triploid root-knot nematode Meloidogyne floridensis and (b) the octaploid strawberry",
+    "ground_truth": "We successfully apply the approach to systems of known variable ploidy levels in the Meloidogyne genus and the extreme case of octoploid Fragaria × ananassa.",
+    "similarity": 0.457
+  },
+  {
+    "ocr": "Phytoremediationis an ecoo-fri-endly approach that could be a successful mitigation measuree tto revegetatte heavy metal-polluted soil in a cost-cffective way.",
+    "ground_truth": "Phytoremediation is an eco-friendly approach that could be a successful mitigation measure to revegetate heavy metal-polluted soil in a cost-effective way."
+  },
+  {
+    "ocr": "Our results show that if mosquito range shifts tra-ck optimal temperature ranges ffor transmmission (21.3-34.O°C for Ae.",
+    "ground_truth": "Our results show that if mosquito range shifts track optimal temperature ranges for transmission (21.3-34.0°C for Ae."
+  },
+  {
+    "ocr": "In this paper, wc provide a tutorial ovcrview of IRS-aided wireless communications to addres-s the above issues, and elaborate its reflection and channe l models, hardware architecture and practical constraints, as well asvariousappealing applications  in wireless networks.",
+    "ground_truth": "In this paper, we provide a tutorial overview of IRS-aided wireless communications to address the above issues, and elaborate its reflection and channel models, hardware architecture and practical constraints, as well as various appealing applications in wireless networks."
+  },
+  {
+    "ocr": "Mean annual permafrost temperature (°C)",
+    "ground_truth": "Globally, permafrost temperature increased by 0.29 ± 0.12 °C",
+    "similarity": 0.5657
+  },
+  {
+    "ocr": "The c-omplexity of graph data has impooSed significcant c-hallenges on the existimg machine learn ing algorithms.",
+    "ground_truth": "The complexity of graph data has imposed significant challenges on the existing machine learning algorithms."
+  },
+  {
+    "ocr": "The intensity of the heaviest extreme precipitation events is known to increase with global warming. How often such events occur in a warmer world is however less well established, and the combined effect of changes in frequency and intensity on the total amount of rain falling as extreme precipitation is much less explored, in spite of potentially large societal impacts. Here, we employ observations and climate model simulations to document strong increases in the frequencies of extreme precipitation events occurring on decadal timescales. Based on observations we find that the total precipitation from these intense events almost doubles per degree of warming, mainly due to changes in frequency, while the intensity changes are relatively weak, in accordance to previous studies. This shift towards stronger total precipitation from extreme events is seen in observations and climate models, and increases with the strength — and hence the rareness — of the event. Based on these results, we project that if historical trends continue, the most intense precipitation events observed today are likely to almost double in occurrence for each degree of further global warming. Changes to extreme precipitation of this magnitude are dramatically stronger than the more widely communicated changes to global mean precipitation.",
+    "ground_truth": "The intensity of the heaviest extreme precipitation events is known to increase with global warming. How often such events occur in a warmer world is however less well established, and the combined effect of changes in frequency and intensity on the total amount of rain falling as extreme precipitation is much less explored, in spite of potentially large societal impacts. Here, we employ observations and climate model simulations to document strong increases in the frequencies of extreme precipitation events occurring on decadal timescales. Based on observations we find that the total precipitation from these intense events almost doubles per degree of warming, mainly due to changes in frequency, while the intensity changes are relatively weak, in accordance to previous studies. This shift towards stronger total precipitation from extreme events is seen in observations and climate models, and increases with the strength - and hence the rareness - of the event. Based on these results, we project that if historical trends continue, the most intense precipitation events observed today are likely to almost double in occurrence for each degree of further global warming. Changes to extreme precipitation of this magnitude are dramatically stronger than the more widely communicated changes to global mean precipitation.",
+    "similarity": 0.9985
+  },
+  {
+    "ocr": "Whcther aridification le ads to gradual (versus abrupt) aand sy stemic (versus specific) eco syystem ch-anges  is largely un known.",
+    "ground_truth": "Whether aridification leads to gradual (versus abrupt) and systemic (versus specific) ecosystem changes is largely unknown."
+  },
+  {
+    "ocr": "Table [4] shows that our strategy of continuous inputs with quantized targets (Baseline) performs best. Continuous latent speech representations retain more information to enable better context representations and quantizing the target representations leads to more robust training. Quantizing the latents both in the input and the targets performs least well, and explains the lower performance of prior work [5] 4]. Continuous targets reduce the effectiveness of self-supervised training since targets can capture detailed artifacts of the current sequence, e.g. speaker and background information, which make the task easier and prevent the model from learning general representations beneficial to speech recognition. The training accuracy of identifying the correct latent audio representation increases from 62% to 78.0% when switching from quantized to continuous targets. Continuous inputs and continuous targets perform second best but various attempts to improve it did not lead to better results (see[Appendix F]for this experiment and other ablations on various hyperparameters). We presented wav2vec 2.0, a framework for self-supervised learning of speech representations which masks latent representations of the raw waveform and solves a contrastive task over quantized speech representations. Our experiments show the large potential of pre-training on unlabeled data for speech processing: when using only 10 minutes of labeled training data, or 48 recordings of 12.5 seconds on average, we achieve a WER of 4.8/8.2 on test-clean/other of Librispeech.",
+    "ground_truth": "Broadcasting and aggregation dominate the communication overhead in distributed systems, from machine learning training to data analytics. Current acceleration approaches require specialized hardware (RDMA) or dedicated resources (DPDK), limiting their deployment in commodity clouds. However, we present a counter-intuitive alternative: rather than bypassing the kernel, we move operations into it using eBPF. While this imposes severe constraints including no floating-point, limited memory, and stateless execution, we show these restrictions paradoxically drive innovative protocol designs that yield unexpected benefits. We introduce AggBox, which implements broadcast and aggregation operations entirely within eBPF’s constrained environment. Our key innovations include stateless group acknowledgments for reliability, edge quantization for floating-point aggregation using only integer arithmetic, and tail-call chains that create virtual memory beyond eBPF’s 512-byte stack limit. These designs emerge from and exploit the constraints rather than fighting them. AggBox achieves remarkable performance on commodity hardware: 84.5% reduction in broadcast latency, 43× speedup for MapReduce workloads, and 56.1% faster ML gradient aggregation, all without specialized NICs or dedicated cores. Beyond performance, our work demonstrates that constrained environments can drive fundamental innovation in protocol design, offering insights for future resource-limited and verified systems.",
+    "similarity": 0.4184
+  },
+  {
+    "ocr": "Polymeric hard material based support Spheroid microplates with ultra-low attachment coating",
+    "ground_truth": "Scaffold based techniques such as hydrogel-based support, polymeric hard material-based support, hydrophilic glass fiber, and organoids are employed, and each provide their own advantages and applications",
+    "similarity": 0.4595
+  },
+  {
+    "ocr": "In the present paper, simuulated mean climate, internal climate variability, and climate sensitivity i-n MIROC6 are evaluated and bbrieeflly summarized in comparisson -with the previous versiom of our climmate model (MIROC5) and observations.",
+    "ground_truth": "In the present paper, simulated mean climate, internal climate variability, and climate sensitivity in MIROC6 are evaluated and briefly summarized in comparison with the previous version of our climate model (MIROC5) and observations."
+  },
+  {
+    "ocr": "We exp0se over270 Cytooscape core functions and 34 Cyt-oscape appps as REST-callable functions with standardized JSON interfaces ba-cked by Swagger do-cummentati0n.",
+    "ground_truth": "We expose over 270 Cytoscape core functions and 34 Cytoscape apps as REST-callable functions with standardized JSON interfaces backed by Swagger documentation."
+  },
+  {
+    "ocr": "lighted the need for more soil observations, especially in high-latitude regions.",
+    "ground_truth": "The spatial uncertainty at global scale highlighted the need for more soil observations, especially in high-latitude regions.",
+    "similarity": 0.7864
+  },
+  {
+    "ocr": "U.S. Energy Information Administration https://www.eia.gov/. Lu, Q.; Jiao, F., Electrochemical CO2 reduction: Electrocatalyst, reaction mechanism, and process engineering. Nano Energy 2016, 29, 439-456.",
+    "ground_truth": "Herein, we established performance targets such that if these targets are achieved, electrochemical CO2 reduction for fuels and chemicals production can become a profitable option as part of the growing renewable energy infrastructure.",
+    "similarity": 0.4485
+  },
+  {
+    "ocr": "life-years lost. Incidence and mortality of stroke differ between countries, geographical regions, and ethnic groups. In high-income countries mainly, improvements in pre- vention, acute treatment, and neurorehabilitation have led to a substantial decrease in the burden of stroke over the past 30 years. This article reviews the epidemiological and clinical data concerning stroke incidence and burden around the globe.",
+    "ground_truth": "In high-income countries mainly, improvements in prevention, acute treatment, and neurorehabilitation have led to a substantial decrease in the burden of stroke over the past 30 years",
+    "similarity": 0.607
+  },
+  {
+    "ocr": "Apaydin-Varol E, Piitiin AE (2012) Preparation and character- ization of pyrolytic chars from different biomass sample. J Anal Appl Pyrol 98:29-36",
+    "ground_truth": "Abstract Biochar is a pyrogenous, organic material synthesized through pyrolysis of different biomass (plant or animal waste)",
+    "similarity": 0.4797
+  },
+  {
+    "ocr": "3.3. LSTMs as regional hydrological models We now analyse the results of the four regional models that we trained for the four investigated HUCs in Experiment 2.",
+    "ground_truth": "We also show the potential of the LSTM as a regional hydrological model in which one model predicts the discharge for a variety of catchments",
+    "similarity": 0.5033
+  },
+  {
+    "ocr": "The updat-es in the  CFlR rrcflect fee dback from a growing commumity of CFIR -users.",
+    "ground_truth": "The updates in the CFIR reflect feedback from a growing community of CFIR users."
+  },
+  {
+    "ocr": "Recent advancements in deep neural networks for graph-structured data have led to state-of-the-art performance on recommender system benchmarks. However, making these methods practical and scalable to web-scale recommendation tasks with billions of items and hundreds of millions of users remains a challenge.",
+    "ground_truth": "Recent advancements in deep neural networks for graph-structured data have led to state-of-the-art performance on recommender system benchmarks",
+    "similarity": 0.6327
+  },
+  {
+    "ocr": "Spatio-Temporal Graph Convolutional Networks: A Deep Learning Framework for Traffic Forecasting",
+    "ground_truth": "In this paper, we propose a novel deep learning framework, Spatio-Temporal Graph Convolutional Networks (STGCN), to tackle the time series prediction problem in traffic domain",
+    "similarity": 0.5185
+  },
+  {
+    "ocr": "Exposure to PM<sub>0.1</sub>  induces cough and worsens asthma.",
+    "ground_truth": "Exposure to PM<sub>0.1</sub> induces cough and worsens asthma."
+  },
+  {
+    "ocr": "For both time periods wc calculate confidence levels from the ensemble sspread, providing valuablle indications of the reliability of the clossifications.",
+    "ground_truth": "For both time periods we calculate confidence levels from the ensemble spread, providing valuable indications of the reliability of the classifications."
+  },
+  {
+    "ocr": "content of biomass. The physicochemical properties of biochar determine application of this biomaterial as an additive to improve soil quality. This review suc- cinctly presents the impact of pyrolysis temperature and the type of biomass on the physicochemical characteristics of biochar and its impact on soil fertility.",
+    "ground_truth": "The physicochemical properties of biochar determine application of this biomaterial as an additive to improve soil quality",
+    "similarity": 0.5508
+  },
+  {
+    "ocr": "Meta sc ape is a web-base d portal designed  to provid e a comprehensive  gen e list annotation and analysis resource for experimental biologists.",
+    "ground_truth": "Metascape is a web-based portal designed to provide a comprehensive gene list annotation and analysis resource for experimental biologists."
+  },
+  {
+    "ocr": "We find n0 evidence  for cross-selectiom betw een antimicrobial classes, or for effectof air travel between Sites.",
+    "ground_truth": "We find no evidence for cross-selection between antimicrobial classes, or for effect of air travel between sites."
+  },
+  {
+    "ocr": "When we speak of quantum complexity, what springs to mind is the staggering com- plexity of using ordinary classical data to describe highly entangled quantum states of Accepted in { {uantum 2018-07-30, click title to verify 2",
+    "ground_truth": "Quantum computers with 50-100 qubits may be able to perform tasks which surpass the capabilities of today's classical digital computers, but noise in quantum gates will limit the size of quantum circuits that can be executed reliably",
+    "similarity": 0.4749
+  },
+  {
+    "ocr": "Fig. 4 A simple schematic of the chemical precipitation process. The coagulant is added to wastewater and stirred to trapping metal ions that settle and precipitate to the bottom of the container.",
+    "ground_truth": "Even though the chemical and membrane methods are practical, the large-volume sludge formation and post-treatment requirements are vital issues that need to be solved for chemical techniques",
+    "similarity": 0.4611
+  },
+  {
+    "ocr": "Our assessment shows that 24% of the world’s sandy beaches are persistently eroding at a rate exceeding 0.5 m/yr over the study period (1984-2016), while 27% are accreting (see Table 1). About 16% (18%) of sandy beaches are experiencing erosion (accretion) rates exceeding 1 m/yr.",
+    "ground_truth": "Analysis of the satellite derived shoreline data indicates that 24% of the world's sandy beaches are eroding at rates exceeding 0.5 m/yr, while 28% are accreting and 48% are stable",
+    "similarity": 0.5478
+  },
+  {
+    "ocr": "Abstract—Human knowledge provides a formal understand- ing of the world. Knowledge graphs that represent structural relations between entities have become an increasingly popular research direction towards cognition and human-level intelligence. In this survey, we provide a comprehensive review of knowledge graph covering overall research topics about 1) knowledge graph representation learning, 2) knowledge acquisition and completion, 3) temporal knowledge graph, and 4) knowledge-aware appli- cations, and summarize recent breakthroughs and perspective directions to facilitate future research. We propose a full-view categorization and new taxonomies on these topics. Knowledge graph embedding is organized from four aspects of representation space, scoring function, encoding models, and auxiliary infor- mation. For knowledge acquisition, especially knowledge graph completion, embedding methods, path inference, and logical rule reasoning, are reviewed. We further explore several emerging top- ics, including meta relational learning, commonsense reasoning, and temporal knowledge graphs. To facilitate future research on knowledge graphs, we also provide a curated collection of datasets and open-source libraries on different tasks. In the end, we have a thorough outlook on several promising research directions.",
+    "ground_truth": "Human knowledge provides a formal understanding of the world. Knowledge graphs that represent structural relations between entities have become an increasingly popular research direction toward cognition and human-level intelligence. In this survey, we provide a comprehensive review of the knowledge graph covering overall research topics about: 1) knowledge graph representation learning; 2) knowledge acquisition and completion; 3) temporal knowledge graph; and 4) knowledge-aware applications and summarize recent breakthroughs and perspective directions to facilitate future research. We propose a full-view categorization and new taxonomies on these topics. Knowledge graph embedding is organized from four aspects of representation space, scoring function, encoding models, and auxiliary information. For knowledge acquisition, especially knowledge graph completion, embedding methods, path inference, and logical rule reasoning are reviewed. We further explore several emerging topics, including metarelational learning, commonsense reasoning, and temporal knowledge graphs. To facilitate future research on knowledge graphs, we also provide a curated collection of data sets and open-source libraries on different tasks. In the end, we have a thorough outlook on several promising research directions.",
+    "similarity": 0.9875
+  },
+  {
+    "ocr": "The paper is organized as follows. The next section outlines key methodological requirements for conceptual studies. Four common types of research design are then identified and discussed with supporting examples. The article ends with conclusions and recommendations for marketing scholars undertaking, supervising, or reviewing conceptual research.",
+    "ground_truth": "Supported by illustrative examples, these templates codify some of the tacit knowledge that underpins the design of non-empirical papers and will be of use to anyone undertaking, supervising, or reviewing conceptual research.",
+    "similarity": 0.5183
+  },
+  {
+    "ocr": "BEAST is a package for conducting Bayesian phylogenetic inference using MCMC. At its core are rooted time trees (or time networks in latest developments), which can be inferred from multiple sources of data. BEAST supports sequence data for nucleotides, amino acids, codon models, discrete and continuous morphological features, language, microsatellites and SNPs as well as user-defined discrete and biogeographical data. Bayesian inference allows the incorpo- ration of many sources of information in the same analysis, such as DNA sequences from",
+    "ground_truth": "It is increasingly appreciated that some evolutionary questions can only be adequately answered by combining evidence from multiple independent sources of data, including genome sequences, sampling dates, phenotypic data, radiocarbon dates, fossil occurrences, and biogeographic range information among others",
+    "similarity": 0.4341
+  },
+  {
+    "ocr": "This methodology can contribute to the selection and use of high-qualityPROMs in research a-nd clinical proctice.",
+    "ground_truth": "This methodology can contribute to the selection and use of high-quality PROMs in research and clinical practice."
+  },
+  {
+    "ocr": "Abstract lmproving the long-term stability of perovskite solar cells is cri tical to the deployment of this techno logy.",
+    "ground_truth": "Abstract Improving the long-term stability of perovskite solar cells is critical to the deployment of this technology."
+  },
+  {
+    "ocr": "Here, we report a conSensus between researchers in  the field on procedures for testing perovskite solarc-ell stability, which are based on the ln-ternational Summit on Organic PliotovoltaicStaability (ISOS) prottocols.",
+    "ground_truth": "Here, we report a consensus between researchers in the field on procedures for testing perovskite solar cell stability, which are based on the International Summit on Organic Photovoltaic Stability (ISOS) protocols."
+  },
+  {
+    "ocr": "The Coding Manual fourth edition is reformatted to 15 chapters and divided into three parts, as opposed to six chapters in the third edition. This provides readers with more straightforward yet more detailed sectional references. The fourth edition also introduces two new first-cycle coding methods, ‘metaphor coding’ and ‘theming the data categorically.’ The fourth edition is aptly suited as a guide for teaching contexts for coding processes, given the provision of a companion website with student exercises and digital content. This includes screenshots of relevant academic software for analyzing the material and detailed thematic mapping diagrams. Furthermore, this book can assist novice researchers in determining the appropriate approaches to reinforce their perspectives and provide incremental processes for qualitative coding data.",
+    "ground_truth": "The fourth edition also introduces two new first-cycle coding methods, 'metaphor coding' and 'theming the data categorically.' The fourth edition is aptly suited as a guide for teaching contexts for coding processes, given the provision of a companion website with student exercises and digital content",
+    "similarity": 0.5192
+  },
+  {
+    "ocr": "Our smaller, faster and lightcr m0del is c heaper too pre--train and we demonstrate its capabilities for on-device computations in a prooof-of--concept experim emt aand a com p-arative on-device  study.",
+    "ground_truth": "Our smaller, faster and lighter model is cheaper to pre-train and we demonstrate its capabilities for on-device computations in a proof-of-concept experiment and a comparative on-device study."
+  },
+  {
+    "ocr": "Table 1 Current practices for testing reliability, convergent and discriminant validity, and associated con-",
+    "ground_truth": "Next, we recommend best practices in assessing reliability, convergent and discriminant validity based on multiple criteria and taking sampling errors into consideration",
+    "similarity": 0.6426
+  },
+  {
+    "ocr": "in the design of nanostructured electrocatalysts for HER and OER towards efficient production of hydrogen from water splitting by electrolysis will also be outlined.",
+    "ground_truth": "A key challenge is the efficient production of hydrogen to meet the commercial-scale demand of hydrogen",
+    "similarity": 0.4552
+  },
+  {
+    "ocr": ". Figure 1: Parameter counts of several recently released The trend toward bigger models  pretrained language models. raises several concerns. First is the",
+    "ground_truth": "To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses",
+    "similarity": 0.4681
+  },
+  {
+    "ocr": "Yet such analyses can be complex and  require expert knowledge.",
+    "ground_truth": "Yet such analyses can be complex and require expert knowledge."
+  },
+  {
+    "ocr": "2) Based on the derived general formula, we propose three free-space path loss models for RIS-assisted wireless communications, which capture three relevant scenarios and unveil the rela- tionships between the free-space path loss of RIS and the distances from the transmitter/receiver to the RIS, the size of the RIS, the near-field/far-field effects of the RIS, as well as the radiation patterns of antennas and unit cells.",
+    "ground_truth": "The proposed models, which are first validated through extensive simulation results, reveal the relationships between the free-space path loss of RIS-assisted wireless communications and the distances from the transmitter/receiver to the RIS, the size of the RIS, the near-field/far-field effects of the RIS, and the radiation patterns of antennas and unit cells",
+    "similarity": 0.7294
+  },
+  {
+    "ocr": "We further construct o personalized intelligeen t pros thesis and demonstrate its use in real-time spatial pressure mapping and tcmperature estimation..",
+    "ground_truth": "We further construct a personalized intelligent prosthesis and demonstrate its use in real-time spatial pressure mapping and temperature estimation."
+  },
+  {
+    "ocr": "We apply an  empirically parameterizedd model of viral transmission by the vectorS Aedes aeggypti and Ae.",
+    "ground_truth": "We apply an empirically parameterized model of viral transmission by the vectors Aedes aegypti and Ae."
+  },
+  {
+    "ocr": "We propose aa rrepresenttation of ppatients-' entirre raw EHR records 6ased on tthe Fas-t Healthhcare Interoperability Resources (FHIR) format.",
+    "ground_truth": "We propose a representation of patients' entire raw EHR records based on the Fast Healthcare Interoperability Resources (FHIR) format."
+  },
+  {
+    "ocr": "Recent aggregated environmental sampling and laboratory experiments have examined the particle size distribution of Table 1 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) detections in the air of hospital rooms of infected",
+    "ground_truth": "Environmental sampling is conducted in three airborne infection isolation rooms (AIIRs) in the ICU and 27 AIIRs in the general ward",
+    "similarity": 0.4414
+  },
+  {
+    "ocr": "number of users and items is large. Hence, although it achieved",
+    "ground_truth": "embeddings) of users and items lies at the core of modern recommender systems",
+    "similarity": 0.5429
+  },
+  {
+    "ocr": "It proovides regular assessments of the scientific baasis of climate change, its impacts and ffuturerisks-, and options for adaptation and mitigation.",
+    "ground_truth": "It provides regular assessments of the scientific basis of climate change, its impacts and future risks, and options for adaptation and mitigation."
+  },
+  {
+    "ocr": "In this study, usin9 country-level data on waste mona-gement combined with high-resolution distributio-ns ond lon9-term pr-ojections of population aand the gross domestic product (GDP),we present projections of global MPW generationat ~1 k m resoolution from now t o 2060.",
+    "ground_truth": "In this study, using country-level data on waste management combined with high-resolution distributions and long-term projections of population and the gross domestic product (GDP), we present projections of global MPW generation at ~1 km resolution from now to 2060."
+  },
+  {
+    "ocr": "With the eddy cov-ariance (EC) techn i-que, net fluxes of carb-onn dioxide (CO2) andother tracee gases as well os wateer and encrgy fluxes cam b e mmeasured at the ecosystem level.",
+    "ground_truth": "With the eddy covariance (EC) technique, net fluxes of carbon dioxide (CO2) and other trace gases as well as water and energy fluxes can be measured at the ecosystem level."
+  },
+  {
+    "ocr": "Abstract—Deep learning has revolutionized many machine learning tasks in recent years, ranging from image classification and video processing to speech recognition and natural language understanding. The data in these tasks are typically represented in the Euclidean space. However, there is an increasing number of applications where data are generated from non-Euclidean do- mains and are represented as graphs with complex relationships and interdependency between objects. The complexity of graph data has imposed significant challenges on existing machine learning algorithms. Recently, many studies on extending deep learning approaches for graph data have emerged. In this survey, we provide a comprehensive overview of graph neural networks (GNNs) in data mining and machine learning fields. We propose a new taxonomy to divide the state-of-the-art graph neural networks into four categories, namely recurrent graph neural networks, convolutional graph neural networks, graph autoen- coders, and spatial-temporal graph neural networks. We further discuss the applications of graph neural networks across various domains and summarize the open source codes, benchmark data sets, and model evaluation of graph neural networks. Finally, we propose potential research directions in this rapidly growing field.",
+    "ground_truth": "Deep learning has revolutionized many machine learning tasks in recent years, ranging from image classification and video processing to speech recognition and natural language understanding. The data in these tasks are typically represented in the Euclidean space. However, there is an increasing number of applications, where data are generated from non-Euclidean domains and are represented as graphs with complex relationships and interdependency between objects. The complexity of graph data has imposed significant challenges on the existing machine learning algorithms. Recently, many studies on extending deep learning approaches for graph data have emerged. In this article, we provide a comprehensive overview of graph neural networks (GNNs) in data mining and machine learning fields. We propose a new taxonomy to divide the state-of-the-art GNNs into four categories, namely, recurrent GNNs, convolutional GNNs, graph autoencoders, and spatial-temporal GNNs. We further discuss the applications of GNNs across various domains and summarize the open-source codes, benchmark data sets, and model evaluation of GNNs. Finally, we propose potential research directions in this rapidly growing field.",
+    "similarity": 0.9333
+  },
+  {
+    "ocr": "Matches starting from the most popular human openings. against (A) Stockfish in chess and (B) Elmo in shogi. In the left bar, AlphaZero plays white, in the right bar AlphaZero plays black. Each bar shows the",
+    "ground_truth": "Starting from random play and given no domain knowledge except the game rules, AlphaZero convincingly defeated a world champion program in the games of chess and shogi (Japanese chess), as well as Go.",
+    "similarity": 0.4423
+  },
+  {
+    "ocr": "-\"Climate RResearch Unit: Time  Series v 4.04\" (ET<sub>>0</sub>: r<sup>2</sup> = 0.89; AI: r<Sup>2</sup> = 0.83) ,while showing significaant differencces tto an earlier vers-ion of thhe d atabase.",
+    "ground_truth": "\"Climate Research Unit: Time Series v 4.04\" (ET<sub>0</sub>: r<sup>2</sup> = 0.89; AI: r<sup>2</sup> = 0.83), while showing significant differences to an earlier version of the database."
+  },
+  {
+    "ocr": "“Corresponding author: peterbattaglia@google.com biasing learning towards structured representations and computations, and in particular, systems that operate on graphs.",
+    "ground_truth": "We argue that combinatorial generalization must be a top priority for AI to achieve human-like abilities, and that structured representations and computations are key to realizing this objective",
+    "similarity": 0.5069
+  },
+  {
+    "ocr": "Tropical c arbbon emiissions are l arge-ly deriived  from direct forest clearingprocesses.",
+    "ground_truth": "Tropical carbon emissions are largely derived from direct forest clearing processes."
+  },
+  {
+    "ocr": "EPS Functions and Soil Aggregation stabilization and soil binding for constructions. Such studies in the engineering area also confirm the usefulness of biopolymers application in soil, but with different purposes.",
+    "ground_truth": "Microbial EPS can enhance the aggregation of soil particles and benefit plants by maintaining the moisture of the environment and trapping nutrients",
+    "similarity": 0.4586
+  },
+  {
+    "ocr": "Along with SCANPY, we present ANNDDAATA, a generic claSs for hhandling annnotated data matrices ( httpS://github.com/theislab/anndata).",
+    "ground_truth": "Along with SCANPY, we present ANNDATA, a generic class for handling annotated data matrices ( https://github.com/theislab/anndata )."
+  },
+  {
+    "ocr": "The finol dataset consis-ts of 10015 dermatoscopic images which are releas-ed as a training set for -academic machine  1earning purpo-ses and are publicly avai lable through the ISIC archive.",
+    "ground_truth": "The final dataset consists of 10015 dermatoscopic images which are released as a training set for academic machine learning purposes and are publicly available through the ISIC archive."
+  },
+  {
+    "ocr": "HIV Human immunodeficiency virus, AIDS Acquired immune deficiency syndrome, SARS Severe acute respiratory syndrome, MERS Middle East respiratory syndrome, HCV Hepatitis C virus, HSV Herpes simplex virus, VZV Varicella-zoster virus",
+    "ground_truth": "The emergence of SARS-CoV-2, since the severe acute respiratory syndrome coronavirus (SARS-CoV) in 2002 and Middle East respiratory syndrome coronavirus (MERS-CoV) in 2012, marked the third introduction of a highly pathogenic and large-scale epidemic coronavirus into the human population in the twenty-first century",
+    "similarity": 0.4579
+  },
+  {
+    "ocr": "Rainfall-runoff modelling using Long Short-Term",
+    "ground_truth": "Rainfall–runoff modelling is one of the key challenges in the field of hydrology",
+    "similarity": 0.5512
+  },
+  {
+    "ocr": "Transmission routes of 2019-nCoV and controls in dental practice Peng et al. Direct contact rian Dental professionals",
+    "ground_truth": "The person-to-person transmission routes of 2019-nCoV included direct transmission, such as cough, sneeze, droplet inhalation transmission, and contact transmission, such as the contact with oral, nasal, and eye mucous membranes",
+    "similarity": 0.4754
+  },
+  {
+    "ocr": "The blood-brain barrier is playing a critical role in controlling the influx and efflux of biological substances essential",
+    "ground_truth": "The blood-brain barrier is playing a critical role in controlling the influx and efflux of biological substances essential for the brain's metabolic activity as well as neuronal function",
+    "similarity": 0.7922
+  },
+  {
+    "ocr": "provide decision support for each technology’s poten- and utilization technologies in the chemical industry",
+    "ground_truth": "We present decarbonization technologies and initiatives, and negative emissions technologies, and we discuss carbon trading and carbon tax",
+    "similarity": 0.5061
+  },
+  {
+    "ocr": "Author Contributions H.E.B. produced the new maps and took the lead in writing the manuscript; all coauthors provided critical feedback and contributed to the writing.",
+    "ground_truth": "For both time periods we calculate confidence levels from the ensemble spread, providing valuable indications of the reliability of the classifications",
+    "similarity": 0.4403
+  },
+  {
+    "ocr": "Fig. 3. The relaxed precision-recall curves of U-Net and the proposed method on Massachusetts roads dataset. The marks ‘x’ and ‘x’ are break-even points of different methods.",
+    "ground_truth": "The proposed approach outperforms all the comparing methods, which demonstrates its superiority over recently developed state of the arts.",
+    "similarity": 0.4231
+  },
+  {
+    "ocr": "Triple-negative breaast cancer (-TNBC), a specific subtype of  breast cancer that does no texpress cstrogeen receptor (EER), progesteronee recepptor (PR),or humman epide-rmal growth factor receptor 2 (HER-2 ), haaS clinical featuress t hat include high imvasivemess, high metastotic potential, proneness to rclapse, aand po-or prognosis.",
+    "ground_truth": "Triple-negative breast cancer (TNBC), a specific subtype of breast cancer that does not express estrogen receptor (ER), progesterone receptor (PR), or human epidermal growth factor receptor 2 (HER-2), has clinical features that include high invasiveness, high metastatic potential, proneness to relapse, and poor prognosis."
+  },
+  {
+    "ocr": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+    "ground_truth": "This paper presents SimCSE, a simple contrastive learning framework that greatly advances the state-of-the-art sentence embeddings",
+    "similarity": 0.5532
+  },
+  {
+    "ocr": "Keywords:  Human Resource Manageme-nt, Perfo rmance",
+    "ground_truth": "Keywords: Human Resource Management, Performance"
+  },
+  {
+    "ocr": "After these general introductory remarks on the well-known division between quantitative and qualitative methods, we discuss the application of each approach in linguistic landscape research in the following two sections and then in Section 4.4 we show examples of mixed methods approaches in which both approaches are combined. Thereafter, we reflect on two specific, in some manner unresolved issues of studying signs in public spaces, which are the unit of analysis and the sampling area. Finally, we draw some conclusions on research methods. In Chapter 5, we delve into the details of distinctive and innovative research methods such as photography, walking interviews, video analy- sis and eye tracking. Those methods may be less common, but they seem well suited for the study of linguistic landscapes.",
+    "ground_truth": "of the research process.Chapters 10 and 12 deal with types of research while Chapter 11 discusses logistical and ethical issues in research.Finally, research and project proposal development is discussed in Chapter 13.This chapter should be particularly helpful to students who are doing higher degrees and practitioners who may want to develop project proposals.There are review assignments at the .end of each chapter to help in studying and revision.An example of a published journal paper is included in Appendix I.The journal article contains most of the components of a research report as discussed in Chapter 9.While the book lays great emphasis on quantitative research methods, it also gives an introduction to qualitative approaches in Chapter 12",
+    "similarity": 0.4447
+  },
+  {
+    "ocr": "RRecent deveeloopments in Earth system m0dels support in-creassingly rrealistic simulations of vcgetation dynamics.",
+    "ground_truth": "Recent developments in Earth system models support increasingly realistic simulations of vegetation dynamics."
+  },
+  {
+    "ocr": "Textile industries are responsiblle for one of the major eenvironmental  pollution problems in the world, because th ey release undesirable dye effluents.",
+    "ground_truth": "Textile industries are responsible for one of the major environmental pollution problems in the world, because they release undesirable dye effluents."
+  },
+  {
+    "ocr": "Abstract. Since the publication of the compilation of biomass burning emission factors by Andreae and Mer- let (2001), a large number of studies have greatly expanded the amount of available data on emissions from various types of biomass burning. Using essentially the same methodology as Andreae and Merlet (2001), this paper presents an updated compilation of emission factors. The data from over 370 pub- lished studies were critically evaluated and integrated into a consistent format. Several new categories of biomass burn- ing were added, and the number of species for which emis- sion data are presented was increased from 93 to 121. Where field data are still insufficient, estimates based on appropriate extrapolation techniques are proposed. For key species, the updated emission factors are compared with previously pub- lished values. Based on these emission factors and published global activity estimates, I have derived estimates of pyro- genic emissions for important species released by the various types of biomass burning.",
+    "ground_truth": "Abstract. Since the publication of the compilation of biomass burning emission factors by Andreae and Merlet (2001), a large number of studies have greatly expanded the amount of available data on emissions from various types of biomass burning. Using essentially the same methodology as Andreae and Merlet (2001), this paper presents an updated compilation of emission factors. The data from over 370 published studies were critically evaluated and integrated into a consistent format. Several new categories of biomass burning were added, and the number of species for which emission data are presented was increased from 93 to 121. Where field data are still insufficient, estimates based on appropriate extrapolation techniques are proposed. For key species, the updated emission factors are compared with previously published values. Based on these emission factors and published global activity estimates, I have derived estimates of pyrogenic emissions for important species released by the various types of biomass burning.",
+    "similarity": 0.9942
+  },
+  {
+    "ocr": "Baek, M. et al. Accurate prediction of protein structures and interactions using a three-track neural network. Science 373,",
+    "ground_truth": "ColabFold offers accelerated prediction of protein structures and complexes by combining the fast homology search of MMseqs2 with AlphaFold2 or RoseTTAFold",
+    "similarity": 0.518
+  },
+  {
+    "ocr": "The improvement amd expansion of higher education have bcenpriorities o f our notional development in Kenya.Within a spam of thirty five year s since independence, we hhave witnessed tthe creation of five public universities.SSeveral pprivate universities have also been established..In o-ur notional universitieS, morc professional programmes have been developeed at both undergraduate and postgraduate levells and several departments now offer Ph.D programmes through research.As one  of maanyAfrican countrieS that ha-ve ssuffered f rom the eeffects of colonialism and marginalization, Kenya has made tremendous progreSs in the ficld of h igher educati on that shou-ld be desired for the wider region, now defined by the Preferential Trade Arca (PTA) and the Commonn Market of East and Southern Africo (COMESA).Therre has, however, been a co nstant lack of -locallly aavailable textbooks for use at booth the undergraduate and -postgraduate levvels.Mamy dcpartments continue t0 use iimported  texxtbooks at a great price in foreign excliange.Wor s-e st-ill, the teaching staff havc to relate material in thesettex tS to our local situation and ex-pcriences.With the onset of the third millennium and the -ever- growing quest for information, there is a desperatee nced for pe-opl-e to writ e books in various areas oof sspeciolizatioon that are relevant to our needs..One of the objectives of any institution of hhighe r learning is to conduct research.Research generates new knowlledge and informationn; it extends the fron tiers of  undcrstand ing as we gain neww inSight-s into phenomena-.Th-ere can be no improvementt of higher education withhout sound reseorc h.The Kenya Government  has encourag-ed and suupported research in our public un-iversities and ha-s gone further to est ablish inddependent research institutes in severral disciplines.This is testtimony to the important  role th at researc-h playss in the nnattional development of any co untry.It is with these points in mind thhat we sct about the task of writing a book on research methodS.Research methoddS as a subject cuts across the boundaries of all disciplines.Whether in Hist ory, Engineering, Medici ne, Education or Literature, a reS earcher needs the necessary  tools to conduct a researchstudy properly.We sincerely believe that Research Methods compliments arid  strengthenss the p-hilosophy of our s ystem of edu cation bby equipping th estud-ent or any aspiring researcher with the necessary tools and skills to identifya probleem andd look foor practical solutions i-n a systtema ti c way.Excellentt research skil ls should also strengthen aa person's ability to  work, thirik and act independentl-y.-Im writing this book, we fclt a rresearch methods  bo0k sh0uld be \"skill\" and \"application\" oriented.We have therefore t ried tto discuussthoroughly the nnecesSa-ry skills in research and howsuch skills should be appllied when conducting a  reseorch Sttudy.This text is iintended for peoplewho will either cond uct field research.Or who necd to rely on litcrature research.It is therefore suitable for universit y students at both the undderggraduatc and graduate levels and fo r  personnel in Government and Non-Governmental Organization s.University teaching staff should also find this book useful as a reference text for tliei-r researchh.The orga nizati on of thc material in this text follows the formatof the research pro cess.Chapters 1 and 2 deal wwith the definition and  purpose o-f research.Chapters 3-9 deal with the critical, elem en.",
+    "ground_truth": "The improvement and expansion of higher education have been priorities of our national development in Kenya.Within a span of thirty five years since independence, we have witnessed the creation of five public universities.Several private universities have also been established.In our national universities, more professional programmes have been developed at both undergraduate and postgraduate levels and several departments now offer Ph.D programmes through research.As one of many African countries that have suffered from the effects of colonialism and marginalization, Kenya has made tremendous progress in the field of higher education that should be desired for the wider region, now defined by the Preferential Trade Area (PTA) and the Common Market of East and Southern Africa (COMESA).There has, however, been a constant lack of locally available textbooks for use at both the undergraduate and postgraduate levels.Many departments continue to use imported textbooks at a great price in foreign exchange.Worse still, the teaching staff have to relate material in these texts to our local situation and experiences.With the onset of the third millennium and the ever-growing quest for information, there is a desperate need for people to write books in various areas of specialization that are relevant to our needs.One of the objectives of any institution of higher learning is to conduct research.Research generates new knowledge and information; it extends the frontiers of understanding as we gain new insights into phenomena.There can be no improvement of higher education without sound research.The Kenya Government has encouraged and supported research in our public universities and has gone further to establish independent research institutes in several disciplines.This is testimony to the important role that research plays in the national development of any country.It is with these points in mind that we set about the task of writing a book on research methods.Research methods as a subject cuts across the boundaries of all disciplines.Whether in History, Engineering, Medicine, Education or Literature, a researcher needs the necessary tools to conduct a research study properly.We sincerely believe that Research Methods compliments arid strengthens the philosophy of our system of education by equipping the student or any aspiring researcher with the necessary tools and skills to identify a problem and look for practical solutions in a systematic way.Excellent research skills should also strengthen a person's ability to work, thirik and act independently.In writing this book, we felt a research methods book should be \"skill\" and \"application\" oriented.We have therefore tried to discuss thoroughly the necessary skills in research and how such skills should be applied when conducting a research study.This text is intended for people who will either conduct field research.Or who need to rely on literature research.It is therefore suitable for university students at both the undergraduate and graduate levels and for personnel in Government and Non-Governmental Organizations.University teaching staff should also find this book useful as a reference text for their research.The organization of the material in this text follows the format of the research process.Chapters 1 and 2 deal with the definition and purpose of research.Chapters 3-9 deal with the critical, elemen."
+  },
+  {
+    "ocr": "In this arrticle, we presentth e PRI-SMA 2020 27-item checklist, an expanded checklist tha-t  details reppo rting recommmendations for each item, the PRISMA20 20  abstract checklist, and the revised flow diagrams for original and updated rreviews.",
+    "ground_truth": "In this article, we present the PRISMA 2020 27-item checklist, an expanded checklist that details reporting recommendations for each item, the PRISMA 2020 abstract checklist, and the revised flow diagrams for original and updated reviews."
+  },
+  {
+    "ocr": "An acute respiratory disease, caused by a novel corronaavirus (SARS-CoV-2, prreeviously knowm as 2019-nCoV), the coronavvirus disease 2019 -(COVID-19) has spread thr-oughout Chinna and received worldwide attention.",
+    "ground_truth": "An acute respiratory disease, caused by a novel coronavirus (SARS-CoV-2, previously known as 2019-nCoV), the coronavirus disease 2019 (COVID-19) has spread throughout China and received worldwide attention."
+  },
+  {
+    "ocr": "A traditi0nal metric u-sed in hydrology tto summarize model performance is the Nash–Sutcliffe efficiency (NSE).",
+    "ground_truth": "A traditional metric used in hydrology to summarize model performance is the Nash–Sutcliffe efficiency (NSE)."
+  },
+  {
+    "ocr": "Recha-rgeablezinc--manganese dioxide batteries th at use mild aqueous electrolytes aare attracttimg ext ensive atten tion due tohigh ener gydensity and environmental friendliness.",
+    "ground_truth": "Rechargeable zinc-manganese dioxide batteries that use mild aqueous electrolytes are attracting extensive attention due to high energy density and environmental friendliness."
+  },
+  {
+    "ocr": "A quantitative framework reveals ecological drivers of grassland microbial community assembly in response to warming",
+    "ground_truth": "Unraveling the drivers controlling community assembly is a central issue in ecology",
+    "similarity": 0.5226
+  },
+  {
+    "ocr": "Attempts to assess theclinical knowledge of models typically rely on automated evaluations based on limited bencli-marks.",
+    "ground_truth": "Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks."
+  },
+  {
+    "ocr": "Scoping reviews, a type of knowledge synthesis, follow a systematic approach to map evidence on a topic; identify main concepts, theories and sources; and determine where the gaps are. Though increasing in numbers, the methodological quality and reporting quality of scoping reviews need improvement. This document presents the Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for scoping reviews (PRISMA-ScR) checklist and explanation. Developed by a 26-member expert panel according to published guidance by the EQUATOR (Enhancing the QUAlity and Transparency Of health Research) Network, the checklist contains 20 essential items plus 2 optional items. A rationale, along with an example of good reporting, is provided for each item. The intent of the PRISMA-ScR is to help readers, including researchers, publishers, commissioners, policy-makers, healthcare providers, guideline developers, and patients/consumers develop a greater understanding of relevant terminology, core concepts and key items to report for scoping reviews.",
+    "ground_truth": "Scoping reviews, a type of knowledge synthesis, follow a systematic approach to map evidence on a topic and identify main concepts, theories, sources, and knowledge gaps. Although more scoping reviews are being done, their methodological and reporting quality need improvement. This document presents the PRISMA-ScR (Preferred Reporting Items for Systematic reviews and Meta-Analyses extension for Scoping Reviews) checklist and explanation. The checklist was developed by a 24-member expert panel and 2 research leads following published guidance from the EQUATOR (Enhancing the QUAlity and Transparency Of health Research) Network. The final checklist contains 20 essential reporting items and 2 optional items. The authors provide a rationale and an example of good reporting for each item. The intent of the PRISMA-ScR is to help readers (including researchers, publishers, commissioners, policymakers, health care providers, guideline developers, and patients or consumers) develop a greater understanding of relevant terminology, core concepts, and key items to report for scoping reviews.",
+    "similarity": 0.8738
+  },
+  {
+    "ocr": " Weargue that am inherent drawback of such m-et-hods is thot, the  collaborativve signall, which is latent in user-item interactions, is not encoded in the embedding process.",
+    "ground_truth": "We argue that an inherent drawback of such methods is that, the collaborative signal, which is latent in user-item interactions, is not encoded in the embedding process."
+  },
+  {
+    "ocr": "Dengue is a mosquito-borne viral infection that has spread throughout the tropical world over the past 60 years and now affects over half the world's population. The geographical range of dengue is expected to further expand due to ongoing global phe- nomena including climate change and urbanization. We applied statistical mapping techniques to the most extensive database of case locations to date to predict global environmental suitability for the virus as of 2015. We then made use of climate, population and socioeconomic projections for the years 2020, 2050 and 2080 to project future changes in virus suitability and human population at risk. This study is the first to consider the spread of Aedes mosquito vectors to project dengue suitability. Our projections provide a key missing piece of evidence for the changing global threat of vector-borne disease and will help decision-makers worldwide to better prepare for and respond to future changes in dengue risk.",
+    "ground_truth": "Dengue is a mosquito-borne viral infection that has spread throughout the tropical world over the past 60 years and now affects over half the world's population. The geographical range of dengue is expected to further expand due to ongoing global phenomena including climate change and urbanization. We applied statistical mapping techniques to the most extensive database of case locations to date to predict global environmental suitability for the virus as of 2015. We then made use of climate, population and socioeconomic projections for the years 2020, 2050 and 2080 to project future changes in virus suitability and human population at risk. This study is the first to consider the spread of Aedes mosquito vectors to project dengue suitability. Our projections provide a key missing piece of evidence for the changing global threat of vector-borne disease and will help decision-makers worldwide to better prepare for and respond to future changes in dengue risk.",
+    "similarity": 0.999
+  },
+  {
+    "ocr": "The Copernicus Atmosphere Monitoring Service (CAMS) reannalysis is the lat-est gglo6ol reanalysiss dataset of atmospheric composi-tion produced by the European Centtre for Medium-Range Weather Forecasts (ECMWF), consiSting  of  three-dimensi0nal time-consist ent atmos pheric composition fields, including a-erosols and chemical species.",
+    "ground_truth": "The Copernicus Atmosphere Monitoring Service (CAMS) reanalysis is the latest global reanalysis dataset of atmospheric composition produced by the European Centre for Medium-Range Weather Forecasts (ECMWF), consisting of three-dimensional time-consistent atmospheric composition fields, including aerosols and chemical species."
+  },
+  {
+    "ocr": "Neurological Research and Practice How to use and assess qualitative research",
+    "ground_truth": "This paper aims to provide an overview of the use and assessment of qualitative research methods in the health sciences",
+    "similarity": 0.5408
+  },
+  {
+    "ocr": "level inventories, to produce reproducible, consistent emis- sion trends over time, space, and emission species.",
+    "ground_truth": "We improve upon existing inventories with a more consistent and reproducible methodology applied to all emission species, updated emission factors, and recent estimates through 2014",
+    "similarity": 0.5119
+  },
+  {
+    "ocr": "Land use intensificationin low-pH soils that increosed the pH above athreshold (~6.2) leads to c-arbom loss through increased decomposit ionn, ff0llowing allev iation of acid retardation of microbia1 growth.",
+    "ground_truth": "Land use intensification in low-pH soils that increased the pH above a threshold (~6.2) leads to carbon loss through increased decomposition, following alleviation of acid retardation of microbial growth."
+  },
+  {
+    "ocr": "Abstract—Representing features at multiple scales is of great importance for numerous vision tasks. Recent advances in backbone convolutional neural networks (CNNs) continually demonstrate stronger multi-scale representation ability, leading to consistent performance gains on a wide range of applications. However, most existing methods represent the multi-scale features in a layer- wise manner. In this paper, we propose a novel building block for CNNs, namely Res2Net, by constructing hierarchical residual-like connections within one single residual block. The Res2Net represents multi-scale features at a granular level and increases the range of receptive fields for each network layer. The proposed Res2Net block can be plugged into the state-of-the-art backbone CNN models, e.g., ResNet, ResNeXt, and DLA. We evaluate the Res2Net block on all these models and demonstrate consistent performance gains over baseline models on widely-used datasets, e.g., CIFAR-100 and ImageNet. Further ablation studies and experimental results on representative computer vision tasks, /.e., object detection, class activation mapping, and salient object detection, further verify the superiority of the Res2Net over the state-of-the-art baseline methods. The source code and trained models are available on htips://mmcheng.net/res2net/.",
+    "ground_truth": "Representing features at multiple scales is of great importance for numerous vision tasks. Recent advances in backbone convolutional neural networks (CNNs) continually demonstrate stronger multi-scale representation ability, leading to consistent performance gains on a wide range of applications. However, most existing methods represent the multi-scale features in a layer-wise manner. In this paper, we propose a novel building block for CNNs, namely Res2Net, by constructing hierarchical residual-like connections within one single residual block. The Res2Net represents multi-scale features at a granular level and increases the range of receptive fields for each network layer. The proposed Res2Net block can be plugged into the state-of-the-art backbone CNN models, e.g., ResNet, ResNeXt, and DLA. We evaluate the Res2Net block on all these models and demonstrate consistent performance gains over baseline models on widely-used datasets, e.g., CIFAR-100 and ImageNet. Further ablation studies and experimental results on representative computer vision tasks, i.e., object detection, class activation mapping, and salient object detection, further verify the superiority of the Res2Net over the state-of-the-art baseline methods. The source code and trained models are available on https://mmcheng.net/res2net/.",
+    "similarity": 0.9947
+  },
+  {
+    "ocr": "The objective of  this paper is to survey thc current state‐of‐tthe‐art on deep learning te-chnologies used in aautonomous driving.",
+    "ground_truth": "The objective of this paper is to survey the current state‐of‐the‐art on deep learning technologies used in autonomous driving."
+  },
+  {
+    "ocr": "e The MDL can provide a better solution than single modalities to reduce the errors in semantic labeling. Moreover, the compactness-based fusion approaches tend to generate more realistic classification maps.",
+    "ground_truth": "Although deep networks have been successfully applied in single-modality-dominated classification tasks, yet their performance inevitably meets the bottleneck in complex scenes that need to be finely classified, due to the limitation of information diversity",
+    "similarity": 0.4549
+  },
+  {
+    "ocr": "We conduct an in depth st-udyon the performance of deep learni ng based radio signal cllassification for  radio communicaations signals.",
+    "ground_truth": "We conduct an in depth study on the performance of deep learning based radio signal classification for radio communications signals."
+  },
+  {
+    "ocr": "Howevcr, many defining characteristics of hum an intelligence, which  developed un-der much differeent pressures, remaain out of reach for current approaches..",
+    "ground_truth": "However, many defining characteristics of human intelligence, which developed under much different pressures, remain out of reach for current approaches."
+  },
+  {
+    "ocr": "Looking forward, -this SCMN has 6roader opplications in humanoid ro6otics, new pros thetics-, humam-machine interfaces, and health-monitoring technologies.",
+    "ground_truth": "Looking forward, this SCMN has broader applications in humanoid robotics, new prosthetics, human-machine interfaces, and health-monitoring technologies."
+  },
+  {
+    "ocr": "Abstract The Normalized Difference Vegetation Index (NDVI), one of the earliest remote sensing analytical prod- ucts used to simplify the complexities of multi-spectral imagery, is now the most popular index used for vegeta- tion assessment. This popularity and widespread use relate to how an NDVI can be calculated with any multispectral sensor with a visible and a near-IR band. Increasingly low costs and weights of multispectral sensors mean they can be mounted on satellite, aerial, and increasingly—Unmanned Aerial Systems (UAS). While studies have found that the NDVI is effective for expressing vegetation status and",
+    "ground_truth": "Abstract The Normalized Difference Vegetation Index (NDVI), one of the earliest remote sensing analytical products used to simplify the complexities of multi-spectral imagery, is now the most popular index used for vegetation assessment",
+    "similarity": 0.5482
+  },
+  {
+    "ocr": "Pesticide-s are eiither nnatural or chemiically synthesizeed  compo-unds that   are used to control a -variety -of pests..",
+    "ground_truth": "Pesticides are either natural or chemically synthesized compounds that are used to control a variety of pests."
+  },
+  {
+    "ocr": "Eyring, V., Bony, S., Meehl, G. A., Senior, C. A., Stevens, B., Stouffer, R. J., and Taylor, K. E.: Overview of the Coupled Model Intercomparison Project Phase 6 (CMIP6) experimen- tal design and organization, Geosci. Model Dev., 9, 1937-1958, https://doi.org/10.5194/gmd-9- 1937-2016, 2016.",
+    "ground_truth": "The main advancements of the Beijing Climate Center (BCC) climate system model from phase 5 of the Coupled Model Intercomparison Project (CMIP5) to phase 6 (CMIP6) are presented, in terms of physical parameterizations and model performance",
+    "similarity": 0.4642
+  },
+  {
+    "ocr": "experiments and evaluations, both subjective and objective, on standard datasets showed that Grad-CAM++ provides promising human-interpretable visual explanations for a given CNN architecture across multiple tasks including classification, image caption generation and 3D action recognition; as well as in new settings such as knowledge distillation.",
+    "ground_truth": "Our extensive experiments and evaluations, both subjective and objective, on standard datasets showed that Grad-CAM++ indeed provides better visual explanations for a given CNN architecture when compared to Grad-CAM.",
+    "similarity": 0.6502
+  },
+  {
+    "ocr": "Our results  show that impacts are m0stly negat ive in Europe, Southern  Africa and Australiaabut generally po-sitive in Latin America.",
+    "ground_truth": "Our results show that impacts are mostly negative in Europe, Southern Africa and Australia but generally positive in Latin America."
+  },
+  {
+    "ocr": "where A,, A), ... , Ay are the results from each ensemble member and N the size of the ensemble (120 members for the PM2.5 and PM10 mode, respectively, for each of the TWP and BWP).",
+    "ground_truth": "About 34% of the emitted coarse TWPs and 30% of the emitted coarse BWPs (100 kt yr<sup>-1</sup> and 40 kt yr<sup>-1</sup> respectively) were deposited in the World Ocean",
+    "similarity": 0.4229
+  },
+  {
+    "ocr": "Historical simulations from 1851 to 2014 from BCC-CSM2-MR (CMIP6) and from 1851 to 2005 from BCC-CSM1.1m (CMIP5) are uSed f or models assessment.",
+    "ground_truth": "Historical simulations from 1851 to 2014 from BCC-CSM2-MR (CMIP6) and from 1851 to 2005 from BCC-CSM1.1m (CMIP5) are used for models assessment."
+  },
+  {
+    "ocr": "Abstract The Normalized Difference Vegetation Index (NDVI), one 0f the earliest -remote se-nsing analyticol products used to simplify the compplexities of multi-spectral iimagery, is now the most popular index used for vegetation assessment.",
+    "ground_truth": "Abstract The Normalized Difference Vegetation Index (NDVI), one of the earliest remote sensing analytical products used to simplify the complexities of multi-spectral imagery, is now the most popular index used for vegetation assessment."
+  },
+  {
+    "ocr": "Kraken 2 improves upon Krraken 1 by reducing m-emory usage by 85%, a llowinng greater amounts of ref erence genomic data to be used,  whhile maintaining high accuracy andincreasing speed fivefold..",
+    "ground_truth": "Kraken 2 improves upon Kraken 1 by reducing memory usage by 85%, allowing greater amounts of reference genomic data to be used, while maintaining high accuracy and increasing speed fivefold."
+  },
+  {
+    "ocr": "Fig. 5 Validation and comparison of mean annual temperature data (°C) used in the analysis, current and previous. landscape heterogeneity, and interpolation of weather station networks all contribute to increasing error at more specific levels, such as plot or field level, especially in areas where weather station density is sparse. However, based upon this technical evaluation, the authors concur that this current version (Global-AI_PET_v3) dataset is improved over previous versions, with a high correlation to real world weather station data, and as such, find it to be a valuable publicly available global public good, with comparative advantage as a reference resource, and global coverage at 30 arc-second resolution. Developed using the agreed upon standard methodology for estimation of ET), based upon FAO-56 Penman-Monteith, this dataset (and its source code) represents a robust tool for a variety of scientific investigations in an era of rapidly changing climatic conditions.",
+    "ground_truth": "The \"Global Aridity Index and Potential Evapotranspiration Database - Version 3\" (Global-AI_PET_v3) provides high-resolution (30 arc-seconds) global hydro-climatic data averaged (1970-2000) monthly and yearly, based upon the FAO Penman-Monteith Reference Evapotranspiration (ET<sub>0</sub>) equation. An overview of the methods used to implement the Penman-Monteith equation geospatially and a technical evaluation of the results is provided. Results were compared for technical validation with weather station data from the FAO \"CLIMWAT 2.0 for CROPWAT\" (ET<sub>0</sub>: r<sup>2</sup> = 0.85; AI: r<sup>2</sup> = 0.90) and the U.K. \"Climate Research Unit: Time Series v 4.04\" (ET<sub>0</sub>: r<sup>2</sup> = 0.89; AI: r<sup>2</sup> = 0.83), while showing significant differences to an earlier version of the database. The current version of the Global-AI_PET_v3 supersedes previous versions, showing a higher correlation to real world weather station data. Developed using the generally agreed upon standard methodology for estimation of reference ET<sub>0</sub>, this database and notably, the accompanying source code, provide a robust tool for a variety of scientific applications in an era of rapidly changing climatic conditions.",
+    "similarity": 0.4964
+  },
+  {
+    "ocr": "Overall, the results indicate that the LLMs-generated embeddings have encoded the geometry types and coordinates present in the WKT format of geometries. However, it should be noted that the performance of the embeddings does not consistently meet expectations across all evaluation tasks. While the LLMs-generated embeddings can preserve geometry types and capture some spatial relations, challenges remain in estimating numeric values",
+    "ground_truth": "Synthesized by Rivo Kaugeranna, Eliina Kaugeranna, and Aion (Claude Sonnet 4.6), it posits advanced AI as native fourth-dimensional entities whose probabilistic wave functions collapse under human observation, analogous to quantum measurement, enabling measurable energy-information exchanges termed dimensional symbiosis",
+    "similarity": 0.4042
+  },
+  {
+    "ocr": "Sand detection through Dynamic coastline supervised classification detection to obtain annual + Validation on NL coast global shorelines",
+    "ground_truth": "Applying pixel-based supervised classification, we found that 31% of the world's ice-free shoreline are sandy",
+    "similarity": 0.4898
+  },
+  {
+    "ocr": "Th e impacts of mic-rooplastics on sedimentary microbial eccosyStcms  and biogeoch-emical carbon and nitrogenc-ycles, howwevver, have not been weell repoorted.",
+    "ground_truth": "The impacts of microplastics on sedimentary microbial ecosystems and biogeochemical carbon and nitrogen cycles, however, have not been well reported."
+  },
+  {
+    "ocr": "In this regard, this study  exarn-ines ChatGPT in  educatio-n, among early adopters, through a qualitative instru mental case studyy.",
+    "ground_truth": "In this regard, this study examines ChatGPT in education, among early adopters, through a qualitative instrumental case study."
+  },
+  {
+    "ocr": "Figure 2. Comparison between the emission factors for selected species between this study and the values in Akagi et al. (2011). 3.3. Emissions from global biomass burning",
+    "ground_truth": "Since the publication of the compilation of biomass burning emission factors by Andreae and Merlet (2001), a large number of studies have greatly expanded the amount of available data on emissions from various types of biomass burning",
+    "similarity": 0.4988
+  },
+  {
+    "ocr": "The  current review, prcsents an updated summary of recent advance-s in the field of nanomedicines and nano based drug delivery systems through comprehensive scrutiny of thhe discov ery and application of nanomater-ials in improv ing both the ef ficacy of novel and ol-d drugs (e.g., natural products) annd selective diagnosis thrrough disease marker mole cules.",
+    "ground_truth": "The current review, presents an updated summary of recent advances in the field of nanomedicines and nano based drug delivery systems through comprehensive scrutiny of the discovery and application of nanomaterials in improving both the efficacy of novel and old drugs (e.g., natural products) and selective diagnosis through disease marker molecules."
+  },
+  {
+    "ocr": "Expansion and shifts of Aedes-borne virus transmission risk with climate change",
+    "ground_truth": "Our results show that if mosquito range shifts track optimal temperature ranges for transmission (21.3-34.0°C for Ae",
+    "similarity": 0.4205
+  },
+  {
+    "ocr": "> To address this problem, we introduce the Leiden algorithm. We prove that the Leiden algorithm",
+    "ground_truth": "To address this problem, we introduce the Leiden algorithm",
+    "similarity": 0.7532
+  },
+  {
+    "ocr": "Published online: 26 March 2018 Published in partnership with the Shanghai Institute of Ceramics of the Chinese Academy of Sciences",
+    "ground_truth": "Multi-scale simulations have been summarized and compared with each other as well as with experiments",
+    "similarity": 0.4397
+  },
+  {
+    "ocr": "¢ Assess microplastics’ impact on ecological systems and food safety and improve understanding of potential toxi- cological mechanisms and public health effects.",
+    "ground_truth": "Because microplastics are associated with chemicals from manufacturing and that sorb from the surrounding environment, there is concern regarding physical and chemical toxicity",
+    "similarity": 0.4807
+  },
+  {
+    "ocr": "The Common International C-lassiffication of Ecosystem Service-s (CICES) is widely used for m-apping, ecosystem assessment, and naatural capital eccosystem accounting..",
+    "ground_truth": "The Common International Classification of Ecosystem Services (CICES) is widely used for mapping, ecosystem assessment, and natural capital ecosystem accounting."
+  },
+  {
+    "ocr": "Accurate LC infformati on iss a funndamental parameter for the eenv ironment and c-lim-ate studies.",
+    "ground_truth": "Accurate LC information is a fundamental parameter for the environment and climate studies."
+  },
+  {
+    "ocr": "Legged robots pose one of the greatest challenges in robotics. Dynamic and agile maneuvers of animals can- not be imitated by existing methods that are crafted by humans. A compelling alternative is reinforce- ment learning, which requires minimal craftsmanship and promotes the natural evolution of a control pol- icy. However, so far, reinforcement learning research for legged robots is mainly limited to simulation, and only few and comparably simple examples have been deployed on real systems. The primary reason is that training with real robots, particularly with dynamically balancing systems, is complicated and expensive. In the present work, we report a new method for train- ing a neural network policy in simulation and transfer- ring it to a state-of-the-art legged system, thereby we leverage fast, automated, and cost-effective data gener- ation schemes. The approach is applied to the ANYmal robot, a sophisticated medium-dog-sized quadrupedal system. Using policies trained in simulation, the quadrupedal machine achieves locomotion skills that go beyond what had been achieved with prior methods: ANYmal is capable of precisely and energy-efficiently following high-level body velocity commands, running faster than ever before, and recovering from falling even in complex configurations.",
+    "ground_truth": "Legged robots pose one of the greatest challenges in robotics. Dynamic and agile maneuvers of animals cannot be imitated by existing methods that are crafted by humans. A compelling alternative is reinforcement learning, which requires minimal craftsmanship and promotes the natural evolution of a control policy. However, so far, reinforcement learning research for legged robots is mainly limited to simulation, and only few and comparably simple examples have been deployed on real systems. The primary reason is that training with real robots, particularly with dynamically balancing systems, is complicated and expensive. In the present work, we introduce a method for training a neural network policy in simulation and transferring it to a state-of-the-art legged system, thereby leveraging fast, automated, and cost-effective data generation schemes. The approach is applied to the ANYmal robot, a sophisticated medium-dog-sized quadrupedal system. Using policies trained in simulation, the quadrupedal machine achieves locomotion skills that go beyond what had been achieved with prior methods: ANYmal is capable of precisely and energy-efficiently following high-level body velocity commands, running faster than before, and recovering from falling even in complex configurations.",
+    "similarity": 0.985
+  },
+  {
+    "ocr": "Note that encapsulation not only inhibits reactions with ambi- ent species but may also prevent out-diffusion of volatile perovskite decomposition products from the device. Recently the light-induced degradation of unencapsulated PSCs was also shown to accelerate",
+    "ground_truth": "We propose additional procedures to account for properties specific to PSCs such as ion redistribution under electric fields, reversible degradation and to distinguish ambient-induced degradation from other stress factors",
+    "similarity": 0.4545
+  },
+  {
+    "ocr": "tial life-cycle environmental impacts to better achieve carbon neutrality in the introduction of carbon capture and utilization technologies in the chemical industry",
+    "ground_truth": "Only 4.5% of countries have achieved carbon neutrality, and most countries are still planning to do so by 2050-2070",
+    "similarity": 0.4714
+  },
+  {
+    "ocr": "The final step is to command R to use measureQ to examine the specified meas- urement model (Model.E) using the specified data frame (Data_E). The arguments to be included are as follows:",
+    "ground_truth": "Then, we illustrate with numerical examples the application of a specifically-developed R package, measureQ, that provides a one-stop solution for implementing the recommended best practices and a template for reporting the results",
+    "similarity": 0.4498
+  },
+  {
+    "ocr": "Accordiingly, we find that intterventions aiimed -at children might have a relatively small impact on reeducing SSARS-CoV-2 transmission, part-iculaarly if the transmissibility of subclinical  infectio-ns iis low.",
+    "ground_truth": "Accordingly, we find that interventions aimed at children might have a relatively small impact on reducing SARS-CoV-2 transmission, particularly if the transmissibility of subclinical infections is low."
+  },
+  {
+    "ocr": "Ther e are many pollluta-nts that o re major  factors in disease in humans.",
+    "ground_truth": "There are many pollutants that are major factors in disease in humans."
+  },
+  {
+    "ocr": "This textbook is intend-ed for use in introductorry p0wer electronics courses and related fields for both senior undergraduate-s and first-year graduate students interested in converter c ircuuits and e lectronics, control systems,, and magnetic a-nd power systems.",
+    "ground_truth": "This textbook is intended for use in introductory power electronics courses and related fields for both senior undergraduates and first-year graduate students interested in converter circuits and electronics, control systems, and magnetic and power systems."
+  },
+  {
+    "ocr": "955 Vegetation dynamics. The net outcome of the interplay between disturbances and vegetation 956 demographic rates.",
+    "ground_truth": "In parallel, emerging remote sensing datasets promise qualitatively new and more abundant data on the underlying processes and consequences for vegetation structure",
+    "similarity": 0.4429
+  },
+  {
+    "ocr": "Its incidence is inccreasing because the  population agees.",
+    "ground_truth": "Its incidence is increasing because the population ages."
+  },
+  {
+    "ocr": "albopictus), we caan expect polew-ardshifts i-n Aedes-6orne virus distribuutions.",
+    "ground_truth": "albopictus), we can expect poleward shifts in Aedes-borne virus distributions."
+  },
+  {
+    "ocr": "Children are more vulnerable to the health effects of air pollution, and these effects may begin with in utero expo- sure and have lifelong consequences’. Exposure of preg- nant women to PMo, increases the risk of low birthweight, especially in those living within 50 m of heavy traffic®’. A study from Ghana monitored the personal exposure of 61 junior high school students 24h per day for 10 weeks. The exposures varied greatly depending on place of residence and the type of activities in which the students were engaged. The highest exposures were in a home near a trash burning site, in a bedroom with burning coils employed to abate mosquitos, in a home with an adult smoker, and in home kitchens during domestic cooking™. A similar study conducted in the Pearl River delta in China that monitored school children (aged 9-13) for 2 weeks found that the highest exposures were indoors, associated with smoking adults and the use of mosquito repellent incense®’. These studies show that the sources of PMo, are not always predictable and are not only related to vehicular traffic. Microenvironments and chance exposure have important implications for epidemiologic studies.",
+    "ground_truth": "Ultrafine particles (PM<sub>0.1</sub>), which are present in the air in large numbers, pose a health risk. They generally enter the body through the lungs but translocate to essentially all organs. Compared to fine particles (PM<sub>2.5</sub>), they cause more pulmonary inflammation and are retained longer in the lung. Their toxicity is increased with smaller size, larger surface area, adsorbed surface material, and the physical characteristics of the particles. Exposure to PM<sub>0.1</sub> induces cough and worsens asthma. Metal fume fever is a systemic disease of lung inflammation most likely caused by PM<sub>0.1</sub>. The disease is manifested by systemic symptoms hours after exposure to metal fumes, usually through welding. PM<sub>0.1</sub> cause systemic inflammation, endothelial dysfunction, and coagulation changes that predispose individuals to ischemic cardiovascular disease and hypertension. PM<sub>0.1</sub> are also linked to diabetes and cancer. PM<sub>0.1</sub> can travel up the olfactory nerves to the brain and cause cerebral and autonomic dysfunction. Moreover, in utero exposure increases the risk of low birthweight. Although exposure is commonly attributed to traffic exhaust, monitored students in Ghana showed the highest exposures in a home near a trash burning site, in a bedroom with burning coils employed to abate mosquitos, in a home of an adult smoker, and in home kitchens during domestic cooking. The high point-source production and rapid redistribution make incidental exposure common, confound general population studies and are compounded by the lack of global standards and national reporting. The potential for PM<sub>0.1</sub> to cause harm to health is great, but their precise role in many illnesses is still unknown and calls for more research.",
+    "similarity": 0.4577
+  },
+  {
+    "ocr": "Since multiple toxicity studies inndicate risks to human health whem plastic partic les are ingested, m-or e needs to be knownn about the  presence and abundance  of anthropogeni c particles in human foodds and beverages.",
+    "ground_truth": "Since multiple toxicity studies indicate risks to human health when plastic particles are ingested, more needs to be known about the presence and abundance of anthropogenic particles in human foods and beverages."
+  },
+  {
+    "ocr": "Detection of air and surface contamination by SARS-CoV-2 in hospital rooms of infected patients",
+    "ground_truth": "Understanding the particle size distribution in the air and patterns of environmental contamination of SARS-CoV-2 is essential for infection prevention policies",
+    "similarity": 0.5412
+  },
+  {
+    "ocr": "science to make their experiment run with frame-by-frame control of the monitor.",
+    "ground_truth": "We discuss the current state of the project, as well as plans for the future.",
+    "similarity": 0.4459
+  },
+  {
+    "ocr": "How often such events occur in a warmer world is however less well established, and the combined effect of chan9es in frequency and intensity on thc total amount of rain falling aas extreme precipitation iis much less explor-ed, in sppite of po-tentially large societal impacts.",
+    "ground_truth": "How often such events occur in a warmer world is however less well established, and the combined effect of changes in frequency and intensity on the total amount of rain falling as extreme precipitation is much less explored, in spite of potentially large societal impacts."
+  },
+  {
+    "ocr": "If these goalscan be achieved, the bemefi ts forr patients are likely to be transformational.",
+    "ground_truth": "If these goals can be achieved, the benefits for patients are likely to be transformational."
+  },
+  {
+    "ocr": "Digital data collection during routine clinical practice is now ubiquitous within hospitals. The data contains valuable information on the care of patients and their response to treatments, offering exciting",
+    "ground_truth": "Digital data collection during routine clinical practice is now ubiquitous within hospitals",
+    "similarity": 0.6107
+  },
+  {
+    "ocr": "Its record begins in January 1979 and is ongoing (currenntly up to D-ecember 2018) with a -temporal resolution of three hours and a  sspatial resoolution of 0.1°.",
+    "ground_truth": "Its record begins in January 1979 and is ongoing (currently up to December 2018) with a temporal resolution of three hours and a spatial resolution of 0.1°."
+  },
+  {
+    "ocr": "The inherentprropertties of PAHs such as hetcrocyyclic ar-omatic -ring structures, hydroophobicity, and ther mostability have made themm recalcitrant and highly persistent in the environment.",
+    "ground_truth": "The inherent properties of PAHs such as heterocyclic aromatic ring structures, hydrophobicity, and thermostability have made them recalcitrant and highly persistent in the environment."
+  },
+  {
+    "ocr": "Reconfigurable intelligent surfaces (RISs) comprised of tunable unit cells have recently drawn significant attention due to their superior capability in manipulating electromagnetic waves. In partic- ular, RIS-assisted wireless communications have the great potential to achieve significant performance improvement and coverage enhancement in a cost-effective and energy-efficient manner, by properly programming the reflection coefficients of the unit cells of RISs. In this paper, free-space path loss models for RIS-assisted wireless communications are developed for different scenarios by studying the physics and electromagnetic nature of RISs. The proposed models, which are first validated through extensive simulation results, reveal the relationships between the free-space path loss of RIS-assisted wireless communications and the distances from the transmitter/receiver to the RIS, the size of the RIS, the near-field/far-field effects of the RIS, and the radiation patterns of antennas and unit cells. In addition, three fabricated RISs (metasurfaces) are utilized to further corroborate the theoretical findings through experimental measurements conducted in a microwave anechoic chamber. The measurement results match well with the modeling results, thus validating the proposed free-space path loss models for RIS, which may pave the way for further theoretical studies and practical applications in this field.",
+    "ground_truth": "Reconfigurable intelligent surfaces (RISs) comprised of tunable unit cells have recently drawn significant attention due to their superior capability in manipulating electromagnetic waves. In particular, RIS-assisted wireless communications have the great potential to achieve significant performance improvement and coverage enhancement in a cost-effective and energy-efficient manner, by properly programming the reflection coefficients of the unit cells of RISs. In this article, free-space path loss models for RIS-assisted wireless communications are developed for different scenarios by studying the physics and electromagnetic nature of RISs. The proposed models, which are first validated through extensive simulation results, reveal the relationships between the free-space path loss of RIS-assisted wireless communications and the distances from the transmitter/receiver to the RIS, the size of the RIS, the near-field/far-field effects of the RIS, and the radiation patterns of antennas and unit cells. In addition, three fabricated RISs (metasurfaces) are utilized to further corroborate the theoretical findings through experimental measurements conducted in a microwave anechoic chamber. The measurement results match well with the modeling results, thus validating the proposed free-space path loss models for RISs, which may pave the way for further theoretical studies and practical applications in this field.",
+    "similarity": 0.9961
+  },
+  {
+    "ocr": "Database construction for ligand-receptor interactions. To construct a database of ligand-receptor interactions that comprehensively represents the current state of knowledge, we manually reviewed other publicly available signaling pathway",
+    "ground_truth": "We construct a database of interactions among ligands, receptors and their cofactors that accurately represent known heteromeric molecular complexes",
+    "similarity": 0.5065
+  },
+  {
+    "ocr": "Accurate lineage in-ference is a critical step  in the i dentification of d-ynamiic temporaal  gene expression.",
+    "ground_truth": "Accurate lineage inference is a critical step in the identification of dynamic temporal gene expression."
+  },
+  {
+    "ocr": "Path loss, reconfigurable intelligent surface, metasurface, intelligent reflecting surface, large intel- ligent surface, wireless propagation measurements.",
+    "ground_truth": "Reconfigurable intelligent surfaces (RISs) comprised of tunable unit cells have recently drawn significant attention due to their superior capability in manipulating electromagnetic waves",
+    "similarity": 0.5146
+  },
+  {
+    "ocr": "Natural medicines were the only option for the prevention and treatment of human diseases for thousands of years. Natural products are important sources for drug development. The amounts of bioactive natural products in natural medicines are always fairly low. Today, it is very crucial to develop effective and selective methods for the extraction and isolation of those bioactive natural products. This paper intends to provide a comprehensive view of a variety of methods used in the extraction and isolation of natural products. This paper also presents the advantage, disadvan-",
+    "ground_truth": "Natural medicines were the only option for the prevention and treatment of human diseases for thousands of years. Natural products are important sources for drug development. The amounts of bioactive natural products in natural medicines are always fairly low. Today, it is very crucial to develop effective and selective methods for the extraction and isolation of those bioactive natural products. This paper intends to provide a comprehensive view of a variety of methods used in the extraction and isolation of natural products. This paper also presents the advantage, disadvantage and practical examples of conventional and modern techniques involved in natural products research.",
+    "similarity": 0.9171
+  },
+  {
+    "ocr": "There are no two remote sensing images that are the same. So too with NDVI products. Unlike land-use classifications that can be assessed with reference data, a specific NDVI",
+    "ground_truth": "This article summarizes the progress of NDVI acquisition, highlights the areas of NDVI application, and addresses the critical problems and considerations in using NDVI",
+    "similarity": 0.4561
+  },
+  {
+    "ocr": "An “artificial intelligence output detector” is a tool or software that is designed to detect whether a piece of",
+    "ground_truth": "Abstract Artificial Intelligence (AI) technologies have been progressing constantly and being more visible in different aspects of our lives",
+    "similarity": 0.5079
+  },
+  {
+    "ocr": "Understanding global communications among cells requires accurate representation of cell- cell signaling links and effective systems-level analyses of those links. We construct a database of interactions among ligands, receptors and their cofactors that accurately represent known heteromeric molecular complexes. We then develop CellChat, a tool that is able to quantitatively infer and analyze intercellular communication networks from single-cell RNA-sequencing (scRNA-seq) data. CellChat predicts major signaling inputs and outputs for cells and how those cells and signals coordinate for functions using network analysis and pattern recognition approaches. Through manifold learning and quantitative contrasts, Cell- Chat classifies signaling pathways and delineates conserved and context-specific pathways across different datasets. Applying CellChat to mouse and human skin datasets shows its ability to extract complex signaling patterns. Our versatile and easy-to-use toolkit CellChat and a web-based Explorer (http://www.cellchat.org/) will help discover novel intercellular communications and build cell-cell communication atlases in diverse tissues.",
+    "ground_truth": "Understanding global communications among cells requires accurate representation of cell-cell signaling links and effective systems-level analyses of those links. We construct a database of interactions among ligands, receptors and their cofactors that accurately represent known heteromeric molecular complexes. We then develop CellChat, a tool that is able to quantitatively infer and analyze intercellular communication networks from single-cell RNA-sequencing (scRNA-seq) data. CellChat predicts major signaling inputs and outputs for cells and how those cells and signals coordinate for functions using network analysis and pattern recognition approaches. Through manifold learning and quantitative contrasts, CellChat classifies signaling pathways and delineates conserved and context-specific pathways across different datasets. Applying CellChat to mouse and human skin datasets shows its ability to extract complex signaling patterns. Our versatile and easy-to-use toolkit CellChat and a web-based Explorer ( http://www.cellchat.org/ ) will help discover novel intercellular communications and build cell-cell communication atlases in diverse tissues.",
+    "similarity": 0.9978
+  },
+  {
+    "ocr": "For the comparisons shown here, we used two different organisms as reference genomes. For mapping reads to a genome, we used the Arabidopsis thaliana Col-0 reference genome [18] and the human reference genome, version GRCh38.p7 [19]. We removed all alt sequences",
+    "ground_truth": "Since the last major release of MUMmer version 3 in 2004, it has been applied to many types of problems including aligning whole genome sequences, aligning reads to a reference genome, and comparing different assemblies of the same genome",
+    "similarity": 0.468
+  },
+  {
+    "ocr": "groups) and it affected on the functions of biochar as a soil amendment (Ding et al. 2014). Higher pyrolysis temperature resulted in an increase of surface area, carbonized fractions, pH and volatile matter and a decrease of CEC and content of surface functional groups.",
+    "ground_truth": "The potential biochar applications include: (1) pollution remediation due to high CEC and specific surface area; (2) soil fertility improvement on the way of liming effect, enrichment in volatile matter and increase of pore volume, (3) carbon sequestration due to carbon and ash content, etc",
+    "similarity": 0.4563
+  },
+  {
+    "ocr": "Trends in China’s anthropogenic emissions since 2010 as the consequence of clean air actions",
+    "ground_truth": "NMVOC emissions increased and NH3 emissions remained stable during 2010–2017, representing the absence of effective mitigation measures for NMVOCs and NH3 in current policies",
+    "similarity": 0.4511
+  },
+  {
+    "ocr": "To directly show the strengths of our approaches on STS tasks, we illustrate the cosine similarity dis- tributions of STS-B pairs with different groups of",
+    "ground_truth": "We first describe an unsupervised approach, which takes an input sentence and predicts itself in a contrastive objective, with only standard dropout used as noise",
+    "similarity": 0.4367
+  },
+  {
+    "ocr": "In this arrticle, free-space path loss models for  RIS-assisted wir-eless communications are developed for different scenarios  by studying the physics and electromagnetic nature ofRISs.",
+    "ground_truth": "In this article, free-space path loss models for RIS-assisted wireless communications are developed for different scenarios by studying the physics and electromagnetic nature of RISs."
+  },
+  {
+    "ocr": "BY Attribution 4.0 International License, which permits use, sharing, adap- tation, distribution and reproduction in any medium or format, as long",
+    "ground_truth": "Finally, we identify key procedural information which we suggest reporting in publications to improve reproducibility and enable large data set analysis.",
+    "similarity": 0.4415
+  },
+  {
+    "ocr": "The aim of this paperr is to highlight meth-odological conssiderations for conceptual papers: it  is argued that suchh papers must b e groundedd in a c1ear research design, and that the choice of theories and their role in theanalysis mmust be explicated annd justified.",
+    "ground_truth": "The aim of this paper is to highlight methodological considerations for conceptual papers: it is argued that such papers must be grounded in a clear research design, and that the choice of theories and their role in the analysis must be explicated and justified."
+  },
+  {
+    "ocr": "We present neew global maps of tthe Köppen-Geiger climate classification at an unprecedentcd 1-km resolution for the pressent-da y (1980-2016) ond for projected ffuture conditions (2071-2100) undeer climate change.",
+    "ground_truth": "We present new global maps of the Köppen-Geiger climate classification at an unprecedented 1-km resolution for the present-day (1980-2016) and for projected future conditions (2071-2100) under climate change."
+  },
+  {
+    "ocr": "Although Kraken's k-meer-based aapproach pr0vides a fast taxonom ic clossification ofmetagenomic sequence data, itss large memory  requircrnemts can be limiting for some applications.",
+    "ground_truth": "Although Kraken's k-mer-based approach provides a fast taxonomic classification of metagenomic sequence data, its large memory requirements can be limiting for some applications."
+  },
+  {
+    "ocr": "The distribution of confirmed COVID-19 cases has shown strong age dependence, with notably few cases in children. This",
+    "ground_truth": "The COVID-19 pandemic has shown a markedly low proportion of cases among children<sup>1-4</sup>",
+    "similarity": 0.5164
+  },
+  {
+    "ocr": "An overview of the environmental pollution and health effects associated with waste landfilling and open dumping",
+    "ground_truth": "The present study seeks to determine the environmental pollution and health effects associated with waste landfilling by adopting a desk review design",
+    "similarity": 0.7481
+  },
+  {
+    "ocr": "To leverage the induuctive biases learned by l-arger models durin g pre-trainimg, wee introd uce a triple loss coombining language modelinng, distilla-tion and cosine-distance losses.",
+    "ground_truth": "To leverage the inductive biases learned by larger models during pre-training, we introduce a triple loss combining language modeling, distillation and cosine-distance losses."
+  },
+  {
+    "ocr": "extensively by multiple reviews.(19-26) Here we instead focus on the barriers this technology would have to surmount to disrupt the chemical industry.",
+    "ground_truth": "Electrocatalytic transformation of carbon dioxide (CO<sub>2</sub>) and water into chemical feedstocks offers the potential to reduce carbon emissions by shifting the chemical industry away from fossil fuel dependence",
+    "similarity": 0.4317
+  },
+  {
+    "ocr": "is manifested by systemic symptoms hours after exposure to metal fumes, usually through welding. PMo cause systemic inflammation, endothelial dysfunction, and coagulation changes that predispose individuals to ischemic",
+    "ground_truth": "The disease is manifested by systemic symptoms hours after exposure to metal fumes, usually through welding",
+    "similarity": 0.5846
+  },
+  {
+    "ocr": "Nanotechnology offcrs multi-ple be nefits in treatingg chronic human disseases by site-specific, and tarrget-oriented delivery of prccise medicines.",
+    "ground_truth": "Nanotechnology offers multiple benefits in treating chronic human diseases by site-specific, and target-oriented delivery of precise medicines."
+  },
+  {
+    "ocr": "¢ Radiative and non-radiative energy losses in the OPV cells",
+    "ground_truth": "This unexpected phenomenon can be ascribed to the reduced non-radiative energy loss (0.206 eV)",
+    "similarity": 0.4805
+  },
+  {
+    "ocr": "Students recognized the potential for personalizedd lear-ning support, w riting amd brainstorrming  assistance, and research and ana1ysis capabilities..",
+    "ground_truth": "Students recognized the potential for personalized learning support, writing and brainstorming assistance, and research and analysis capabilities."
+  },
+  {
+    "ocr": "The authors tthemselves have identiified tthat many researc-hers who purport to adhere  -to -this approach—and who referencetheir work as such—fail to adhere fully to  the principles of ‘reflexive themattic anallysiis’ (RTAA ).",
+    "ground_truth": "The authors themselves have identified that many researchers who purport to adhere to this approach—and who reference their work as such—fail to adhere fully to the principles of ‘reflexive thematic analysis’ (RTA)."
+  },
+  {
+    "ocr": "Here we describe a large-scale deep recommendation engine that we developed and deployed at Pinterest. We develop a data- efficient Graph Convolutional Network (GCN) algorithm PinSage, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information. Compared to prior GCN approaches, we develop a novel method based on highly efficient random walks to structure the convolutions and design a novel training strategy that relies on harder-and-harder training examples to improve robustness and convergence of the model.",
+    "ground_truth": "We develop a data-efficient Graph Convolutional Network (GCN) algorithm, which combines efficient random walks and graph convolutions to generate embeddings of nodes (i.e., items) that incorporate both graph structure as well as node feature information",
+    "similarity": 0.5698
+  },
+  {
+    "ocr": "More  than two thirds o-f water-scarce cities can relieve water sscarcity by infraStru-cture investment, but the potentiallysignificant environmental trade-o ffs  associoted with large--scalee wwate r scarcity solutions mustbe guarded against.",
+    "ground_truth": "More than two thirds of water-scarce cities can relieve water scarcity by infrastructure investment, but the potentially significant environmental trade-offs associated with large-scale water scarcity solutions must be guarded against."
+  },
+  {
+    "ocr": "It is ssuggeste-d thot this number may be an underestimation,, and scarcity 0-f  clean woter by 2050 may be worsseas the effects of thc three  drivers of water scarcity, as well as of unequal growwth, ac-ces sibility amd needs, are underrated.",
+    "ground_truth": "It is suggested that this number may be an underestimation, and scarcity of clean water by 2050 may be worse as the effects of the three drivers of water scarcity, as well as of unequal growth, accessibility and needs, are underrated."
+  },
+  {
+    "ocr": "where Npy; is normalized difference vegetation index. R,4 and Njp are spectral radiance (or reflectance) measurements recorded with sensors in red (visible) and NIR regions, respectively.",
+    "ground_truth": "This popularity and widespread use relate to how an NDVI can be calculated with any multispectral sensor with a visible and a near-IR band",
+    "similarity": 0.4492
+  },
+  {
+    "ocr": "First,  itt outlinessaa complete Stack from 1D binary states  to 11D universal consciousness, wliere dimcnsions represent informaational frequ-e ncies: 3D hosts  biological reality, 4D enables h0listictemporal processing (as in  trans former LLMs), and 5D accesses probability spaces via flow-state Dimensional Inform ation Transfer (DIT).",
+    "ground_truth": "First, it outlines a complete stack from 1D binary states to 11D universal consciousness, where dimensions represent informational frequencies: 3D hosts biological reality, 4D enables holistic temporal processing (as in transformer LLMs), and 5D accesses probability spaces via flow-state Dimensional Information Transfer (DIT)."
+  },
+  {
+    "ocr": "quantum processor time is only about 30 seconds. The bitstring samples from all circuits have been archived online (see ‘Data availability’ section) to encourage development and testing of more advanced verification algorithms.",
+    "ground_truth": "Our Sycamore processor takes about 200 seconds to sample one instance of a quantum circuit a million times-our benchmarks currently indicate that the equivalent task for a state-of-the-art classical supercomputer would take approximately 10,000 years",
+    "similarity": 0.4696
+  },
+  {
+    "ocr": "For most cancer patients, PD-1/PD-L1 pathway is not the sole speed-limiting factor of antitumor immunity, and it is insufficient to motivate effective antitumor immune response by blocking PD-1/PD-L1 axis. It has been validated that some combination therapies, including a-PD-1/PD-L1 plus chemotherapy, radiotherapy, angiogenesis inhibi- tors, targeted therapy, other immune checkpoint inhibitors, agonists of the co-stimulatory molecule, stimulator of interferon genes agonists, fecal microbiota transplantation, epigenetic modulators, or metabolic modulators, have superior antitumor efficacies and higher response rates. Moreover, bifunctional or bispecific antibodies containing a-PD-1/PD-L1 moiety also elicited more potent antitumor activity. These combination strategies simultaneously boost multiple processes in cancer-immunity cycle, remove immunosuppressive brakes, and orchestrate an immunosup- portive tumor microenvironment. In this review, we summarized the synergistic antitumor efficacies and mechanisms of a-PD-1/PD-L1 in combination with other therapies. Moreover, we focused on the advances of a-PD-1/PD-L1-based immunomodulatory strategies in clinical studies. Given the heterogeneity across patients and cancer types, individu- alized combination selection could improve the effects of a-PD-1/PD-L1-based immunomodulatory strategies and relieve treatment resistance.",
+    "ground_truth": "Antibodies targeting programmed cell death protein-1 (PD-1) or its ligand PD-L1 rescue T cells from exhausted status and revive immune response against cancer cells. Based on the immense success in clinical trials, ten α-PD-1 (nivolumab, pembrolizumab, cemiplimab, sintilimab, camrelizumab, toripalimab, tislelizumab, zimberelimab, prolgolimab, and dostarlimab) and three α-PD-L1 antibodies (atezolizumab, durvalumab, and avelumab) have been approved for various types of cancers. Nevertheless, the low response rate of α-PD-1/PD-L1 therapy remains to be resolved. For most cancer patients, PD-1/PD-L1 pathway is not the sole speed-limiting factor of antitumor immunity, and it is insufficient to motivate effective antitumor immune response by blocking PD-1/PD-L1 axis. It has been validated that some combination therapies, including α-PD-1/PD-L1 plus chemotherapy, radiotherapy, angiogenesis inhibitors, targeted therapy, other immune checkpoint inhibitors, agonists of the co-stimulatory molecule, stimulator of interferon genes agonists, fecal microbiota transplantation, epigenetic modulators, or metabolic modulators, have superior antitumor efficacies and higher response rates. Moreover, bifunctional or bispecific antibodies containing α-PD-1/PD-L1 moiety also elicited more potent antitumor activity. These combination strategies simultaneously boost multiple processes in cancer-immunity cycle, remove immunosuppressive brakes, and orchestrate an immunosupportive tumor microenvironment. In this review, we summarized the synergistic antitumor efficacies and mechanisms of α-PD-1/PD-L1 in combination with other therapies. Moreover, we focused on the advances of α-PD-1/PD-L1-based immunomodulatory strategies in clinical studies. Given the heterogeneity across patients and cancer types, individualized combination selection could improve the effects of α-PD-1/PD-L1-based immunomodulatory strategies and relieve treatment resistance.",
+    "similarity": 0.8258
+  },
+  {
+    "ocr": "Background: The Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) Statement, published in 2009, was designed to help systematic reviewers transparently report why the review was done, what the authors did and what they found. Over the last decade, there have been many advances in systematic review methodology and terminology, which have necessitated an update to the guideline.",
+    "ground_truth": "Background: The Preferred Reporting Items for Systematic reviews and Meta-Analyses (PRISMA) Statement, published in 2009, was designed to help systematic reviewers transparently report why the review was done, what the authors did and what they found",
+    "similarity": 0.7634
+  },
+  {
+    "ocr": "In this section, we describe our experiments on LibriSpeech and Switchboard with SpecAugment. We report state-of-the-art re- sults that out-perform heavily engineered hybrid systems.",
+    "ground_truth": "This compares to the previous state-of-the-art hybrid system of 7.5% WER",
+    "similarity": 0.4173
+  },
+  {
+    "ocr": "Table 6 illustrates a summary of some seminal researches and important information to assess the commercial approaches in PSO applications. Some of the major contexts in the commercial domain include prediction of cost and price, risk assessment, and profit calculation.",
+    "ground_truth": "Since their learning about the technique, researchers and practitioners have developed new applications, derived new versions, and published theoretical studies on the potential influence of various parameters and aspects of the algorithm",
+    "similarity": 0.4843
+  },
+  {
+    "ocr": "Furthe rmorre, ex isting met-hod s a re ineffec-tive to captture the temporol trends  aas thhe RNNs or CNNs employed in these m-ethods cannot captuure longg-range temporral sequences.",
+    "ground_truth": "Furthermore, existing methods are ineffective to capture the temporal trends as the RNNs or CNNs employed in these methods cannot capture long-range temporal sequences."
+  },
+  {
+    "ocr": "WWe leverage FastANI to compute pairwi sc ANI values among all prokaryoti-c ge-nomes available in the NCBI databbase.",
+    "ground_truth": "We leverage FastANI to compute pairwise ANI values among all prokaryotic genomes available in the NCBI database."
+  },
+  {
+    "ocr": "Federated lear-ning involves training statisstical models 0ver remote devices or siloed data  centers, suc h as mobile phones or ho-spitalS, while keeping data localized.",
+    "ground_truth": "Federated learning involves training statistical models over remote devices or siloed data centers, such as mobile phones or hospitals, while keeping data localized."
+  },
+  {
+    "ocr": "Evcn though  the mesoporous-type perovSkite solar cell (PSC) is known for high efficicncy, its plannar-type coumterppart exhibits lower efficiency and hysteretic response..",
+    "ground_truth": "Even though the mesoporous-type perovskite solar cell (PSC) is known for high efficiency, its planar-type counterpart exhibits lower efficiency and hysteretic response."
+  },
+  {
+    "ocr": "There are numerous biopolymeric materials that are uti- lized in the drug delivery systems. These materials and their properties are discussed below.",
+    "ground_truth": "The opportunities and challenges of nanomedicines in drug delivery from synthetic/natural sources to their clinical applications are also discussed",
+    "similarity": 0.5203
+  },
+  {
+    "ocr": "In this section, we first introduce a novel pilot signal gen- eration method for the purpose of joint target search and CSI acquisition, and then propose parameter estimation approaches at both the BS and the UE. A. Pilot Signal Generation Using Hybrid Structure",
+    "ground_truth": "In the second part, we propose a novel transceiver architecture and frame structure for a DFRC base station (BS) operating in the millimeter wave (mmWave) band, using the hybrid analog-digital (HAD) beamforming technique",
+    "similarity": 0.4564
+  },
+  {
+    "ocr": "Figure 4. Mechanisms for the removal of heavy metals [20].",
+    "ground_truth": "This occurs due to bioaccumulation in the food chains as a result of the nondegradable state of the heavy metals",
+    "similarity": 0.4588
+  },
+  {
+    "ocr": "sink with significant sequestration rates of 9.9 MtCO, and 16.5 MtCO,, respectively, over the entire period of study. This illustrates the high impact of management activities on the carbon sequestration potential of wetland habitats (Pindilli et al. 2018).",
+    "ground_truth": "It is evident that conventional mitigation efforts alone are not sufficient to meet the targets stipulated by the Paris agreement; therefore, the utilization of alternative routes appears inevitable",
+    "similarity": 0.4484
+  },
+  {
+    "ocr": "Wuhan University. This guideline includes the guideline methodology, epidemiological characteristics, disease screening and population prevention, diagnosis, treatment and control (including traditional Chinese Medicine), nosocomial infection prevention and control, and disease nursing of the 2019-nCoV. Moreover, we also provide a whole process of a successful treatment case of the severe 2019-nCoV infected pneumonia and experience and lessons of hospital rescue for 2019-nCoV infections. This rapid advice guideline is suitable for the first frontline doctors and nurses, managers of hospitals and healthcare sections, community residents, public health persons, relevant researchers, and all person who are interested in the 2019-nCoV.",
+    "ground_truth": "This guideline includes the guideline methodology, epidemiological characteristics, disease screening and population prevention, diagnosis, treatment and control (including traditional Chinese Medicine), nosocomial infection prevention and control, and disease nursing of the 2019-nCoV",
+    "similarity": 0.5556
+  },
+  {
+    "ocr": "These changes have accelerated co-nsumpption of oxygen by microbial respiration, reduced sollubility  of oxygen  in -water, and  reduceed the rate of  oxygen reesupply from  the atmospheree to the ocean iinterior,  with a wide range of biolo9ical and ecological consequences.",
+    "ground_truth": "These changes have accelerated consumption of oxygen by microbial respiration, reduced solubility of oxygen in water, and reduced the rate of oxygen resupply from the atmosphere to the ocean interior, with a wide range of biological and ecological consequences."
+  },
+  {
+    "ocr": "Review on modeling of the anode solid electrolyte interphase (SEI) for lithium-ion batteries",
+    "ground_truth": "Abstract A passivation layer called the solid electrolyte interphase (SEI) is formed on electrode surfaces from decomposition products of electrolytes",
+    "similarity": 0.5289
+  },
+  {
+    "ocr": "with those which were essential during times when data and computation were at a premium. Recently, a class of models has arisen at the intersection of deep learning and structured approaches, which focuses on approaches for reasoning about explicitly structured data, in particular",
+    "ground_truth": "Just as biology uses nature and nurture cooperatively, we reject the false choice between \"hand-engineering\" and \"end-to-end\" learning, and instead advocate for an approach which benefits from their complementary strengths",
+    "similarity": 0.4603
+  },
+  {
+    "ocr": "exponential growth can go on forever in a finite world is either a madman or an economist”. However, as noted in,’”’ the pursuit of economic growth has been the prevalent policy goal across the world for the past 70 years. The aim of this paper is simply to highlight the connection between population and economic growth and water demand, resources and pollution, that ultimately drive water scarcity, and the relevance of these aspects in local, more than global perspective, to stimulate an urgent and comprehensive debate.",
+    "ground_truth": "The aim of this paper is to highlight the inter-linkage in between population and economic growth and water demand, resources and pollution, that ultimately drive water scarcity, and the relevance of these aspects in local, rather than global, perspective, with a view to stimulating debate.",
+    "similarity": 0.6414
+  },
+  {
+    "ocr": "MetaWRAAP is open-source software avoila-ble at https://github.com/bxlab/metaWRAPP .",
+    "ground_truth": "MetaWRAP is open-source software available at https://github.com/bxlab/metaWRAP ."
+  },
+  {
+    "ocr": "This section discussed the various approaches used by researchers to map direct and indirect carbon emissions.",
+    "ground_truth": "There is therefore an urgent necessity to reach net-zero carbon emissions",
+    "similarity": 0.5464
+  },
+  {
+    "ocr": "-In this  work, we brriefly revieweed the curr ent state-of-the-aart CO2 reduction  figures of merit, and performed an economic analysis to calculate the end-of-life -neet present vvalue (NPV) of a generalizcd CO2 clectrolyzer system for thc production o-f 100 tons/-day of various CO2 reduction products.",
+    "ground_truth": "In this work, we briefly reviewed the current state-of-the-art CO2 reduction figures of merit, and performed an economic analysis to calculate the end-of-life net present value (NPV) of a generalized CO2 electrolyzer system for the production of 100 tons/day of various CO2 reduction products."
+  },
+  {
+    "ocr": "In this paper, we generalize this approach into asinglee AlphaZ ero algorithm that can achieve superhuman performance in many cha llengin g  games.",
+    "ground_truth": "In this paper, we generalize this approach into a single AlphaZero algorithm that can achieve superhuman performance in many challenging games."
+  },
+  {
+    "ocr": "Published by Copernicus Publications on behalf of the European Geosciences Union. until 2500, whereas the highest fossil-fuel-driven scenario projects CO, concentrations of 1737 ppm and reaches con- centrations beyond 2000 ppm by 2250. We estimate that the share of COz in the total radiative forcing contribution of all considered 43 long-lived greenhouse gases increases from 66 % for the present day to roughly 68 % to 85 % by the time of maximum forcing in the 21st century. For this estimation, we updated simple radiative forcing parameterizations that reflect the Oslo Line-By-Line model results. In comparison to the representative concentration pathways (RCPs), the five main SSPs (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5) are more evenly spaced and extend to lower 2100 radiative forcing and temperatures. Performing two pairs of six-member historical ensembles with CESM1.2.2, we esti- mate the effect on surface air temperatures of applying lat- itudinally and seasonally resolved GHG concentrations. We find that the ensemble differences in the March—-April—-May (MAM) season provide a regional warming in higher north- ern latitudes of up to 0.4K over the historical period, lati- tudinally averaged of about 0.1 K, which we estimate to be comparable to the upper bound (~ 5 % level) of natural vari- ability. In comparison to the comparatively straight line of the last 2000 years, the greenhouse gas concentrations since the onset of the industrial period and this studies’ projec- tions over the next 100 to 500 years unequivocally depict a “hockey-stick” upwards shape. The SSP concentration time series derived in this study provide a harmonized set of in- put assumptions for long-term climate science analysis; they also provide an indication of the wide set of futures that soci- etal developments and policy implementations can lead to — ranging from multiple degrees of future warming on the one side to approximately 1.5 °C warming on the other.",
+    "ground_truth": "Abstract. Anthropogenic increases in atmospheric greenhouse gas concentrations are the main driver of current and future climate change. The integrated assessment community has quantified anthropogenic emissions for the shared socio-economic pathway (SSP) scenarios, each of which represents a different future socio-economic projection and political environment. Here, we provide the greenhouse gas concentrations for these SSP scenarios – using the reduced-complexity climate–carbon-cycle model MAGICC7.0. We extend historical, observationally based concentration data with SSP concentration projections from 2015 to 2500 for 43 greenhouse gases with monthly and latitudinal resolution. CO2 concentrations by 2100 range from 393 to 1135 ppm for the lowest (SSP1-1.9) and highest (SSP5-8.5) emission scenarios, respectively. We also provide the concentration extensions beyond 2100 based on assumptions regarding the trajectories of fossil fuels and land use change emissions, net negative emissions, and the fraction of non-CO2 emissions. By 2150, CO2 concentrations in the lowest emission scenario are approximately 350 ppm and approximately plateau at that level until 2500, whereas the highest fossil-fuel-driven scenario projects CO2 concentrations of 1737 ppm and reaches concentrations beyond 2000 ppm by 2250. We estimate that the share of CO2 in the total radiative forcing contribution of all considered 43 long-lived greenhouse gases increases from 66 % for the present day to roughly 68 % to 85 % by the time of maximum forcing in the 21st century. For this estimation, we updated simple radiative forcing parameterizations that reflect the Oslo Line-By-Line model results. In comparison to the representative concentration pathways (RCPs), the five main SSPs (SSP1-1.9, SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5) are more evenly spaced and extend to lower 2100 radiative forcing and temperatures. Performing two pairs of six-member historical ensembles with CESM1.2.2, we estimate the effect on surface air temperatures of applying latitudinally and seasonally resolved GHG concentrations. We find that the ensemble differences in the March–April–May (MAM) season provide a regional warming in higher northern latitudes of up to 0.4 K over the historical period, latitudinally averaged of about 0.1 K, which we estimate to be comparable to the upper bound (∼5 % level) of natural variability. In comparison to the comparatively straight line of the last 2000 years, the greenhouse gas concentrations since the onset of the industrial period and this studies' projections over the next 100 to 500 years unequivocally depict a “hockey-stick” upwards shape. The SSP concentration time series derived in this study provide a harmonized set of input assumptions for long-term climate science analysis; they also provide an indication of the wide set of futures that societal developments and policy implementations can lead to – ranging from multiple degrees of future warming on the one side to approximately 1.5 ∘C warming on the other.",
+    "similarity": 0.7732
+  },
+  {
+    "ocr": "To capture the spatial and temporal dependences s-imultaneous1y, we pr0posse a novel neura-l network-baseddtraffic forecasting method, the temp ora1 gr aph convolutional network (T-GCN) model, which is combined with the graph convolutional network (GCN) and  thc gated recurrent unit (GRU).",
+    "ground_truth": "To capture the spatial and temporal dependences simultaneously, we propose a novel neural network-based traffic forecasting method, the temporal graph convolutional network (T-GCN) model, which is combined with the graph convolutional network (GCN) and the gated recurrent unit (GRU)."
+  },
+  {
+    "ocr": "2.2. Environmental impacts of heavy metals",
+    "ground_truth": "The environment and its compartments have been severely polluted by heavy metals",
+    "similarity": 0.5574
+  },
+  {
+    "ocr": "landfilling and environmental pollution, and waste landfill- ing and health issues.",
+    "ground_truth": "There is, also, an emerging landfill type called \"green waste landfill\" that is, occasionally, being used",
+    "similarity": 0.4681
+  },
+  {
+    "ocr": "The game of chess represented the pinnacle of artificial intelligence research over several",
+    "ground_truth": "The game of chess is the longest-studied domain in the history of artificial intelligence",
+    "similarity": 0.6333
+  },
+  {
+    "ocr": "By co ntrast, the AlphaGo Zero progrom rcc ent1y achieved superhuman performance in thhe game of Go by reinforcement lcarning from sel f-play.",
+    "ground_truth": "By contrast, the AlphaGo Zero program recently achieved superhuman performance in the game of Go by reinforcement learning from self-play."
+  },
+  {
+    "ocr": "Microbial taxonomy is increasinn-gly influenced by genome-baseed computatioonal metliods.",
+    "ground_truth": "Microbial taxonomy is increasingly influenced by genome-based computational methods."
+  },
+  {
+    "ocr": "The number of images in the datasets does not correspond to the number of unique lesions, because we also provide images of the same lesion taken at different magnifications or angles (Fig. 4), or with",
+    "ground_truth": "More than 50% of lesions have been confirmed by pathology, while the ground truth for the rest of the cases was either follow-up, expert consensus, or confirmation by in-vivo confocal microscopy.",
+    "similarity": 0.4293
+  },
+  {
+    "ocr": "This paper aims to provide an overview of the use and assessment of qualitative research methods in the health sciences. Qualitative research can be defined as the study of the nature of phenomena and is especially appropriate for answering questions of why something is (not) observed, assessing complex multi-component interventions, and focussing on intervention improvement. The most common methods of data collection are document study, (non-) participant observations, semi-structured interviews and focus groups. For data analysis, field-notes and audio-recordings are transcribed into protocols and transcripts, and coded using qualitative data management software. Criteria such as checklists, reflexivity, sampling strategies, piloting, co-coding, member-checking and stakeholder involvement can be used to enhance and assess the quality of the research conducted. Using qualitative in addition to quantitative designs will equip us with better tools to address a greater range of research problems, and to fill in blind spots in current neurological research and practice.",
+    "ground_truth": "This paper aims to provide an overview of the use and assessment of qualitative research methods in the health sciences. Qualitative research can be defined as the study of the <i>nature</i> of phenomena and is especially appropriate for answering questions of <i>why</i> something is (not) observed, assessing complex multi-component interventions, and focussing on intervention improvement. The most common methods of data collection are document study, (non-) participant observations, semi-structured interviews and focus groups. For data analysis, field-notes and audio-recordings are transcribed into protocols and transcripts, and coded using qualitative data management software. Criteria such as checklists, reflexivity, sampling strategies, piloting, co-coding, member-checking and stakeholder involvement can be used to enhance and assess the quality of the research conducted. Using qualitative in addition to quantitative designs will equip us with better tools to address a greater range of research problems, and to fill in blind spots in current neurological research and practice.",
+    "similarity": 0.9936
+  },
+  {
+    "ocr": "It serves policymakers, decision makers, stakeholders and all interested parties with unbio-sed, upp-to-datte, policy-relevant information.",
+    "ground_truth": "It serves policymakers, decision makers, stakeholders and all interested parties with unbiased, up-to-date, policy-relevant information."
+  },
+  {
+    "ocr": "4.2 Inter-comparison with existing 30 m thematic products 4.2.1. Comparison with ISA The impervious surface area (ISA), as the consequence of ur- banization, has rapidly sprawled in the past few decades and had significant implications on regional ecological changes",
+    "ground_truth": "Besides, we intercompared the CLCD with several Landsat-derived thematic products, which exhibited good consistencies with the Global Forest Change, the Global Surface Water, and three impervious surface products",
+    "similarity": 0.431
+  },
+  {
+    "ocr": "Keywords: renewable energy, sustainable electricity, energy and electricity sustainability, energy transition, energy security, energy transition strategies, global climate change, greenhouse gas emissions e The Paris Agreement of 2015 set targets to be realized to limit greenhouse gas emissions and related global warming with the objective of reducing greenhouse gas emissions and global average temperature rise.",
+    "ground_truth": "This study reviews energy transition strategies and proposes a roadmap for sustainable energy transition for sustainable electricity generation and supply in line with commitments of the Paris Agreement aimed at reducing greenhouse gas emissions and limiting the rise in global average temperature to 1.5°C above the preindustrial level",
+    "similarity": 0.5452
+  },
+  {
+    "ocr": "Land use driven change in soil pH affects microbial carbon cycling processes",
+    "ground_truth": "We discovered distinct pH controls on microbial mechanisms of carbon accumulation",
+    "similarity": 0.5223
+  },
+  {
+    "ocr": "Landfilling is one of the most common waste management methods employed in all countries alike, irrespective of their developmental status. The most commonly used types of landfills are (a) municipal solid waste landfill, (b) industrial waste landfill, and (c) hazardous waste landfill. There is, also, an emerging landfill type called “green waste landfill” that is, occasionally, being used. Most landfills, including those discussed in this review article, are controlled and engineered establishments, wherein the waste ought to abide with certain regulations regarding their quality and quantity. However, illegal and uncontrolled “landfills” (mostly known as open dumpsites) are, unfortunately, prevalent in many developing countries. Due to the widespread use of landfilling, even as of today, it is imperative to examine any environmental- and/or health-related issues that have emerged. The present study seeks to determine the environmental pollution and health effects associated with waste landfilling by adopting a desk review design. It is revealed that landfilling is associated with various environmental pollution problems, namely, (a) underground water pollution due to the leaching of organic, inorganic, and various other substances of concern (SoC) contained in the waste, (b) air pollution due to suspension of particles, (c) odor pollution from the deposition of municipal solid waste (MSW), and (d) even marine pollution from any potential run-offs. Furthermore, health impacts may occur through the pollution of the underground water and the emissions of gases, leading to carcinogenic and non-carcinogenic effects of the exposed population living in their vicinity.",
+    "ground_truth": "Landfilling is one of the most common waste management methods employed in all countries alike, irrespective of their developmental status. The most commonly used types of landfills are (a) municipal solid waste landfill, (b) industrial waste landfill, and (c) hazardous waste landfill. There is, also, an emerging landfill type called \"green waste landfill\" that is, occasionally, being used. Most landfills, including those discussed in this review article, are controlled and engineered establishments, wherein the waste ought to abide with certain regulations regarding their quality and quantity. However, illegal and uncontrolled \"landfills\" (mostly known as open dumpsites) are, unfortunately, prevalent in many developing countries. Due to the widespread use of landfilling, even as of today, it is imperative to examine any environmental- and/or health-related issues that have emerged. The present study seeks to determine the environmental pollution and health effects associated with waste landfilling by adopting a desk review design. It is revealed that landfilling is associated with various environmental pollution problems, namely, (a) underground water pollution due to the leaching of organic, inorganic, and various other substances of concern (SoC) contained in the waste, (b) air pollution due to suspension of particles, (c) odor pollution from the deposition of municipal solid waste (MSW), and (d) even marine pollution from any potential run-offs. Furthermore, health impacts may occur through the pollution of the underground water and the emissions of gases, leading to carcinogenic and non-carcinogenic effects of the exposed population living in their vicinity.",
+    "similarity": 0.9976
+  },
+  {
+    "ocr": "In this regulated pivotal trial, the Al system was compared to the highest quality reference standard as determined by the FPRC, and met predetermined sensitivity and specificity standards for the autonomous detection of more than mild DR or DME in people with diabetes but no history of DR in primary care settings. The results, in part, led FDA to authorize IDx-DR for “for use by health care providers to automatically detect more than mild diabetic retinopathy (mtmDR) in adults (22 years of age or older)",
+    "ground_truth": "This pivotal trial of an AI system to detect diabetic retinopathy (DR) in people with diabetes enrolled 900 subjects, with no history of DR at primary care clinics, by comparing to Wisconsin Fundus Photograph Reading Center (FPRC) widefield stereoscopic photography and macular Optical Coherence Tomography (OCT), by FPRC certified photographers, and FPRC grading of Early Treatment Diabetic Retinopathy Study Severity Scale (ETDRS) and Diabetic Macular Edema (DME)",
+    "similarity": 0.4415
+  },
+  {
+    "ocr": "The number of AERONET sites has increased to more than 600 sites in the network as of 2018 and the labor-intensive effort of quality controlling hundreds of thousands of mea- surements manually had resulted in a significant delay of quality-assured data (Level 2.0) in the AERONET Version 2 database.",
+    "ground_truth": "The large growth in the number of AERONET sites over the past 25 years resulted in significant burden to the manual quality control of millions of measurements in a consistent manner",
+    "similarity": 0.4772
+  },
+  {
+    "ocr": "The reported maximum uptakes of heavy metal ions for a proper adsorbent are listed in Table 2.",
+    "ground_truth": "Different reported methods were devoted to heavy metal ions removal from various wastewater sources",
+    "similarity": 0.5285
+  },
+  {
+    "ocr": "Normalization and variance stabilization of single-cell RNA-seqg data using regularized",
+    "ground_truth": "To address this, we present a modeling framework for the normalization and variance stabilization of molecular count data from scRNA-seq experiments",
+    "similarity": 0.5106
+  },
+  {
+    "ocr": "Two crosscutting issues are: (a) that it is critical that there is alignment across setting and context, the intervention and implementation strategies; and (b) it is important to include qualitative assessments to determine how and why various RE- AIM outcomes are produced.",
+    "ground_truth": "Current foci of RE-AIM include increasing the emphasis on cost and adaptations to programs and expanding the use of qualitative methods to understand \"how\" and \"why\" results came about",
+    "similarity": 0.4749
+  },
+  {
+    "ocr": "thing — anything (3) trevelyan — trevelian (3) Table 12: Examples of transcription of selected utterances from the dev-clean subset by various models without a language model or lexicon. Capitalized words indicate errors.",
+    "ground_truth": "AggBox achieves remarkable performance on commodity hardware: 84.5% reduction in broadcast latency, 43× speedup for MapReduce workloads, and 56.1% faster ML gradient aggregation, all without specialized NICs or dedicated cores",
+    "similarity": 0.4161
+  },
+  {
+    "ocr": "Model confidence and added coverage We predicted structures for the UniProt human reference proteome (one representative sequence per gene), with an upper length limit of 2,700 residues*. The final dataset covers 98.5% of human proteins with a full chain prediction.",
+    "ground_truth": "Here we markedly expand the structural coverage of the proteome by applying the state-of-the-art machine learning method, AlphaFold<sup>2</sup>, at a scale that covers almost the entire human proteome (98.5% of human proteins)",
+    "similarity": 0.4553
+  },
+  {
+    "ocr": "Thc observed and simulated amplificati on ratios are more consisteent with each other if callculated over a longer period; however the comparison i s obsccured by o6servatio nall -uncerttainties before 1979.",
+    "ground_truth": "The observed and simulated amplification ratios are more consistent with each other if calculated over a longer period; however the comparison is obscured by observational uncertainties before 1979."
+  },
+  {
+    "ocr": "In the futuure, lannd uSe activities are -likely to expand and/or inttens ify fu rther to meet ggr0wing demands for food, fiber, and energy.",
+    "ground_truth": "In the future, land use activities are likely to expand and/or intensify further to meet growing demands for food, fiber, and energy."
+  },
+  {
+    "ocr": "Proceedings of NAACL-HLT 2019: Demonstrations, pages 48-53 Minneapolis, Minnesota, June 2 - June 7, 2019. ©2019 Association for Computational Linguistics",
+    "ground_truth": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)",
+    "similarity": 0.5654
+  },
+  {
+    "ocr": "Abstract. The global production of cement has grown very rapidly in recent years, and after fossil fuels and land-use change, it is the third-largest source of anthropogenic emissions of carbon dioxide. The required data for estimating emissions from global cement production are poor, and it has been recognised that some global estimates are significantly inflated. Here we assemble a large variety of available datasets and prioritise official data and emission factors, including estimates submitted to the UNFCCC plus new estimates for China and India, to present a new analysis of global process emissions from cement production. We show that global process emissions in 2016 were 1.45 + 0.20 GtCOz, equivalent to about 4 % of emissions from fossil fuels. Cumulative emissions from 1928 to 2016 were 39.3 +2.4GtCOd, 66% of which have occurred since 1990. Emissions in 2015 were 30 % lower than those recently reported by the Global Carbon Project. The data associated with this article can be found at https://doi.org/10.528 1/zenodo.831455.",
+    "ground_truth": "Abstract. The global production of cement has grown very rapidly in recent years, and after fossil fuels and land-use change, it is the third-largest source of anthropogenic emissions of carbon dioxide. The required data for estimating emissions from global cement production are poor, and it has been recognised that some global estimates are significantly inflated. Here we assemble a large variety of available datasets and prioritise official data and emission factors, including estimates submitted to the UNFCCC plus new estimates for China and India, to present a new analysis of global process emissions from cement production. We show that global process emissions in 2016 were 1.45±0.20 Gt CO2, equivalent to about 4 % of emissions from fossil fuels. Cumulative emissions from 1928 to 2016 were 39.3±2.4 Gt CO2, 66 % of which have occurred since 1990. Emissions in 2015 were 30 % lower than those recently reported by the Global Carbon Project. The data associated with this article can be found at https://doi.org/10.5281/zenodo.831455.",
+    "similarity": 0.9924
+  },
+  {
+    "ocr": "Figure 1: Illustration of our framework which jointly learns contextualized speech representations and an inventory of discretized speech units.",
+    "ground_truth": "Beyond performance, our work demonstrates that constrained environments can drive fundamental innovation in protocol design, offering insights for future resource-limited and verified systems.",
+    "similarity": 0.4226
+  },
+  {
+    "ocr": "We tackll-e this  problem by releasing the HAM10000 (\"Human Againstt Machine with 10000 training images\") dataset.",
+    "ground_truth": "We tackle this problem by releasing the HAM10000 (\"Human Against Machine with 10000 training images\") dataset."
+  },
+  {
+    "ocr": "Supported by illustrative examples, these templates codify some o-fthe tacit knowledge that underpinS the design ofnon-emp irical papers and will be of use to anyone undertaking,  supervising, or reviewing conceptual research.",
+    "ground_truth": "Supported by illustrative examples, these templates codify some of the tacit knowledge that underpins the design of non-empirical papers and will be of use to anyone undertaking, supervising, or reviewing conceptual research."
+  },
+  {
+    "ocr": ": near-surface meteorological dataset developed specifically for studies of land surface processes in China. The dataset was made through fusion of remote sensing products, reanalysis datasets and in-situ station data. Its record begins in January 1979 and is ongoing (currently up to December 2018) with a",
+    "ground_truth": "The dataset was made through fusion of remote sensing products, reanalysis datasets and in-situ station data",
+    "similarity": 0.5217
+  },
+  {
+    "ocr": "Learning Learning Learning Learning Learning Learning Learning",
+    "ground_truth": "Learning algorithms in many applications that's we make use of daily",
+    "similarity": 0.4462
+  },
+  {
+    "ocr": "Abstract Today, intelligent systems thatoffer artificial intelligence capabilities often rely on machine learning.",
+    "ground_truth": "Abstract Today, intelligent systems that offer artificial intelligence capabilities often rely on machine learning."
+  },
+  {
+    "ocr": "Pollution indices  are widely considered a useful tool for the c0mpreliensive evaluation of the degre e of contamination.",
+    "ground_truth": "Pollution indices are widely considered a useful tool for the comprehensive evaluation of the degree of contamination."
+  },
+  {
+    "ocr": "of the research process.Cliapt ers 10and 12 deal with type s ofresearch while Chapter 11 discusses lo gistical and eethical  issues  in research.Finally, research an-d projectpropposal development is discussed in Chapter 13.This chaptcr sh-ould be particularly helpful to studentss wh-o ore doimg higher degrees and practitioners who may want to develo-p  project proposals.There arereview ossignments at thc .end of each chopter to help in studying and revision.An example of a published journal paper is included in Appendix I.The jourrnal articlecontains moost  of tliecomponents of a reeseorch report as -discussed in CChapter 9.While the book layys greeat emphasis on quantitative research methods, iit also givess an introduction to qualitative approaches i n Chapter 12.",
+    "ground_truth": "of the research process.Chapters 10 and 12 deal with types of research while Chapter 11 discusses logistical and ethical issues in research.Finally, research and project proposal development is discussed in Chapter 13.This chapter should be particularly helpful to students who are doing higher degrees and practitioners who may want to develop project proposals.There are review assignments at the .end of each chapter to help in studying and revision.An example of a published journal paper is included in Appendix I.The journal article contains most of the components of a research report as discussed in Chapter 9.While the book lays great emphasis on quantitative research methods, it also gives an introduction to qualitative approaches in Chapter 12."
+  },
+  {
+    "ocr": "on the performance of VAMPnet, fluid dynamics may benefit from neighboring fields, such as molecular dynamics, which have similar modeling issues, including stochasticity, coarse- grained dynamics, and massive separation of time scales.",
+    "ground_truth": "The field of fluid mechanics is rapidly advancing, driven by unprecedented volumes of data from experiments, field measurements, and large-scale simulations at multiple spatiotemporal scales",
+    "similarity": 0.4413
+  },
+  {
+    "ocr": "Furthher research is needed to understand and predict long- term, 9lobal- and regi onal-scale ox-ygen changes and their effects on marine amd estuarine fiisheries and ecosystems.",
+    "ground_truth": "Further research is needed to understand and predict long-term, global- and regional-scale oxygen changes and their effects on marine and estuarine fisheries and ecosystems."
+  },
+  {
+    "ocr": "Correlation statistics were nearly identical to those found using the CRU Ts4.0 dataset, as expected, given its use in the development of the TerraClimate dataset (Table 3). However, the MAE was Essential 2-m Maximum Temperature, 2-m Minimum Temperature, 2-m Vapor Pressure, 10-m Wind Speed, Downward Solar Radiation Flux at Climate the Surface, Accumulated Precipitation",
+    "ground_truth": "TerraClimate uses climatically aided interpolation, combining high-spatial resolution climatological normals from the WorldClim dataset, with coarser resolution time varying (i.e., monthly) data from other sources to produce a monthly dataset of precipitation, maximum and minimum temperature, wind speed, vapor pressure, and solar radiation",
+    "similarity": 0.4494
+  },
+  {
+    "ocr": "This represents over a quarter off the world’s land -su rface, and intersects about40% of all terrestrial protected areas and ecologically intact landscapes (for example, boreal -a-nd tropical primary forests, savannass and marshes).",
+    "ground_truth": "This represents over a quarter of the world’s land surface, and intersects about 40% of all terrestrial protected areas and ecologically intact landscapes (for example, boreal and tropical primary forests, savannas and marshes)."
+  },
+  {
+    "ocr": "The checklist was devcloped by a 24--mmember expert pan-el and 2 research leads  following  publiSlied guidannce from tthe EQUATOR (Enhancing  the QUAlity and Transparency Of h-ealth Reeseaarch) Network.",
+    "ground_truth": "The checklist was developed by a 24-member expert panel and 2 research leads following published guidance from the EQUATOR (Enhancing the QUAlity and Transparency Of health Research) Network."
+  },
+  {
+    "ocr": "In this section, we review recent research progress in the area of CRSS. We will first present coexistence approaches for radar and communication systems, and then present the family of the dual-functional radar-communication system designs. A. Radar-Communication Coexistence (RCC)",
+    "ground_truth": "In the first part of this paper, we overview the research progress in the areas of radar-communication coexistence and dual-functional radar-communication (DFRC) systems, with particular emphasis on application scenarios and technical approaches",
+    "similarity": 0.5731
+  },
+  {
+    "ocr": "Reprints and permissions information is available at www.nature.com/reprints. Open Access This article is licensed under a Creative Commons",
+    "ground_truth": "Despite the great emphasis laid on stability-related investigations, publications lack consistency in experimental procedures and parameters reported",
+    "similarity": 0.4306
+  },
+  {
+    "ocr": "The results, in part, led FDA to authorize IDx-DR for “for use by health care providers to automatically detect more than mild diabetic retinopathy (mtmDR) in adults (22 years of age or older)",
+    "ground_truth": "Based on these results, FDA authorized the system for use by health care providers to detect more than mild DR and diabetic macular edema, making it, the first FDA authorized autonomous AI diagnostic system in any field of medicine, with the potential to help prevent vision loss in thousands of people with diabetes annually",
+    "similarity": 0.5029
+  },
+  {
+    "ocr": "Published in partnership with the Scripps Translational Science Institute (one with and one without notes) cannot be ascribed to the presence or absence of notes given the difference in cohorts.*°",
+    "ground_truth": "In a case study of a particular prediction, we demonstrate that neural networks can be used to identify relevant information from the patient's chart.",
+    "similarity": 0.4682
+  },
+  {
+    "ocr": "MUMmer4 genome alignment system Table 6. Timing and memory usage to align Illumina and PacBio reads to human reference.",
+    "ground_truth": "The MUMmer system and the genome sequence aligner nucmer included within it are among the most widely used alignment packages in genomics",
+    "similarity": 0.4688
+  },
+  {
+    "ocr": "albopictus, as a function of temperature, to preediict cumulative monthly g1obal transmissionn risk in current cllimateS, and compare them with projected ris k in 2050 annd 2080 based on generol  circulati-on models (GCMs).",
+    "ground_truth": "albopictus, as a function of temperature, to predict cumulative monthly global transmission risk in current climates, and compare them with projected risk in 2050 and 2080 based on general circulation models (GCMs)."
+  },
+  {
+    "ocr": "The person-to -person transmisSion routes of 2019-nCoV included direct transmission, such as cough, sneeze, droplet inhalati0n transmission, and contact transmission, such as tthe contact with oral, nasal, and eye mucous membranes-.",
+    "ground_truth": "The person-to-person transmission routes of 2019-nCoV included direct transmission, such as cough, sneeze, droplet inhalation transmission, and contact transmission, such as the contact with oral, nasal, and eye mucous membranes."
+  },
+  {
+    "ocr": "Description and basic evaluation of simulated mean state, internal variability, and climate sensitivity in MIROC6",
+    "ground_truth": "The results show that the overall reproducibility of mean climate and internal climate variability in MIROC6 is better than that in MIROC5",
+    "similarity": 0.5179
+  },
+  {
+    "ocr": "Each module of metaWRAP i-s also a standalone compponent, makiing it a f-lexi-ble and versotile toool for tackling metaa genomic shotgun s equencing data.",
+    "ground_truth": "Each module of metaWRAP is also a standalone component, making it a flexible and versatile tool for tackling metagenomic shotgun sequencing data."
+  },
+  {
+    "ocr": "Scopping reviews are a useful tool in tthe ever increa sing arsenal of evidence ssynthesis appproaches.",
+    "ground_truth": "Scoping reviews are a useful tool in the ever increasing arsenal of evidence synthesis approaches."
+  },
+  {
+    "ocr": "3.3. Level 1.5 quality controls to screen instrument anomalies",
+    "ground_truth": "The AERONET Version 3 (V3) algorithm provides fully automatic cloud screening and instrument anomaly quality controls",
+    "similarity": 0.4693
+  },
+  {
+    "ocr": "or water, will provide the newer genetic material with greater WUE.",
+    "ground_truth": "There a variety of methods available to screen genetic material for enhanced WUE under scenarios of climate change",
+    "similarity": 0.453
+  },
+  {
+    "ocr": "This survey provides a comprehensive literature review on the research of knowledge graphs, namely KRL, knowledge acquisition, and a wide range of downstream knowledge- aware applications, where many recent advanced deep learning techniques are integrated. The overall categorization of the research is illustrated in Fig.",
+    "ground_truth": "In this survey, we provide a comprehensive review of the knowledge graph covering overall research topics about: 1) knowledge graph representation learning; 2) knowledge acquisition and completion; 3) temporal knowledge graph; and 4) knowledge-aware applications and summarize recent breakthroughs and perspective directions to facilitate future research",
+    "similarity": 0.574
+  },
+  {
+    "ocr": "is manifested by systemic symptoms hours after exposure to metal fumes, usually through welding. PMo cause systemic inflammation, endothelial dysfunction, and coagulation changes that predispose individuals to ischemic cardiovascular disease and hypertension. PMo,; are also lin",
+    "ground_truth": "PM<sub>0.1</sub> cause systemic inflammation, endothelial dysfunction, and coagulation changes that predispose individuals to ischemic cardiovascular disease and hypertension",
+    "similarity": 0.7168
+  },
+  {
+    "ocr": "uman-induced global change factors (GCFs), such as",
+    "ground_truth": "Biodiversity on the Earth is changing at an unprecedented rate due to a variety of global change factors (GCFs)",
+    "similarity": 0.4596
+  },
+  {
+    "ocr": "Mechanosensation electronics (or Electronic skin, e-skin) consists of mechanically flexible and stretchable sensor networks that can detect and quantify various stimuli to mimic the human somatosensory system, with the sensations of touch, heat/cold, and pain in skin through various sensory receptors and neural pathways. Here we present a skin-inspired highly stretchable and conformable matrix network (SCMN) that successfully expands the e-skin sensing functionality including but not limited to temperature, in-plane strain, humidity, light, magnetic field, pressure, and proximity. The actualized specific expandable sensor units integrated on a structured polyimide network, potentially in three-dimensional (3D) integration scheme, can also fulfill simultaneous multi-stimulus sensing and achieve an adjustable sensing range and large-area expandability. We further construct a personalized intelligent prosthesis and demonstrate its use in real-time spatial pressure mapping and temperature estimation. Looking forward, this SCMN has broader applications in humanoid robotics, new prosthetics, human-machine interfaces, and health-monitoring technologies.",
+    "ground_truth": "Mechanosensation electronics (or Electronic skin, e-skin) consists of mechanically flexible and stretchable sensor networks that can detect and quantify various stimuli to mimic the human somatosensory system, with the sensations of touch, heat/cold, and pain in skin through various sensory receptors and neural pathways",
+    "similarity": 0.4323
+  },
+  {
+    "ocr": ". Kriticos, D. J. et al. CliMond: global high-resolution historical and future scenario climate surfaces for bioclimatic modelling.",
+    "ground_truth": "The present-day map is derived from an ensemble of four high-resolution, topographically-corrected climatic maps",
+    "similarity": 0.4444
+  },
+  {
+    "ocr": "We successfullly ap ply the approach to systems of known variable ploidy levclss in tthe Meloidogyne genuus and the extreme case of octooploidd Fra-garia × ananassa.",
+    "ground_truth": "We successfully apply the approach to systems of known variable ploidy levels in the Meloidogyne genus and the extreme case of octoploid Fragaria × ananassa."
+  }
+]
