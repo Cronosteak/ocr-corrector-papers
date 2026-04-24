@@ -25,6 +25,7 @@ pydantic>=2.5.0
 python-dotenv>=1.0.0
 PyYAML>=6.0.1
 tqdm>=4.66.0
+psutil>=5.9.0
 
 # Notebooks
 jupyter>=1.0.0
