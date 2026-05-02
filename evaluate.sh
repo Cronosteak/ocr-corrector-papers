@@ -1,13 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=ocr-corrector
-#SBATCH --output=logs/train_%j.log
-#SBATCH --error=logs/train_%j.err
+#SBATCH --job-name=ocr-postprocess
+#SBATCH --output=logs/postprocess_%j.log
+#SBATCH --error=logs/postprocess_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --partition=gpu
+#SBATCH --account=prosei
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
+
 
 # ── Adjust these paths ────────────────────────────────────────────────────────
 SIF_PATH="$HOME/ocr-corrector.sif"
@@ -17,15 +19,18 @@ REPO_PATH="$HOME/ocr-corrector-papers"
 export CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
 
 mkdir -p "$REPO_PATH/logs"
-mkdir -p "$REPO_PATH/models/ocr-corrector"
 
 echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
 echo "SLURM_JOB_NODELIST  : $SLURM_JOB_NODELIST"
 echo "SLURM_JOBID         : $SLURM_JOBID"
 echo "Start time          : $(date)"
 
-singularity run --nv \
+# postprocess overrides the container CMD via exec
+singularity exec --nv \
     -B "$REPO_PATH":/app \
-    "$SIF_PATH"
+    "$SIF_PATH" \
+    python -m src.model.postprocess \
+        --model models/ocr-corrector \
+        --data  data/pairs/synthetic_test.json
 
 echo "End time: $(date)"
