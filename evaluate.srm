@@ -2,24 +2,30 @@
 #SBATCH --job-name=ocr-postprocess
 #SBATCH --output=logs/postprocess_%j.log
 #SBATCH --error=logs/postprocess_%j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
-#SBATCH --time=02:00:00
 
 # ── Adjust these paths ────────────────────────────────────────────────────────
 SIF_PATH="$HOME/ocr-corrector.sif"
 REPO_PATH="$HOME/ocr-corrector-papers"
 # ─────────────────────────────────────────────────────────────────────────────
 
+export CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
+
 mkdir -p "$REPO_PATH/logs"
 
-echo "Job ID     : $SLURM_JOB_ID"
-echo "Node       : $SLURMD_NODENAME"
-echo "Start time : $(date)"
+echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
+echo "SLURM_JOB_NODELIST  : $SLURM_JOB_NODELIST"
+echo "SLURM_JOBID         : $SLURM_JOBID"
+echo "Start time          : $(date)"
 
+# postprocess overrides the container CMD via exec
 singularity exec --nv \
-    --bind "$REPO_PATH":/app \
+    -B "$REPO_PATH":/app \
     "$SIF_PATH" \
     python -m src.model.postprocess \
         --model models/ocr-corrector \
