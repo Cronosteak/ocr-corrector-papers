@@ -5,21 +5,13 @@ FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    software-properties-common \
     git \
     curl \
     wget \
     build-essential \
-    pkg-config \
-    # Required for pdf2image and pytesseract
-    poppler-utils \
-    tesseract-ocr \
-    libsm6 \
-    libxext6 \
-    && add-apt-repository ppa:deadsnakes/ppa \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends \
-    python3.10 python3.10-distutils python3.10-dev python3-pip \
+    python3.10 \
+    python3.10-dev \
+    python3-pip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
