@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ocr-corrector
-#SBATCH --output=logs/train_%j.log
+#SBATCH --output=logs/train_%j.output
 #SBATCH --error=logs/train_%j.err
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -12,8 +12,8 @@
 
 
 # ── Adjust these paths ────────────────────────────────────────────────────────
-SIF_PATH="$HOME/ocr-corrector.sif"
 REPO_PATH="$HOME/ocr-corrector-papers"
+SIF_PATH="$REPO_PATH/singularity/ocr-corrector.sif"
 # ─────────────────────────────────────────────────────────────────────────────
 
 export CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
@@ -21,13 +21,23 @@ export CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
 mkdir -p "$REPO_PATH/logs"
 mkdir -p "$REPO_PATH/models/ocr-corrector"
 
-echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
-echo "SLURM_JOB_NODELIST  : $SLURM_JOB_NODELIST"
+echo "========================================"
+echo " OCR Corrector — Training Job"
+echo "========================================"
 echo "SLURM_JOBID         : $SLURM_JOBID"
+echo "SLURM_JOB_NODELIST  : $SLURM_JOB_NODELIST"
+echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
+echo "REPO                : $REPO_PATH"
+echo "SIF                 : $SIF_PATH"
 echo "Start time          : $(date)"
+echo "========================================"
 
 singularity run --nv \
     -B "$REPO_PATH":/app \
     "$SIF_PATH"
 
-echo "End time: $(date)"
+EXIT_CODE=$?
+echo "========================================"
+echo "End time  : $(date)"
+echo "Exit code : $EXIT_CODE"
+echo "========================================"
