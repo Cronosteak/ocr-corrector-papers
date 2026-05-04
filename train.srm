@@ -33,6 +33,7 @@ echo "Start time          : $(date)"
 echo "========================================"
 
 singularity run --nv \
+    --pwd /app \
     -B "$REPO_PATH":/app \
     "$SIF_PATH"
 

@@ -32,6 +32,7 @@ echo "Start time          : $(date)"
 echo "========================================"
 
 singularity exec --nv \
+    --pwd /app \
     -B "$REPO_PATH":/app \
     "$SIF_PATH" \
     python -m src.model.postprocess \
