@@ -12,7 +12,7 @@
 
 
 # ── Adjust these paths ────────────────────────────────────────────────────────
-REPO_PATH="$HOME/ocr-corrector-papers"
+REPO_PATH="/share_beta/prosei/Breinner/ocr-corrector-papers"
 SIF_PATH="$REPO_PATH/singularity/ocr-corrector.sif"
 # ─────────────────────────────────────────────────────────────────────────────
 
