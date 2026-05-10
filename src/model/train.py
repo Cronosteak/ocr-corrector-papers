@@ -14,6 +14,7 @@ from transformers import (
     AutoModelForSeq2SeqLM,
     AutoTokenizer,
     DataCollatorForSeq2Seq,
+    EarlyStoppingCallback,
     Seq2SeqTrainer,
     Seq2SeqTrainingArguments,
 )
@@ -73,6 +74,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
     dataloader_num_workers = config.get("dataloader_num_workers", 2)
     max_grad_norm = config.get("max_grad_norm", 1.0)
     optim = config.get("optim", "adafactor")
+    early_stopping_patience = config.get("early_stopping_patience", 0)
 
     logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16} | optim: {optim}")
 
@@ -123,6 +125,8 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
         eval_dataset=val_ds,
         processing_class=tokenizer,
         data_collator=data_collator,
+        callbacks=[EarlyStoppingCallback(early_stopping_patience=early_stopping_patience)]
+        if early_stopping_patience > 0 else None,
     )
 
     logger.info("Iniciando entrenamiento...")

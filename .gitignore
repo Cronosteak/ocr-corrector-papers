@@ -23,19 +23,29 @@ build/
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
+# Singularity images (too large for git)
+singularity/
+
 # Datos crudos y PDFs (pesados, no versionar)
 data/raw/
 data/ocr/
 data/ground_truth/
 
 # Modelos entrenados (binarios pesados)
+models/
 *.pt
 *.bin
 *.safetensors
 
+# Singularity images
+singularity/*.sif
+
 # Logs
 logs/
 *.log
+
+# Paper (solo local)
+paper/
 
 # IDEs
 .vscode/

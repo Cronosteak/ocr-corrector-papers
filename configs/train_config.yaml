@@ -13,13 +13,14 @@ prefix: "correct OCR: "
 batch_size: 8
 gradient_accumulation_steps: 2
 learning_rate: 1.0e-4
-num_epochs: 100
-warmup_steps: 0
-weight_decay: 0.0
+num_epochs: 15
+warmup_steps: 200
+weight_decay: 0.01
 max_grad_norm: 1.0
 optim: adafactor
 fp16: false
 seed: 42
+early_stopping_patience: 3
 
 # Data splits
 train_split: 0.8
