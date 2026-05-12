@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 _PREFIX = "correct OCR: "
 _MAX_INPUT = 512
-_MAX_OUTPUT = 128
+_MAX_OUTPUT = 256
 
 
 def load_model(model_path: str):

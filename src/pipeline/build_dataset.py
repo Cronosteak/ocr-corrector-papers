@@ -36,8 +36,17 @@ _OCR_CONFUSIONS = {
     "fi": "ﬁ", "s": "S", "g": "9", "b": "6",
 }
 
-# Tasas de ruido: leve, media, fuerte
-_NOISE_RATES = [0.04, 0.08, 0.12]
+# Tasas de ruido: muy leve, leve, media, fuerte (máx 0.08 para evitar alucinaciones)
+_NOISE_RATES = [0.02, 0.04, 0.06, 0.08]
+
+
+def _clean_text(text: str) -> str:
+    """Elimina HTML, normaliza espacios y filtra caracteres no-ASCII problemáticos."""
+    # Quitar tags HTML
+    text = re.sub(r"<[^>]+>", "", text)
+    # Normalizar espacios múltiples
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def _inject_ocr_noise(text: str, rate: float = 0.08) -> str:
@@ -80,6 +89,7 @@ def build_synthetic_pairs(gt_files: list, n_per_doc: int = 10) -> list[dict]:
         text = gt_file.read_text(encoding="utf-8").strip()
         if not text or len(text) < 40:
             continue
+        text = _clean_text(text)
         sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if len(s.strip()) > 30]
         for sent in sentences[:n_per_doc]:
             for rate in _NOISE_RATES:

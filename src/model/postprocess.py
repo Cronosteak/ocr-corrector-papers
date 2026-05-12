@@ -7,7 +7,6 @@ All outputs are saved as PNG/JSON files (no display needed — cluster-safe).
 import argparse
 import json
 import logging
-import random
 from pathlib import Path
 
 import matplotlib
@@ -102,7 +101,9 @@ def plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir: Path) -
 
 def save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, out_dir: Path, n: int = 5) -> None:
     gt_texts = [p["ground_truth"] for p in test_pairs]
-    indices = random.sample(range(len(test_pairs)), min(n, len(test_pairs)))
+    # Seleccionar los n ejemplos con oraciones más largas (más informativos)
+    sorted_indices = sorted(range(len(test_pairs)), key=lambda i: len(gt_texts[i]), reverse=True)
+    indices = sorted_indices[:n]
     examples = []
     for idx in indices:
         examples.append({
@@ -154,7 +155,7 @@ def run(model_path: str, data_path: str) -> None:
     corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)
 
     plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir)
-    save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, out_dir)
+    save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, out_dir, n=10)
 
     logger.info("All post-processing complete.")
 
