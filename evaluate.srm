@@ -35,9 +35,10 @@ singularity exec --nv \
     --pwd /app \
     -B "$REPO_PATH":/app \
     "$SIF_PATH" \
-    python -m src.model.postprocess \
-        --model models/ocr-corrector_test2 \
-        --data  data/pairs/synthetic_test.json
+    bash -c "pip install --user --quiet sacrebleu pyspellchecker && \
+             python -m src.model.postprocess \
+                 --model models/ocr-corrector_test2 \
+                 --data  data/pairs/synthetic_test.json"
 
 EXIT_CODE=$?
 echo "========================================"
