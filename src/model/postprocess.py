@@ -1,12 +1,14 @@
 """
-postprocess.py — Post-training analysis: training curves, CER/WER bar chart,
-CER per-sample histogram, and qualitative examples.
+postprocess.py — Post-training analysis: training curves, CER/WER/BLEU,
+per-noise-level breakdown, baselines (raw OCR + spellchecker),
+per-sample distribution, qualitative examples.
 All outputs are saved as PNG/JSON files (no display needed — cluster-safe).
 """
 
 import argparse
 import json
 import logging
+from collections import defaultdict
 from pathlib import Path
 
 import matplotlib
@@ -14,8 +16,15 @@ matplotlib.use("Agg")  # non-interactive backend, required on cluster
 import matplotlib.pyplot as plt
 from jiwer import cer as compute_cer
 
-from src.model.evaluate import evaluate_model
-from src.model.predict import correct_batch, correct_text, load_model
+from src.model.baselines import spellcheck_correct
+from src.model.predict import correct_batch, load_model
+from src.utils.metrics import (
+    calculate_bleu,
+    calculate_cer,
+    calculate_exact_match,
+    calculate_improvement,
+    calculate_wer,
+)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -50,30 +59,131 @@ def plot_training_curves(history_path: Path, out_dir: Path) -> None:
     logger.info(f"Saved: {out}")
 
 
-def plot_cer_wer_bar(results: dict, out_dir: Path) -> None:
-    metrics = ["CER", "WER"]
-    baseline  = [results["baseline_cer"], results["baseline_wer"]]
-    corrected = [results["cer"]["corrected"], results["wer"]["corrected"]]
-    improvement = [results["cer"]["relative_improvement_pct"], results["wer"]["relative_improvement_pct"]]
+def _metric_block(preds, refs):
+    return {
+        "cer": round(calculate_cer(preds, refs), 4),
+        "wer": round(calculate_wer(preds, refs), 4),
+        "bleu": round(calculate_bleu(preds, refs), 2),
+        "exact_match_pct": round(calculate_exact_match(preds, refs), 2),
+    }
 
-    x = range(len(metrics))
-    fig, ax = plt.subplots(figsize=(7, 5))
-    bars1 = ax.bar([i - 0.2 for i in x], baseline,  width=0.4, label="Baseline (raw OCR)", color="#e74c3c")
-    bars2 = ax.bar([i + 0.2 for i in x], corrected, width=0.4, label="Corrected (flan-t5)", color="#2ecc71")
-    ax.set_xticks(list(x))
+
+def evaluate_all(test_pairs, model_path: str):
+    """
+    Evalúa: raw OCR baseline, spellchecker baseline, modelo corregido.
+    Devuelve overall metrics, per-noise-level metrics y los textos generados.
+    """
+    ocr_texts = [p["ocr"] for p in test_pairs]
+    gt_texts  = [p["ground_truth"] for p in test_pairs]
+    noise_rates = [p.get("noise_rate") for p in test_pairs]
+
+    # Baseline 1: raw OCR
+    logger.info("Evaluating baseline (raw OCR)...")
+    baseline_block = _metric_block(ocr_texts, gt_texts)
+
+    # Baseline 2: spellchecker
+    logger.info("Evaluating spellchecker baseline...")
+    spell_texts = spellcheck_correct(ocr_texts)
+    spell_block = _metric_block(spell_texts, gt_texts)
+
+    # Modelo corregido
+    logger.info("Loading model and generating corrections...")
+    model, tokenizer = load_model(model_path)
+    corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)
+    corrected_block = _metric_block(corrected_texts, gt_texts)
+
+    overall = {
+        "num_samples": len(test_pairs),
+        "raw_ocr":     baseline_block,
+        "spellcheck":  spell_block,
+        "model":       corrected_block,
+        "improvement_vs_raw": {
+            "cer":  calculate_improvement(baseline_block["cer"],  corrected_block["cer"]),
+            "wer":  calculate_improvement(baseline_block["wer"],  corrected_block["wer"]),
+        },
+        "improvement_vs_spellcheck": {
+            "cer":  calculate_improvement(spell_block["cer"],  corrected_block["cer"]),
+            "wer":  calculate_improvement(spell_block["wer"],  corrected_block["wer"]),
+        },
+    }
+
+    # Per noise level
+    per_level = {}
+    if any(r is not None for r in noise_rates):
+        buckets = defaultdict(list)
+        for i, r in enumerate(noise_rates):
+            if r is not None:
+                buckets[r].append(i)
+        for rate in sorted(buckets):
+            idxs = buckets[rate]
+            ocr_s   = [ocr_texts[i]       for i in idxs]
+            gt_s    = [gt_texts[i]        for i in idxs]
+            spell_s = [spell_texts[i]     for i in idxs]
+            corr_s  = [corrected_texts[i] for i in idxs]
+            per_level[f"r={rate:.2f}"] = {
+                "n":           len(idxs),
+                "raw_ocr":     _metric_block(ocr_s,   gt_s),
+                "spellcheck":  _metric_block(spell_s, gt_s),
+                "model":       _metric_block(corr_s,  gt_s),
+            }
+
+    return overall, per_level, ocr_texts, gt_texts, spell_texts, corrected_texts
+
+
+def plot_cer_wer_bar(overall: dict, out_dir: Path) -> None:
+    metrics = ["CER", "WER"]
+    raw   = [overall["raw_ocr"]["cer"],    overall["raw_ocr"]["wer"]]
+    spell = [overall["spellcheck"]["cer"], overall["spellcheck"]["wer"]]
+    model = [overall["model"]["cer"],      overall["model"]["wer"]]
+
+    x = list(range(len(metrics)))
+    fig, ax = plt.subplots(figsize=(8, 5))
+    w = 0.27
+    ax.bar([i - w for i in x], raw,   width=w, label="Raw OCR",       color="#e74c3c")
+    ax.bar(x,                  spell, width=w, label="Spellchecker",  color="#f39c12")
+    ax.bar([i + w for i in x], model, width=w, label="Ours (flan-t5)", color="#2ecc71")
+    ax.set_xticks(x)
     ax.set_xticklabels(metrics, fontsize=13)
     ax.set_ylabel("Error rate (lower is better)")
-    ax.set_title("CER / WER: Baseline vs Corrected model (synthetic test set)")
+    ax.set_title("CER / WER comparison across methods")
     ax.legend()
-    ax.set_ylim(0, 1.1)
-    for bar in list(bars1) + list(bars2):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.02,
-                f"{bar.get_height():.3f}", ha="center", fontsize=10)
-    for i, pct in enumerate(improvement):
-        color = "#27ae60" if pct > 0 else "#c0392b"
-        ax.text(i, 1.07, f"{'+' if pct > 0 else ''}{pct:.1f}%", ha="center", fontsize=9, color=color)
+    ax.set_ylim(0, max(raw + spell + model) * 1.25)
+    for i, vals in enumerate(zip(raw, spell, model)):
+        for j, v in enumerate(vals):
+            ax.text(i + (j - 1) * w, v + 0.005, f"{v:.3f}", ha="center", fontsize=9)
     plt.tight_layout()
     out = out_dir / "cer_wer_comparison.png"
+    plt.savefig(out, dpi=150)
+    plt.close()
+    logger.info(f"Saved: {out}")
+
+
+def plot_per_noise_level(per_level: dict, out_dir: Path) -> None:
+    if not per_level:
+        return
+    rates = list(per_level.keys())
+    raw_cer   = [per_level[r]["raw_ocr"]["cer"]    for r in rates]
+    spell_cer = [per_level[r]["spellcheck"]["cer"] for r in rates]
+    model_cer = [per_level[r]["model"]["cer"]      for r in rates]
+    raw_wer   = [per_level[r]["raw_ocr"]["wer"]    for r in rates]
+    spell_wer = [per_level[r]["spellcheck"]["wer"] for r in rates]
+    model_wer = [per_level[r]["model"]["wer"]      for r in rates]
+
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5))
+    for ax, raw, spell, model, title in [
+        (axes[0], raw_cer, spell_cer, model_cer, "CER vs noise level"),
+        (axes[1], raw_wer, spell_wer, model_wer, "WER vs noise level"),
+    ]:
+        ax.plot(rates, raw,   marker="o", label="Raw OCR",      color="#e74c3c", linewidth=2)
+        ax.plot(rates, spell, marker="s", label="Spellchecker", color="#f39c12", linewidth=2)
+        ax.plot(rates, model, marker="^", label="Ours (flan-t5)", color="#2ecc71", linewidth=2)
+        ax.set_xlabel("Noise rate")
+        ax.set_ylabel("Error rate")
+        ax.set_title(title)
+        ax.grid(True, alpha=0.3)
+        ax.legend()
+    plt.tight_layout()
+    out = out_dir / "metrics_per_noise_level.png"
     plt.savefig(out, dpi=150)
     plt.close()
     logger.info(f"Saved: {out}")
@@ -99,22 +209,19 @@ def plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir: Path) -
     logger.info(f"Saved: {out}")
 
 
-def save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, out_dir: Path, n: int = 5) -> None:
+def save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, spell_texts, out_dir: Path, n: int = 10) -> None:
     gt_texts = [p["ground_truth"] for p in test_pairs]
-    # Seleccionar los n ejemplos con oraciones más largas (más informativos)
     sorted_indices = sorted(range(len(test_pairs)), key=lambda i: len(gt_texts[i]), reverse=True)
     indices = sorted_indices[:n]
     examples = []
     for idx in indices:
         examples.append({
-            "ocr":        ocr_texts[idx],
-            "corrected":  corrected_texts[idx],
+            "noise_rate":   test_pairs[idx].get("noise_rate"),
+            "ocr":          ocr_texts[idx],
+            "spellcheck":   spell_texts[idx],
+            "corrected":    corrected_texts[idx],
             "ground_truth": gt_texts[idx],
         })
-        logger.info(f"\n--- Example {idx} ---\n"
-                    f"OCR:       {ocr_texts[idx][:120]}\n"
-                    f"Corrected: {corrected_texts[idx][:120]}\n"
-                    f"GT:        {gt_texts[idx][:120]}")
     out = out_dir / "qualitative_examples.json"
     with open(out, "w") as f:
         json.dump(examples, f, indent=2, ensure_ascii=False)
@@ -132,30 +239,23 @@ def run(model_path: str, data_path: str) -> None:
     else:
         logger.warning(f"train_history.json not found at {history_path}, skipping curves.")
 
-    # 2. Evaluate CER/WER
-    logger.info("Running evaluation...")
-    results = evaluate_model(pairs_path=data_path, model_path=model_path)
+    # 2. Full evaluation: raw OCR, spellchecker, model — overall + per-noise-level
+    test_pairs = json.load(open(data_path))
+    overall, per_level, ocr_texts, gt_texts, spell_texts, corrected_texts = evaluate_all(
+        test_pairs, model_path
+    )
+
+    results = {"overall": overall, "per_noise_level": per_level}
     results_path = out_dir / "eval_results.json"
     with open(results_path, "w") as f:
         json.dump(results, f, indent=2)
     logger.info(f"Saved: {results_path}")
 
-    if "cer" not in results:
-        logger.error("Evaluation did not return model metrics. Aborting plots.")
-        return
-
-    plot_cer_wer_bar(results, out_dir)
-
-    # 3. Per-sample CER histogram + qualitative examples (reuse predictions)
-    logger.info("Loading model for per-sample analysis...")
-    model, tokenizer = load_model(model_path)
-    test_pairs = json.load(open(data_path))
-    ocr_texts = [p["ocr"] for p in test_pairs]
-    gt_texts  = [p["ground_truth"] for p in test_pairs]
-    corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)
-
+    # 3. Plots
+    plot_cer_wer_bar(overall, out_dir)
+    plot_per_noise_level(per_level, out_dir)
     plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir)
-    save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, out_dir, n=10)
+    save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, spell_texts, out_dir, n=10)
 
     logger.info("All post-processing complete.")
 

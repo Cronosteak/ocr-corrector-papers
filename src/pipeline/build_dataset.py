@@ -49,22 +49,22 @@ def _clean_text(text: str) -> str:
     return text
 
 
-def _inject_ocr_noise(text: str, rate: float = 0.08) -> str:
+def _inject_ocr_noise(text: str, rate: float = 0.08, seed: int | None = None) -> str:
     """Inyecta ruido OCR sintético en un texto limpio."""
-    random.seed(None)
+    rng = random.Random(seed)
     chars = list(text)
     i = 0
     while i < len(chars):
-        if random.random() > rate:
+        if rng.random() > rate:
             i += 1
             continue
-        action = random.randint(0, 3)
+        action = rng.randint(0, 3)
         if action == 0 and chars[i] in _OCR_CONFUSIONS:
             # sustitución de carácter
             chars[i] = _OCR_CONFUSIONS[chars[i]]
         elif action == 1 and chars[i] != " ":
             # inserción de espacio o guión
-            chars.insert(i, random.choice([" ", "-"]))
+            chars.insert(i, rng.choice([" ", "-"]))
             i += 1
         elif action == 2 and i + 1 < len(chars) and chars[i] == " ":
             # eliminar espacio (palabras pegadas)
@@ -85,6 +85,7 @@ def build_synthetic_pairs(gt_files: list, n_per_doc: int = 10) -> list[dict]:
     de ruido por cada tasa en _NOISE_RATES (leve, media, fuerte).
     """
     pairs = []
+    pair_counter = 0
     for gt_file in gt_files:
         text = gt_file.read_text(encoding="utf-8").strip()
         if not text or len(text) < 40:
@@ -93,9 +94,14 @@ def build_synthetic_pairs(gt_files: list, n_per_doc: int = 10) -> list[dict]:
         sentences = [s.strip() for s in re.split(r"(?<=[.!?])\s+", text) if len(s.strip()) > 30]
         for sent in sentences[:n_per_doc]:
             for rate in _NOISE_RATES:
-                noisy = _inject_ocr_noise(sent, rate=rate)
+                noisy = _inject_ocr_noise(sent, rate=rate, seed=pair_counter)
+                pair_counter += 1
                 if noisy != sent:
-                    pairs.append({"ocr": noisy, "ground_truth": sent})
+                    pairs.append({
+                        "ocr": noisy,
+                        "ground_truth": sent,
+                        "noise_rate": rate,
+                    })
     return pairs
 
 

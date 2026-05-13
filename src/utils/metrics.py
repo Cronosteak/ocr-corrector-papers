@@ -4,6 +4,7 @@ CER (Character Error Rate), WER (Word Error Rate), BLEU.
 """
 
 from jiwer import wer, cer
+import sacrebleu
 
 
 def calculate_cer(predictions: list[str], references: list[str]) -> float:
@@ -32,6 +33,25 @@ def calculate_wer(predictions: list[str], references: list[str]) -> float:
         WER promedio.
     """
     return wer(references, predictions)
+
+
+def calculate_bleu(predictions: list[str], references: list[str]) -> float:
+    """
+    Calcula el BLEU corpus-level usando sacrebleu.
+
+    Returns:
+        BLEU score (0-100, mayor es mejor).
+    """
+    bleu = sacrebleu.corpus_bleu(predictions, [references])
+    return bleu.score
+
+
+def calculate_exact_match(predictions: list[str], references: list[str]) -> float:
+    """Porcentaje de predicciones idénticas al ground truth."""
+    if not predictions:
+        return 0.0
+    matches = sum(1 for p, r in zip(predictions, references) if p.strip() == r.strip())
+    return matches / len(predictions) * 100
 
 
 def calculate_improvement(

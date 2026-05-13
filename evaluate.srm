@@ -36,7 +36,7 @@ singularity exec --nv \
     -B "$REPO_PATH":/app \
     "$SIF_PATH" \
     python -m src.model.postprocess \
-        --model models/ocr-corrector \
+        --model models/ocr-corrector_test2 \
         --data  data/pairs/synthetic_test.json
 
 EXIT_CODE=$?
