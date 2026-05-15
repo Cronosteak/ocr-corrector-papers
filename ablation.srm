@@ -1,0 +1,72 @@
+#!/bin/bash
+#SBATCH --job-name=ocr-ablation
+#SBATCH --output=logs/ablation_%j.output
+#SBATCH --error=logs/ablation_%j.err
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --partition=gpu
+#SBATCH --account=prosei
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=16G
+
+# ── Usage:
+#   sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml ablation.srm
+# ─────────────────────────────────────────────────────────────────────────────
+REPO_PATH="/share_beta/prosei/Breinner/ocr-corrector-papers"
+SIF_PATH="$REPO_PATH/singularity/ocr-corrector.sif"
+
+if [ -z "$ABL_CONFIG" ]; then
+    echo "ERROR: ABL_CONFIG environment variable not set."
+    echo "Usage: sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml ablation.srm"
+    exit 1
+fi
+
+export CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES
+mkdir -p "$REPO_PATH/logs"
+
+# Extract output_dir from the yaml (simple grep, assumes one match)
+OUTPUT_DIR=$(grep -E '^\s*output_dir:' "$REPO_PATH/$ABL_CONFIG" | head -1 | sed -E 's/.*output_dir:\s*"?([^"]+)"?.*/\1/')
+
+echo "========================================"
+echo " OCR Corrector — Ablation Job"
+echo "========================================"
+echo "SLURM_JOBID         : $SLURM_JOBID"
+echo "SLURM_JOB_NODELIST  : $SLURM_JOB_NODELIST"
+echo "CUDA_VISIBLE_DEVICES: $CUDA_VISIBLE_DEVICES"
+echo "CONFIG              : $ABL_CONFIG"
+echo "OUTPUT_DIR          : $OUTPUT_DIR"
+echo "Start time          : $(date)"
+echo "========================================"
+
+# 1) Train with the given config
+singularity exec --nv \
+    --pwd /app \
+    -B "$REPO_PATH":/app \
+    "$SIF_PATH" \
+    bash -c "pip install --user --quiet sacrebleu pyspellchecker && \
+             python -m src.model.train --config $ABL_CONFIG"
+
+TRAIN_EXIT=$?
+echo "Train exit: $TRAIN_EXIT"
+
+if [ $TRAIN_EXIT -ne 0 ]; then
+    echo "Training failed, skipping evaluation."
+    exit $TRAIN_EXIT
+fi
+
+# 2) Evaluate the trained model on the same test set
+singularity exec --nv \
+    --pwd /app \
+    -B "$REPO_PATH":/app \
+    "$SIF_PATH" \
+    bash -c "pip install --user --quiet sacrebleu pyspellchecker && \
+             python -m src.model.postprocess \
+                 --model $OUTPUT_DIR \
+                 --data  data/pairs/synthetic_test.json"
+
+EXIT_CODE=$?
+echo "========================================"
+echo "End time  : $(date)"
+echo "Exit code : $EXIT_CODE"
+echo "========================================"

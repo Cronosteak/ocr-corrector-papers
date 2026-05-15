@@ -257,6 +257,29 @@ def run(model_path: str, data_path: str) -> None:
     plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir)
     save_qualitative_examples(test_pairs, ocr_texts, corrected_texts, spell_texts, out_dir, n=10)
 
+    # 4. Save full predictions for downstream analysis (error categorization, etc.)
+    predictions = [
+        {
+            "noise_rate":   test_pairs[i].get("noise_rate"),
+            "ocr":          ocr_texts[i],
+            "spellcheck":   spell_texts[i],
+            "corrected":    corrected_texts[i],
+            "ground_truth": gt_texts[i],
+        }
+        for i in range(len(test_pairs))
+    ]
+    preds_path = out_dir / "predictions.json"
+    with open(preds_path, "w") as f:
+        json.dump(predictions, f, indent=2, ensure_ascii=False)
+    logger.info(f"Saved: {preds_path}")
+
+    # 5. Error analysis (categorized residual errors)
+    try:
+        from src.model.error_analysis import run_error_analysis
+        run_error_analysis(predictions, out_dir)
+    except Exception as e:
+        logger.warning(f"Error analysis failed: {e}")
+
     logger.info("All post-processing complete.")
 
 

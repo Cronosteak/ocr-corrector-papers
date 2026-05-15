@@ -2,6 +2,7 @@
 train.py — Fine-tune de un modelo seq2seq (T5/BART) sobre pares OCR → texto limpio.
 """
 
+import argparse
 import json
 import logging
 import os
@@ -23,9 +24,13 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger(__name__)
 
 
-def _load_split(path: Path) -> Dataset:
+def _load_split(path: Path, noise_rate_filter=None) -> Dataset:
     with open(path, "r", encoding="utf-8") as f:
         pairs = json.load(f)
+    if noise_rate_filter is not None:
+        before = len(pairs)
+        pairs = [p for p in pairs if p.get("noise_rate") == noise_rate_filter]
+        logger.info(f"noise_rate_filter={noise_rate_filter}: {before} -> {len(pairs)} pairs from {path.name}")
     return Dataset.from_list(pairs)
 
 
@@ -75,6 +80,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
     max_grad_norm = config.get("max_grad_norm", 1.0)
     optim = config.get("optim", "adafactor")
     early_stopping_patience = config.get("early_stopping_patience", 0)
+    noise_rate_filter = config.get("noise_rate_filter", None)
 
     logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16} | optim: {optim}")
 
@@ -84,7 +90,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
 
     # Cargar splits pre-generados
     pairs_dir = Path("data/pairs")
-    train_ds = _load_split(pairs_dir / "train.json")
+    train_ds = _load_split(pairs_dir / "train.json", noise_rate_filter=noise_rate_filter)
     val_ds = _load_split(pairs_dir / "val.json")
     logger.info(f"Train: {len(train_ds)} | Val: {len(val_ds)}")
 
@@ -146,4 +152,7 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
 
 
 if __name__ == "__main__":
-    train()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--config", type=str, default="configs/train_config.yaml")
+    args = parser.parse_args()
+    train(config_path=args.config)
