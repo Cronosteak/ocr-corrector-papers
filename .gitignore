@@ -47,6 +47,10 @@ logs/
 # Paper (solo local)
 paper/
 
+# Scripts y jobs de cluster (privados)
+*.sh
+*.srm
+
 # IDEs
 .vscode/
 .idea/
