@@ -1,6 +1,6 @@
 """
-evaluate.py — Evalúa el modelo de corrección OCR calculando
-CER (Character Error Rate) y WER (Word Error Rate) antes y después de la corrección.
+evaluate.py — Evaluates the OCR correction model, computing CER and WER
+before and after correction.
 """
 
 import json
@@ -34,10 +34,10 @@ def evaluate_model(
     if model_path:
         from src.model.predict import correct_batch, load_model
 
-        logger.info(f"Cargando modelo desde {model_path}...")
+        logger.info(f"Loading model from {model_path}...")
         model, tokenizer = load_model(model_path)
 
-        logger.info(f"Generando correcciones para {len(ocr_texts)} ejemplos...")
+        logger.info(f"Generating corrections for {len(ocr_texts)} samples...")
         corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)
 
         corrected_cer = calculate_cer(corrected_texts, gt_texts)
@@ -46,7 +46,7 @@ def evaluate_model(
         results["cer"] = calculate_improvement(baseline_cer, corrected_cer)
         results["wer"] = calculate_improvement(baseline_wer, corrected_wer)
 
-    logger.info(f"Resultados: {results}")
+    logger.info(f"Results: {results}")
     return results
 
 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", type=str, default=None, help="Ruta al modelo entrenado")
+    parser.add_argument("--model", type=str, default=None, help="Path to the trained model")
     parser.add_argument("--data", type=str, default="data/pairs/synthetic_test.json")
     args = parser.parse_args()
 

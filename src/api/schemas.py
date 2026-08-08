@@ -1,16 +1,16 @@
 """
-schemas.py — Modelos Pydantic para la API de corrección OCR.
+schemas.py — Pydantic models for the OCR correction API.
 """
 
 from pydantic import BaseModel, Field
 
 
 class CorrectionRequest(BaseModel):
-    """Solicitud de corrección de texto OCR."""
+    """Request to correct a noisy OCR text."""
 
     text: str = Field(
         ...,
-        description="Texto OCR ruidoso a corregir",
+        description="Noisy OCR text to correct",
         min_length=1,
         max_length=10000,
         examples=["Ths artcle presens a novl approch to electrcal enginring"],
@@ -18,7 +18,7 @@ class CorrectionRequest(BaseModel):
 
 
 class CorrectionResponse(BaseModel):
-    """Respuesta con el texto corregido."""
+    """Response containing the corrected text."""
 
-    original: str = Field(description="Texto original enviado")
-    corrected: str = Field(description="Texto corregido por el modelo")
+    original: str = Field(description="Original text that was submitted")
+    corrected: str = Field(description="Text corrected by the model")

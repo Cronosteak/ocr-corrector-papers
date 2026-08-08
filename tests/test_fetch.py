@@ -1,18 +1,18 @@
 """
-test_fetch.py — Tests para el módulo de consulta a OpenAlex.
+test_fetch.py — Tests for the OpenAlex query module.
 """
 
 import pytest
 
 
 def test_fetch_works_returns_list():
-    """fetch_works debe retornar una lista de diccionarios."""
-    # TODO: Implementar con mock de la API
+    """fetch_works should return a list of dicts."""
+    # TODO: implement with a mocked API
     pass
 
 
 def test_save_abstracts_creates_files(tmp_path):
-    """save_abstracts debe crear archivos .txt en el directorio de salida."""
+    """save_abstracts should create .txt files in the output directory."""
     from src.pipeline.fetch_openalex import save_abstracts
 
     works = [
@@ -28,7 +28,7 @@ def test_save_abstracts_creates_files(tmp_path):
 
 
 def test_save_abstracts_skips_empty(tmp_path):
-    """save_abstracts debe ignorar trabajos sin abstract."""
+    """save_abstracts should skip works without an abstract."""
     from src.pipeline.fetch_openalex import save_abstracts
 
     works = [

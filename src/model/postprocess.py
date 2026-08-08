@@ -70,8 +70,8 @@ def _metric_block(preds, refs):
 
 def evaluate_all(test_pairs, model_path: str):
     """
-    Evalúa: raw OCR baseline, spellchecker baseline, modelo corregido.
-    Devuelve overall metrics, per-noise-level metrics y los textos generados.
+    Evaluate the raw-OCR baseline, the spellchecker baseline and the model.
+    Returns overall metrics, per-noise-level metrics and the generated texts.
     """
     ocr_texts = [p["ocr"] for p in test_pairs]
     gt_texts  = [p["ground_truth"] for p in test_pairs]
@@ -86,7 +86,7 @@ def evaluate_all(test_pairs, model_path: str):
     spell_texts = spellcheck_correct(ocr_texts)
     spell_block = _metric_block(spell_texts, gt_texts)
 
-    # Modelo corregido
+    # Model corrections
     logger.info("Loading model and generating corrections...")
     model, tokenizer = load_model(model_path)
     corrected_texts = correct_batch(ocr_texts, model, tokenizer, batch_size=16)

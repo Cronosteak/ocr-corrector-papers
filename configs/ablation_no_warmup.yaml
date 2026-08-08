@@ -1,4 +1,4 @@
-# Ablation: sin warmup
+# Ablation: no warmup
 model_name: "google/flan-t5-base"
 max_input_length: 256
 max_output_length: 256
@@ -8,7 +8,7 @@ batch_size: 8
 gradient_accumulation_steps: 2
 learning_rate: 1.0e-4
 num_epochs: 15
-warmup_steps: 0          # <-- ablación
+warmup_steps: 0          # <-- ablated
 weight_decay: 0.01
 max_grad_norm: 1.0
 optim: adafactor

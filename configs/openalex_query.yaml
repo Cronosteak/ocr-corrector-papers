@@ -1,9 +1,9 @@
-# Configuración de consulta a OpenAlex API
+# OpenAlex API query configuration
 # Docs: https://docs.openalex.org/
 
-# Filtros de búsqueda
+# Search filters
 filters:
-  # Conceptos: Ingeniería Eléctrica + áreas relacionadas con buena cobertura OA
+  # Concepts: Electrical Engineering + related fields with good OA coverage
   # C39432304 = Electrical Engineering
   # C41008148 = Computer Science
   # C127413603 = Engineering
@@ -13,21 +13,21 @@ filters:
     - "C41008148"   # Computer Science
     - "C127413603"  # Engineering
 
-  # Solo papers con acceso abierto (necesitamos el PDF)
+  # Open-access papers only (we need the PDF)
   is_oa: true
   
-  # Rango de años de publicación
+  # Publication date range
   from_publication_date: "2018-01-01"
   to_publication_date: "2026-03-31"
   
-  # Idioma — filtrar por inglés
+  # Language — English only
   language: "en"
 
-# Paginación
+# Pagination
 per_page: 50
-max_results: 1500  # Aumentado para obtener más papers
+max_results: 1500  # Raised to collect more papers
 
-# Campos a recuperar de cada trabajo
+# Fields to retrieve for each work
 select_fields:
   - id
   - doi

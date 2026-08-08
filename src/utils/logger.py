@@ -1,5 +1,5 @@
 """
-logger.py — Configuración estándar de logging para el proyecto.
+logger.py — Standard logging configuration for the project.
 """
 
 import logging
@@ -10,13 +10,7 @@ def setup_logger(
     level: int = logging.INFO,
     log_format: str = "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 ) -> None:
-    """
-    Configura el logger raíz del proyecto.
-
-    Args:
-        level: Nivel de logging (default: INFO).
-        log_format: Formato del mensaje de log.
-    """
+    """Configure the project root logger."""
     logging.basicConfig(
         level=level,
         format=log_format,

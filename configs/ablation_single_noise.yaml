@@ -1,5 +1,5 @@
-# Ablation: entrenamiento solo con un nivel de ruido (r=0.04)
-# Evaluación sigue siendo sobre el test set completo (4 niveles)
+# Ablation: train on a single noise level (r=0.04)
+# Evaluation still runs on the full test set (all 4 levels)
 model_name: "google/flan-t5-base"
 max_input_length: 256
 max_output_length: 256
@@ -17,8 +17,8 @@ fp16: false
 seed: 42
 early_stopping_patience: 3
 
-# Solo se conservan los pares con noise_rate == 0.04 en el conjunto de train.
-# El conjunto de val/test permanece intacto.
+# Only pairs with noise_rate == 0.04 are kept in the training set.
+# The val/test sets are left untouched.
 noise_rate_filter: 0.04
 
 train_split: 0.8

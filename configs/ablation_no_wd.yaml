@@ -1,4 +1,4 @@
-# Ablation: sin weight decay
+# Ablation: no weight decay
 model_name: "google/flan-t5-base"
 max_input_length: 256
 max_output_length: 256
@@ -9,7 +9,7 @@ gradient_accumulation_steps: 2
 learning_rate: 1.0e-4
 num_epochs: 15
 warmup_steps: 200
-weight_decay: 0.0        # <-- ablación
+weight_decay: 0.0        # <-- ablated
 max_grad_norm: 1.0
 optim: adafactor
 fp16: false

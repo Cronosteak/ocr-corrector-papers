@@ -1,6 +1,6 @@
 """
-fetch_openalex.py — Consulta OpenAlex API para obtener metadata y abstracts
-de papers de ingeniería eléctrica con acceso abierto.
+fetch_openalex.py — Queries the OpenAlex API for metadata and abstracts of
+open-access electrical engineering papers.
 """
 
 import os
@@ -23,11 +23,7 @@ if OPENALEX_EMAIL:
 
 
 def reconstruct_abstract(inverted_index: dict) -> str:
-    """
-    Reconstruye el abstract desde el formato abstract_inverted_index de OpenAlex.
-
-    El formato es {palabra: [posicion1, posicion2, ...]}.
-    """
+    """Rebuild the abstract from OpenAlex's {word: [pos1, pos2, ...]} inverted index."""
     if not inverted_index:
         return ""
     max_pos = max(pos for positions in inverted_index.values() for pos in positions)
@@ -39,7 +35,7 @@ def reconstruct_abstract(inverted_index: dict) -> str:
 
 
 def _fetch_by_concept(concept_id: str, filters: dict, select_fields: list, per_page: int, max_results: int) -> list[dict]:
-    """Descarga works para un concept_id específico."""
+    """Fetch works for a single concept_id."""
     query = Works().filter(
         concepts={"id": concept_id},
         is_oa=filters.get("is_oa", True),
@@ -70,14 +66,8 @@ def _fetch_by_concept(concept_id: str, filters: dict, select_fields: list, per_p
 
 def fetch_works(config: dict) -> list[dict]:
     """
-    Busca trabajos en OpenAlex según los filtros del config.
-    Itera sobre concept_id principal y extra_concept_ids si están definidos.
-
-    Args:
-        config: Diccionario con filtros (concept, year_range, language, per_page, etc.)
-
-    Returns:
-        Lista de diccionarios con metadata de cada trabajo (sin duplicados).
+    Search OpenAlex using the config filters, iterating over the main
+    concept_id plus any extra_concept_ids. Returns deduplicated works.
     """
     filters = config.get("filters", {})
     max_results = config.get("max_results", 500)
@@ -85,7 +75,7 @@ def fetch_works(config: dict) -> list[dict]:
     select_fields = config.get("select_fields", [])
 
     concept_ids = [filters["concept_id"]] + filters.get("extra_concept_ids", [])
-    # Repartir max_results entre conceptos
+    # Split max_results across concepts
     per_concept = max_results // len(concept_ids)
 
     seen_ids = set()
@@ -98,20 +88,14 @@ def fetch_works(config: dict) -> list[dict]:
             if work["id"] not in seen_ids:
                 seen_ids.add(work["id"])
                 all_works.append(work)
-        print(f"  → {len(batch)} obtenidos, {len(all_works)} únicos acumulados")
+        print(f"  → {len(batch)} fetched, {len(all_works)} unique so far")
 
-    logger.info(f"Total obtenidos: {len(all_works)} trabajos únicos.")
+    logger.info(f"Total fetched: {len(all_works)} unique works.")
     return all_works
 
 
 def save_abstracts(works: list[dict], output_dir: Path | None = None) -> None:
-    """
-    Guarda los abstracts limpios como archivos de texto (ground truth).
-
-    Args:
-        works: Lista de trabajos obtenidos de OpenAlex.
-        output_dir: Directorio donde guardar los archivos.
-    """
+    """Save the clean abstracts as text files (ground truth)."""
     output_dir = output_dir or GROUND_TRUTH_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
 
@@ -121,15 +105,15 @@ def save_abstracts(works: list[dict], output_dir: Path | None = None) -> None:
         if abstract:
             filepath = output_dir / f"{work_id}.txt"
             filepath.write_text(abstract, encoding="utf-8")
-            logger.info(f"Guardado abstract: {filepath}")
+            logger.info(f"Saved abstract: {filepath}")
 
 
 def save_works_json(works: list[dict], output_path: Path = Path("data/works.json")) -> None:
-    """Guarda la lista completa de works (con oa_url) en un JSON para uso del pipeline."""
+    """Save the full works list (including oa_url) as JSON for the pipeline."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(works, f, ensure_ascii=False, indent=2)
-    logger.info(f"Works guardados en {output_path}")
+    logger.info(f"Works saved to {output_path}")
 
 
 if __name__ == "__main__":
@@ -148,5 +132,5 @@ if __name__ == "__main__":
         t.record("n_with_abstract", n_with_abstract)
         t.record("n_with_oa_url", sum(1 for w in works if w.get("oa_url")))
 
-    print(f"Se obtuvieron {len(works)} trabajos ({n_with_abstract} con abstract).")
+    print(f"Fetched {len(works)} works ({n_with_abstract} with abstract).")
     print_summary()

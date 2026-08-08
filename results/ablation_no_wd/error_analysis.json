@@ -1,0 +1,152 @@
+{
+  "categories": [
+    "acronym",
+    "capitalized_word",
+    "greek_symbol",
+    "lowercase_word",
+    "number",
+    "punctuation"
+  ],
+  "total_errors_by_method": {
+    "ocr": {
+      "capitalized_word": 174,
+      "lowercase_word": 2749,
+      "acronym": 32,
+      "number": 58,
+      "greek_symbol": 1
+    },
+    "spellcheck": {
+      "lowercase_word": 1586,
+      "capitalized_word": 194,
+      "acronym": 32,
+      "number": 58,
+      "greek_symbol": 8
+    },
+    "corrected": {
+      "capitalized_word": 44,
+      "lowercase_word": 489,
+      "acronym": 13,
+      "punctuation": 24,
+      "number": 43,
+      "greek_symbol": 20
+    }
+  },
+  "samples_affected_by_method": {
+    "ocr": {
+      "capitalized_word": 153,
+      "lowercase_word": 650,
+      "acronym": 27,
+      "number": 49,
+      "greek_symbol": 1
+    },
+    "spellcheck": {
+      "lowercase_word": 569,
+      "capitalized_word": 173,
+      "acronym": 27,
+      "number": 49,
+      "greek_symbol": 4
+    },
+    "corrected": {
+      "capitalized_word": 42,
+      "lowercase_word": 335,
+      "acronym": 11,
+      "punctuation": 20,
+      "number": 39,
+      "greek_symbol": 8
+    }
+  },
+  "per_noise_rate": {
+    "r=0.02": {
+      "ocr": {
+        "capitalized_word": 26,
+        "lowercase_word": 292,
+        "number": 10,
+        "acronym": 1
+      },
+      "spellcheck": {
+        "lowercase_word": 187,
+        "capitalized_word": 40,
+        "number": 10,
+        "greek_symbol": 2,
+        "acronym": 1
+      },
+      "corrected": {
+        "capitalized_word": 6,
+        "lowercase_word": 47,
+        "punctuation": 4,
+        "number": 7,
+        "greek_symbol": 5
+      }
+    },
+    "r=0.04": {
+      "ocr": {
+        "capitalized_word": 37,
+        "lowercase_word": 552,
+        "acronym": 6,
+        "number": 6
+      },
+      "spellcheck": {
+        "capitalized_word": 47,
+        "lowercase_word": 314,
+        "greek_symbol": 2,
+        "acronym": 6,
+        "number": 6
+      },
+      "corrected": {
+        "capitalized_word": 9,
+        "lowercase_word": 102,
+        "punctuation": 3,
+        "greek_symbol": 5,
+        "number": 6,
+        "acronym": 1
+      }
+    },
+    "r=0.06": {
+      "ocr": {
+        "capitalized_word": 49,
+        "lowercase_word": 833,
+        "acronym": 10,
+        "number": 15
+      },
+      "spellcheck": {
+        "capitalized_word": 49,
+        "lowercase_word": 478,
+        "acronym": 10,
+        "number": 15,
+        "greek_symbol": 2
+      },
+      "corrected": {
+        "lowercase_word": 157,
+        "capitalized_word": 13,
+        "acronym": 3,
+        "punctuation": 8,
+        "number": 10,
+        "greek_symbol": 5
+      }
+    },
+    "r=0.08": {
+      "ocr": {
+        "capitalized_word": 62,
+        "lowercase_word": 1072,
+        "acronym": 15,
+        "number": 27,
+        "greek_symbol": 1
+      },
+      "spellcheck": {
+        "lowercase_word": 607,
+        "capitalized_word": 58,
+        "acronym": 15,
+        "number": 27,
+        "greek_symbol": 2
+      },
+      "corrected": {
+        "lowercase_word": 183,
+        "acronym": 9,
+        "capitalized_word": 16,
+        "number": 20,
+        "greek_symbol": 5,
+        "punctuation": 9
+      }
+    }
+  }
+}

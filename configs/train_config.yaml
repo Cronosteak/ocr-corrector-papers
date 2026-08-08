@@ -1,15 +1,15 @@
-# Configuración de entrenamiento del modelo
+# Model training configuration
 
-# Modelo base
+# Base model
 model_name: "google/flan-t5-base"
-# Alternativas: "google/flan-t5-small", "facebook/bart-base"
+# Alternatives: "google/flan-t5-small", "facebook/bart-base"
 
-# Tokenización
+# Tokenization
 max_input_length: 256
 max_output_length: 256
 prefix: "correct OCR: "
 
-# Entrenamiento
+# Training
 batch_size: 8
 gradient_accumulation_steps: 2
 learning_rate: 1.0e-4
@@ -27,7 +27,7 @@ train_split: 0.8
 val_split: 0.1
 test_split: 0.1
 
-# Guardado del modelo
+# Model saving
 output_dir: "models/ocr-corrector"
 save_strategy: "epoch"
 evaluation_strategy: "epoch"
@@ -35,5 +35,5 @@ load_best_model_at_end: true
 metric_for_best_model: "eval_loss"
 
 # Hardware
-fp16: false  # Cambiar a true si tienes GPU con soporte FP16
+fp16: false  # Set to true on a GPU with FP16 support
 dataloader_num_workers: 2

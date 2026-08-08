@@ -1,6 +1,5 @@
 """
-metrics.py — Funciones para calcular métricas de calidad OCR.
-CER (Character Error Rate), WER (Word Error Rate), BLEU.
+metrics.py — OCR quality metrics: CER, WER, BLEU, exact match.
 """
 
 from jiwer import wer, cer
@@ -8,46 +7,23 @@ import sacrebleu
 
 
 def calculate_cer(predictions: list[str], references: list[str]) -> float:
-    """
-    Calcula el Character Error Rate promedio.
-
-    Args:
-        predictions: Lista de textos predichos/OCR.
-        references: Lista de textos de referencia (ground truth).
-
-    Returns:
-        CER promedio (0.0 = perfecto, 1.0 = todo incorrecto).
-    """
+    """Average Character Error Rate (0.0 = perfect, 1.0 = everything wrong)."""
     return cer(references, predictions)
 
 
 def calculate_wer(predictions: list[str], references: list[str]) -> float:
-    """
-    Calcula el Word Error Rate promedio.
-
-    Args:
-        predictions: Lista de textos predichos/OCR.
-        references: Lista de textos de referencia (ground truth).
-
-    Returns:
-        WER promedio.
-    """
+    """Average Word Error Rate."""
     return wer(references, predictions)
 
 
 def calculate_bleu(predictions: list[str], references: list[str]) -> float:
-    """
-    Calcula el BLEU corpus-level usando sacrebleu.
-
-    Returns:
-        BLEU score (0-100, mayor es mejor).
-    """
+    """Corpus-level BLEU via sacrebleu (0-100, higher is better)."""
     bleu = sacrebleu.corpus_bleu(predictions, [references])
     return bleu.score
 
 
 def calculate_exact_match(predictions: list[str], references: list[str]) -> float:
-    """Porcentaje de predicciones idénticas al ground truth."""
+    """Percentage of predictions identical to the ground truth."""
     if not predictions:
         return 0.0
     matches = sum(1 for p, r in zip(predictions, references) if p.strip() == r.strip())
@@ -57,16 +33,7 @@ def calculate_exact_match(predictions: list[str], references: list[str]) -> floa
 def calculate_improvement(
     baseline_metric: float, corrected_metric: float
 ) -> dict:
-    """
-    Calcula la mejora relativa entre baseline y corregido.
-
-    Args:
-        baseline_metric: Métrica antes de la corrección.
-        corrected_metric: Métrica después de la corrección.
-
-    Returns:
-        Diccionario con absolute_improvement y relative_improvement_pct.
-    """
+    """Absolute and relative improvement of a corrected metric over its baseline."""
     absolute = baseline_metric - corrected_metric
     relative_pct = (absolute / baseline_metric * 100) if baseline_metric > 0 else 0.0
 

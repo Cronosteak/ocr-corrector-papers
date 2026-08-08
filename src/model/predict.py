@@ -1,5 +1,5 @@
 """
-predict.py — Usa el modelo entrenado para corregir texto OCR ruidoso.
+predict.py — Uses the trained model to correct noisy OCR text.
 """
 
 import logging
@@ -26,20 +26,12 @@ def load_model(model_path: str):
 
 def correct_text(text: str, model=None, tokenizer=None, model_path: str | None = None) -> str:
     """
-    Corrige texto OCR ruidoso usando el modelo entrenado.
-
-    Args:
-        text: Texto OCR a corregir.
-        model: Modelo cargado (opcional).
-        tokenizer: Tokenizer cargado (opcional).
-        model_path: Ruta al modelo si model/tokenizer no se proporcionan.
-
-    Returns:
-        Texto corregido.
+    Correct a single noisy OCR text. Either pass a loaded model/tokenizer or a
+    model_path to load them from.
     """
     if model is None or tokenizer is None:
         if model_path is None:
-            raise ValueError("Debe proporcionar model/tokenizer o model_path")
+            raise ValueError("Provide either model/tokenizer or model_path")
         model, tokenizer = load_model(model_path)
 
     device = next(model.parameters()).device
@@ -81,11 +73,11 @@ def correct_batch(
 if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description="Corregir texto OCR")
-    parser.add_argument("--input", type=str, required=True, help="Texto OCR a corregir")
-    parser.add_argument("--model", type=str, default="models/ocr-corrector", help="Ruta al modelo")
+    parser = argparse.ArgumentParser(description="Correct OCR text")
+    parser.add_argument("--input", type=str, required=True, help="OCR text to correct")
+    parser.add_argument("--model", type=str, default="models/ocr-corrector", help="Path to the model")
     args = parser.parse_args()
 
     corrected = correct_text(args.input, model_path=args.model)
     print(f"Original:  {args.input}")
-    print(f"Corregido: {corrected}")
+    print(f"Corrected: {corrected}")

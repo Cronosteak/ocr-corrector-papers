@@ -1,5 +1,5 @@
 """
-server.py — API REST con FastAPI para corregir texto OCR.
+server.py — FastAPI REST service for correcting OCR text.
 """
 
 import os
@@ -14,11 +14,11 @@ load_dotenv()
 
 app = FastAPI(
     title="OCR Corrector API",
-    description="Servicio para corregir texto OCR de papers académicos",
+    description="Service that corrects OCR text from academic papers",
     version="0.1.0",
 )
 
-# Carga el modelo al iniciar el servidor
+# The model is loaded once at server startup
 MODEL_PATH = os.getenv("MODEL_PATH", "models/ocr-corrector")
 model = None
 tokenizer = None
@@ -26,20 +26,20 @@ tokenizer = None
 
 @app.on_event("startup")
 async def startup_event():
-    """Carga el modelo al iniciar."""
+    """Load the model on startup."""
     global model, tokenizer
     try:
         model, tokenizer = load_model(MODEL_PATH)
     except Exception as e:
-        print(f"Warning: No se pudo cargar el modelo: {e}")
+        print(f"Warning: could not load the model: {e}")
 
 
 @app.post("/correct", response_model=CorrectionResponse)
 async def correct_ocr_text(request: CorrectionRequest) -> CorrectionResponse:
     """
-    Corrige texto OCR ruidoso.
+    Correct a noisy OCR text.
 
-    - **text**: Texto OCR a corregir
+    - **text**: OCR text to correct
     """
     corrected = correct_text(
         text=request.text,

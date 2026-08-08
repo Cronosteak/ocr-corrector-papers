@@ -1,8 +1,8 @@
 """
-compare_ablations.py — Agrega los eval_results.json de los runs de ablación
-y produce una tabla comparativa (markdown + JSON).
+compare_ablations.py — Aggregates the eval_results.json of the ablation runs
+into a comparison table (markdown + JSON).
 
-Uso:
+Usage:
     python -m src.model.compare_ablations
 """
 
@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger(__name__)
 
 RUNS = {
-    "Full (ours)":      "models/ocr-corrector_test2",
+    "Full (ours)":      "models/ocr-corrector",
     "no warmup":        "models/ablation_no_warmup",
     "no weight decay":  "models/ablation_no_wd",
     "single noise (r=0.04)": "models/ablation_single_noise",

@@ -1,6 +1,6 @@
 """
-pipeline_stats.py — Registra métricas de tiempo y volumen del pipeline
-para incluir en la sección de Dataset Construction del paper.
+pipeline_stats.py — Records pipeline timing and volume metrics for the
+Dataset Construction section of the paper.
 """
 
 import json
@@ -25,7 +25,7 @@ def save_stats(stats: dict) -> None:
 
 
 class StepTimer:
-    """Context manager para medir y guardar el tiempo de un paso del pipeline."""
+    """Context manager that times a pipeline step and persists the result."""
 
     def __init__(self, step_name: str):
         self.step_name = step_name
@@ -33,13 +33,13 @@ class StepTimer:
 
     def __enter__(self):
         self.start = time.time()
-        print(f"\n[{self.step_name}] Iniciando — {datetime.now().strftime('%H:%M:%S')}")
+        print(f"\n[{self.step_name}] Starting — {datetime.now().strftime('%H:%M:%S')}")
         return self
 
     def __exit__(self, *args):
         elapsed = time.time() - self.start
         mins, secs = divmod(int(elapsed), 60)
-        print(f"[{self.step_name}] Completado en {mins}m {secs}s")
+        print(f"[{self.step_name}] Completed in {mins}m {secs}s")
 
         stats = load_stats()
         stats[self.step_name] = {
@@ -50,7 +50,7 @@ class StepTimer:
         save_stats(stats)
 
     def record(self, key: str, value) -> None:
-        """Registra un valor adicional (ej: n_works, n_pdfs) en las stats."""
+        """Record an extra value (e.g. n_works, n_pdfs) in the stats."""
         stats = load_stats()
         if self.step_name in stats:
             stats[self.step_name][key] = value
@@ -58,14 +58,14 @@ class StepTimer:
 
 
 def print_summary() -> None:
-    """Imprime un resumen de todas las métricas del pipeline."""
+    """Print a summary of all pipeline metrics."""
     stats = load_stats()
     if not stats:
-        print("No hay estadísticas registradas aún.")
+        print("No stats recorded yet.")
         return
 
     print("\n" + "="*55)
-    print("  PIPELINE STATS — para el paper")
+    print("  PIPELINE STATS — for the paper")
     print("="*55)
     for step, data in stats.items():
         print(f"\n  {step}")

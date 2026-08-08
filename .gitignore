@@ -1,10 +1,10 @@
-# Entornos virtuales
+# Virtual environments
 venv/
 .venv/
 env/
 .env/
 
-# Variables de entorno
+# Environment variables
 .env
 *.env
 
@@ -25,29 +25,27 @@ build/
 
 # Singularity images (too large for git)
 singularity/
+singularity/*.sif
 
-# Datos crudos y PDFs (pesados, no versionar)
+# Raw data and PDFs (heavy, not versioned)
 data/raw/
 data/ocr/
 data/ground_truth/
 
-# Modelos entrenados (binarios pesados)
+# Trained models (heavy binaries) — weights are published on Hugging Face
 models/
 *.pt
 *.bin
 *.safetensors
 
-# Singularity images
-singularity/*.sif
-
 # Logs
 logs/
 *.log
 
-# Paper (solo local)
+# Paper sources (local only)
 paper/
 
-# Scripts y jobs de cluster (privados)
+# Cluster scripts outside slurm_scripts/
 *.sh
 *.srm
 
@@ -60,6 +58,16 @@ paper/
 # macOS
 .DS_Store
 
-# Tesseract / pdf2image temporales
+# Tesseract / pdf2image temporaries
 *.tiff
 *.png
+
+# ── Exceptions: files the paper's availability appendix promises ──────────────
+# Evaluation artifacts (light, ~4 MB)
+!results/
+!results/**/*.json
+!results/**/*.png
+# SLURM job scripts used to produce the paper results
+!slurm_scripts/
+!slurm_scripts/*.sh
+!slurm_scripts/*.srm

@@ -1,6 +1,6 @@
 """
-baselines.py — Baselines no-neuronales para comparación.
-Actualmente: corrección por diccionario (pyspellchecker).
+baselines.py — Non-neural baselines for comparison.
+Currently: dictionary-based correction (pyspellchecker).
 """
 
 import logging
@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 
 def _match_case(source: str, target: str) -> str:
-    """Restaura la capitalización de `source` sobre `target`."""
+    """Apply the capitalization of `source` to `target`."""
     if source.isupper():
         return target.upper()
     if source[:1].isupper():
@@ -20,15 +20,14 @@ def _match_case(source: str, target: str) -> str:
 
 def spellcheck_correct(texts: list[str]) -> list[str]:
     """
-    Corrige texto OCR aplicando un spellchecker palabra por palabra.
-    Solo corrige tokens alfabéticos; preserva puntuación, números, símbolos
-    y capitalización original.
+    Correct OCR text word by word with a spellchecker. Only alphabetic tokens
+    are corrected; punctuation, numbers, symbols and casing are preserved.
     """
     try:
         from spellchecker import SpellChecker
     except ImportError as e:
         raise ImportError(
-            "pyspellchecker no está instalado. Añade `pyspellchecker` a requirements.txt"
+            "pyspellchecker is not installed. Add `pyspellchecker` to requirements.txt"
         ) from e
 
     sc = SpellChecker(distance=2)
@@ -46,7 +45,7 @@ def spellcheck_correct(texts: list[str]) -> list[str]:
                 else:
                     corrected_tokens.append(tok)
             else:
-                # Preserva acrónimos en mayúsculas (NDVI, UAS, etc.) sin tocar
+                # Leave all-caps acronyms (NDVI, UAS, ...) untouched
                 corrected_tokens.append(tok)
         out.append("".join(corrected_tokens))
     return out

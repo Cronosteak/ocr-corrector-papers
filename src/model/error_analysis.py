@@ -1,14 +1,13 @@
 """
-error_analysis.py — Categorización de errores residuales del modelo.
+error_analysis.py — Categorizes the model's residual errors.
 
-Compara token a token la predicción del modelo con el ground-truth y
-clasifica cada token mal predicho en una de varias categorías
-(números, mayúsculas/acrónimos, símbolos no-ASCII, puntuación, palabras
-de contenido). Útil para entender DÓNDE falla el modelo.
+Compares each prediction against the ground truth token by token and sorts every
+missed token into a category (numbers, acronyms, non-ASCII symbols, punctuation,
+content words), showing *where* the model still fails.
 
-Se puede invocar standalone:
+Run standalone:
     python -m src.model.error_analysis --predictions models/<run>/predictions.json
-o usarse como librería desde postprocess.py.
+or import it from postprocess.py.
 """
 
 import argparse
@@ -34,7 +33,7 @@ def _tokenize(text: str) -> list[str]:
 
 
 def _categorize_token(tok: str) -> str:
-    """Asigna una categoría a un token (de GT) que el modelo predijo mal."""
+    """Assign a category to a ground-truth token the model got wrong."""
     if _GREEK_RE.search(tok):
         return "greek_symbol"
     if _NON_ASCII_RE.search(tok):
@@ -54,13 +53,13 @@ def _categorize_token(tok: str) -> str:
 
 def _diff_categories(pred: str, gt: str) -> Counter:
     """
-    Aproximación rápida basada en multiset diff: cuenta tokens del GT
-    que no aparecen (con la misma frecuencia) en la predicción.
-    No es alignment perfecto pero captura bien el patrón de errores.
+    Fast multiset diff: count ground-truth tokens that do not appear (at the same
+    frequency) in the prediction. Not a true alignment, but it captures the error
+    pattern well.
     """
     pred_tokens = Counter(_tokenize(pred))
     gt_tokens = Counter(_tokenize(gt))
-    missing = gt_tokens - pred_tokens  # tokens presentes en GT y no recuperados
+    missing = gt_tokens - pred_tokens  # tokens in the GT that were not recovered
     cats = Counter()
     for tok, n in missing.items():
         cats[_categorize_token(tok)] += n
@@ -69,8 +68,9 @@ def _diff_categories(pred: str, gt: str) -> Counter:
 
 def analyze(predictions: list[dict]) -> dict:
     """
-    predictions: lista de dicts con keys ocr, spellcheck, corrected, ground_truth, noise_rate
-    Devuelve un dict con conteos agregados por categoría y por método.
+    Aggregate error counts per category and per method.
+
+    predictions: dicts with keys ocr, spellcheck, corrected, ground_truth, noise_rate.
     """
     methods = ["ocr", "spellcheck", "corrected"]
     total_errors = {m: Counter() for m in methods}

@@ -5,20 +5,19 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --partition=gpu
-#SBATCH --account=prosei
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
 
 # ── Usage:
-#   sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml ablation.srm
+#   sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml slurm_scripts/ablation.srm
 # ─────────────────────────────────────────────────────────────────────────────
-REPO_PATH="/share_beta/prosei/Breinner/ocr-corrector-papers"
+REPO_PATH="/path/to/ocr-corrector-papers"
 SIF_PATH="$REPO_PATH/singularity/ocr-corrector.sif"
 
 if [ -z "$ABL_CONFIG" ]; then
     echo "ERROR: ABL_CONFIG environment variable not set."
-    echo "Usage: sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml ablation.srm"
+    echo "Usage: sbatch --export=ALL,ABL_CONFIG=configs/ablation_no_warmup.yaml slurm_scripts/ablation.srm"
     exit 1
 fi
 

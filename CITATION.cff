@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite the paper below."
+title: "OCR Corrector Papers"
+abstract: >-
+  Automated pipeline and fine-tuned flan-t5-base model for OCR error
+  correction in electrical engineering academic papers, built from
+  open-access literature via the OpenAlex API.
+type: software
+license: MIT
+repository-code: "https://github.com/Cronosteak/ocr-corrector-papers"
+authors:
+  - family-names: "Espinosa Ortiz"
+    given-names: "Breinner Farid"
+    affiliation: "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)"
+  - family-names: "Forero Mendoza"
+    given-names: "Leonardo Alfredo"
+    affiliation: "Rio de Janeiro State University (UERJ)"
+  - family-names: "Pacheco"
+    given-names: "Marco Aurélio C."
+    affiliation: "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)"
+  - family-names: "Batista"
+    given-names: "Evelyn C. S."
+    affiliation: "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)"
+preferred-citation:
+  type: conference-paper
+  title: >-
+    Automatic OCR Error Correction in Electrical Engineering Academic Papers
+    Using Sequence-to-Sequence Models
+  authors:
+    - family-names: "Espinosa Ortiz"
+      given-names: "Breinner Farid"
+    - family-names: "Forero Mendoza"
+      given-names: "Leonardo Alfredo"
+    - family-names: "Pacheco"
+      given-names: "Marco Aurélio C."
+    - family-names: "Batista"
+      given-names: "Evelyn C. S."
+  conference:
+    name: "2026 IEEE Latin American Conference on Computational Intelligence (LA-CCI)"
+  year: 2026
+  publisher:
+    name: "IEEE"

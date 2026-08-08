@@ -1,6 +1,5 @@
 """
-download_pdfs.py — Descarga PDFs de acceso abierto desde las URLs
-proporcionadas por OpenAlex.
+download_pdfs.py — Downloads open-access PDFs from the URLs provided by OpenAlex.
 """
 
 import os
@@ -20,49 +19,32 @@ RAW_DIR = Path(os.getenv("RAW_DIR", "data/raw"))
 
 
 def download_pdf(url: str, output_path: Path, timeout: int = 30) -> bool:
-    """
-    Descarga un PDF desde una URL.
-
-    Args:
-        url: URL del PDF.
-        output_path: Ruta donde guardar el archivo.
-        timeout: Timeout en segundos para la descarga.
-
-    Returns:
-        True si la descarga fue exitosa, False en caso contrario.
-    """
+    """Download a single PDF. Returns True on success."""
     try:
         response = requests.get(url, timeout=timeout, stream=True)
         response.raise_for_status()
         content = response.content
         if not content.startswith(b"%PDF"):
-            logger.warning(f"Respuesta no es un PDF válido (URL: {url})")
+            logger.warning(f"Response is not a valid PDF (URL: {url})")
             return False
         output_path.write_bytes(content)
-        logger.info(f"Descargado: {output_path}")
+        logger.info(f"Downloaded: {output_path}")
         return True
     except requests.RequestException as e:
-        logger.warning(f"Error descargando {url}: {e}")
+        logger.warning(f"Error downloading {url}: {e}")
         return False
 
 
 def download_all_pdfs(works: list[dict], output_dir: Path | None = None) -> dict:
     """
-    Descarga todos los PDFs de una lista de trabajos.
-
-    Args:
-        works: Lista de trabajos con campo 'open_access.oa_url'.
-        output_dir: Directorio de salida.
-
-    Returns:
-        Diccionario con estadísticas de descarga (exitosos, fallidos).
+    Download the PDFs for a list of works. Returns {"success": n, "failed": n}.
     """
     output_dir = output_dir or RAW_DIR
     output_dir.mkdir(parents=True, exist_ok=True)
 
     stats = {"success": 0, "failed": 0}
 
-    for work in tqdm(works, desc="Descargando PDFs"):
+    for work in tqdm(works, desc="Downloading PDFs"):
         work_id = work.get("id", "unknown").split("/")[-1]
         pdf_url = work.get("oa_url") or work.get("open_access", {}).get("oa_url")
 
@@ -77,7 +59,7 @@ def download_all_pdfs(works: list[dict], output_dir: Path | None = None) -> dict
 
         if download_pdf(pdf_url, output_path):
             stats["success"] += 1
-            # Delay aleatorio para evitar rate limiting
+            # Random delay to avoid rate limiting
             time.sleep(random.uniform(1.0, 3.0))
         else:
             stats["failed"] += 1
@@ -91,13 +73,13 @@ if __name__ == "__main__":
 
     works_path = Path("data/works.json")
     if not works_path.exists():
-        print("ERROR: data/works.json no encontrado. Ejecuta primero fetch_openalex.py")
+        print("ERROR: data/works.json not found. Run fetch_openalex.py first.")
         sys.exit(1)
 
     with open(works_path, encoding="utf-8") as f:
         works = json.load(f)
 
-    # Testear con 10 papers primero
+    # Optional CLI limit, useful for smoke-testing on a few papers
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
     gt_dir = Path("data/ground_truth")
     works_to_download = [
@@ -107,7 +89,7 @@ if __name__ == "__main__":
     ]
     if limit:
         works_to_download = works_to_download[:limit]
-    print(f"Descargando {len(works_to_download)} PDFs con abstract (de {len(works)} totales)...")
+    print(f"Downloading {len(works_to_download)} PDFs with abstract (out of {len(works)} total)...")
 
     from src.utils.pipeline_stats import StepTimer, print_summary
     with StepTimer("2_download_pdfs") as t:
@@ -117,5 +99,5 @@ if __name__ == "__main__":
         t.record("n_failed", stats["failed"])
         t.record("success_rate_pct", round(stats["success"] / len(works_to_download) * 100, 1) if works_to_download else 0)
 
-    print(f"Exitosos: {stats['success']} | Fallidos: {stats['failed']}")
+    print(f"Success: {stats['success']} | Failed: {stats['failed']}")
     print_summary()

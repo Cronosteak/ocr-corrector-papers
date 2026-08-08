@@ -1,6 +1,7 @@
 #!/bin/bash
-# Lanza las 3 ablaciones (no_warmup, no_wd, single_noise) en paralelo.
-# Cada job entrena + evalúa automáticamente.
+# Launches the 3 ablations (no_warmup, no_wd, single_noise) in parallel.
+# Each job trains and evaluates automatically.
+# Run from the repository root: ./slurm_scripts/run_ablations.sh
 
 set -e
 
@@ -12,7 +13,7 @@ CONFIGS=(
 
 for cfg in "${CONFIGS[@]}"; do
     echo "Submitting ablation: $cfg"
-    sbatch --export=ALL,ABL_CONFIG="$cfg" ablation.srm
+    sbatch --export=ALL,ABL_CONFIG="$cfg" slurm_scripts/ablation.srm
 done
 
 echo

@@ -1,5 +1,5 @@
 """
-train.py — Fine-tune de un modelo seq2seq (T5/BART) sobre pares OCR → texto limpio.
+train.py — Fine-tunes a seq2seq model (T5/BART) on OCR → clean text pairs.
 """
 
 import argparse
@@ -82,19 +82,19 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
     early_stopping_patience = config.get("early_stopping_patience", 0)
     noise_rate_filter = config.get("noise_rate_filter", None)
 
-    logger.info(f"Modelo: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16} | optim: {optim}")
+    logger.info(f"Model: {model_name} | GPU: {torch.cuda.is_available()} | fp16: {fp16} | optim: {optim}")
 
-    # Cargar tokenizer y modelo
+    # Load tokenizer and model
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
-    # Cargar splits pre-generados
+    # Load the pre-generated splits
     pairs_dir = Path("data/pairs")
     train_ds = _load_split(pairs_dir / "train.json", noise_rate_filter=noise_rate_filter)
     val_ds = _load_split(pairs_dir / "val.json")
     logger.info(f"Train: {len(train_ds)} | Val: {len(val_ds)}")
 
-    # Tokenizar
+    # Tokenize
     tokenize_fn = _build_tokenize_fn(tokenizer, prefix, max_input, max_output)
     train_ds = train_ds.map(tokenize_fn, batched=True, remove_columns=train_ds.column_names)
     val_ds = val_ds.map(tokenize_fn, batched=True, remove_columns=val_ds.column_names)
@@ -135,20 +135,20 @@ def train(config_path: str = "configs/train_config.yaml") -> None:
         if early_stopping_patience > 0 else None,
     )
 
-    logger.info("Iniciando entrenamiento...")
+    logger.info("Starting training...")
     trainer.train()
 
     trainer.save_model(output_dir)
     tokenizer.save_pretrained(output_dir)
 
-    # Guardar historial de pérdidas para gráficos
+    # Save the loss history for the training-curve plots
     history_path = Path(output_dir) / "train_history.json"
     history_path.parent.mkdir(parents=True, exist_ok=True)
     with open(history_path, "w") as f:
         json.dump(trainer.state.log_history, f, indent=2)
-    logger.info(f"Historial guardado en {history_path}")
+    logger.info(f"History saved to {history_path}")
 
-    logger.info(f"Modelo guardado en {output_dir}")
+    logger.info(f"Model saved to {output_dir}")
 
 
 if __name__ == "__main__":

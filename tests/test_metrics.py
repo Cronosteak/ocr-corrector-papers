@@ -1,5 +1,5 @@
 """
-test_metrics.py — Tests para las funciones de métricas.
+test_metrics.py — Tests for the metrics functions.
 """
 
 import pytest
@@ -15,7 +15,7 @@ from src.utils.text_cleaner import (
 
 class TestTextCleaner:
     def test_normalize_unicode(self):
-        # Carácter compuesto vs precompuesto
+        # Composed vs precomposed character
         text = "café"
         result = normalize_unicode(text)
         assert isinstance(result, str)
