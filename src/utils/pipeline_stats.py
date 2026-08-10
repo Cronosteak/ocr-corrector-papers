@@ -30,6 +30,12 @@ class StepTimer:
     def __init__(self, step_name: str):
         self.step_name = step_name
         self.start = None
+        self.extras: dict = {}
+
+    @property
+    def elapsed(self) -> float:
+        """Seconds since the step started (usable inside the with block)."""
+        return time.time() - self.start if self.start else 0.0
 
     def __enter__(self):
         self.start = time.time()
@@ -46,15 +52,17 @@ class StepTimer:
             "duration_seconds": round(elapsed, 1),
             "duration_human": f"{mins}m {secs}s",
             "timestamp": datetime.now().isoformat(),
+            **self.extras,
         }
         save_stats(stats)
 
     def record(self, key: str, value) -> None:
-        """Record an extra value (e.g. n_works, n_pdfs) in the stats."""
-        stats = load_stats()
-        if self.step_name in stats:
-            stats[self.step_name][key] = value
-            save_stats(stats)
+        """
+        Record an extra value (e.g. n_works, n_pdfs) for this step.
+        Buffered in memory and written out when the step finishes, since the
+        stats entry does not exist yet while the with block is running.
+        """
+        self.extras[key] = value
 
 
 def print_summary() -> None:

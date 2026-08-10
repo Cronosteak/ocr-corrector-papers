@@ -1,11 +1,3 @@
-"""
-compare_ablations.py — Aggregates the eval_results.json of the ablation runs
-into a comparison table (markdown + JSON).
-
-Usage:
-    python -m src.model.compare_ablations
-"""
-
 import json
 import logging
 from pathlib import Path

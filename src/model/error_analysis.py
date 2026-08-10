@@ -1,15 +1,3 @@
-"""
-error_analysis.py — Categorizes the model's residual errors.
-
-Compares each prediction against the ground truth token by token and sorts every
-missed token into a category (numbers, acronyms, non-ASCII symbols, punctuation,
-content words), showing *where* the model still fails.
-
-Run standalone:
-    python -m src.model.error_analysis --predictions models/<run>/predictions.json
-or import it from postprocess.py.
-"""
-
 import argparse
 import json
 import logging
@@ -106,7 +94,7 @@ def analyze(predictions: list[dict]) -> dict:
 def plot_error_categories(summary: dict, out_dir: Path) -> None:
     cats = summary["categories"]
     methods = ["ocr", "spellcheck", "corrected"]
-    labels = {"ocr": "Raw OCR", "spellcheck": "Spellchecker", "corrected": "Ours (flan-t5)"}
+    labels = {"ocr": "Noisy input", "spellcheck": "Spellchecker", "corrected": "Ours (flan-t5)"}
     colors = {"ocr": "#e74c3c", "spellcheck": "#f39c12", "corrected": "#2ecc71"}
 
     x = list(range(len(cats)))

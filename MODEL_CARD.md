@@ -64,15 +64,16 @@ Held-out test set of 676 pairs:
 | Method | CER (%) ↓ | WER (%) ↓ | BLEU ↑ | EM (%) ↑ |
 |---|---|---|---|---|
 | Noisy input (no correction) | 3.28 | 21.99 | 63.95 | 0.00 |
-| Spellchecker baseline | 3.35 | 15.88 | 73.79 | 5.47 |
+| Spellchecker baseline | 3.35 | 15.87 | 73.80 | 5.47 |
 | **This model** | **2.05** | **4.21** | **91.94** | **44.23** |
 
 A 37.5% relative CER reduction and an 80.9% relative WER reduction over the
 uncorrected input. Per-noise-rate metrics are in `eval_results.json`.
 
-Ablations showed that **training across multiple noise levels is the single most
-important factor for generalization**: restricting training to r=0.04 alone drops
-exact match from 44.23% to 35.21%.
+Ablations showed that **multi-level noise diversity is an important contributor
+to generalization**: restricting training to r=0.04 alone drops exact match from
+44.23% to 35.21% (that variant also trains on fewer pairs, so diversity and
+dataset size are not fully disentangled).
 
 ## Training procedure
 

@@ -67,7 +67,7 @@ if __name__ == "__main__":
         n_pdfs = len(list(RAW_DIR.glob("*.pdf")))
         t.record("n_pdfs_total", n_pdfs)
         t.record("n_processed", processed)
-        t.record("dpi", 200)
+        t.record("dpi", 300)
         total_pages = sum(
             int(__import__('subprocess').check_output(
                 ['pdfinfo', str(p)], stderr=__import__('subprocess').DEVNULL
@@ -75,7 +75,7 @@ if __name__ == "__main__":
             for p in RAW_DIR.glob('*.pdf')
         )
         t.record("total_pages", total_pages)
-        t.record("avg_sec_per_page", round(t.__dict__.get('_elapsed', 0) / max(total_pages, 1), 2))
+        t.record("avg_sec_per_page", round(t.elapsed / max(total_pages, 1), 2))
 
     print(f"Processed {processed} PDF files.")
     print_summary()

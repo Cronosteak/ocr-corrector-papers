@@ -22,7 +22,7 @@ OCR–ground-truth pairs, evaluated on a held-out 676-pair test set.
 | Method | CER (%) ↓ | WER (%) ↓ | BLEU ↑ | EM (%) ↑ |
 |---|---|---|---|---|
 | Noisy input (no correction) | 3.28 | 21.99 | 63.95 | 0.00 |
-| Spellchecker baseline | 3.35 | 15.88 | 73.79 | 5.47 |
+| Spellchecker baseline | 3.35 | 15.87 | 73.80 | 5.47 |
 | **flan-t5-base (ours)** | **2.05** | **4.21** | **91.94** | **44.23** |
 
 That is a **37.5% relative CER reduction** and an **80.9% relative WER
@@ -41,9 +41,10 @@ nouns that the noisy input had preserved correctly.
 | w/o weight decay | **1.92** | **4.15** | **92.19** | 41.72 |
 | Single noise (r=0.04 only) | 2.40 | 5.33 | 89.89 | 35.21 |
 
-**Training across multiple noise levels is the single most important factor for
+**Training across multiple noise levels is an important contributor to
 generalization** — restricting training to one noise rate drops exact match by
-9 percentage points.
+9 percentage points, though that variant also trains on fewer pairs (1,306 vs
+5,178), so diversity and dataset size are not fully disentangled.
 
 All raw numbers above are reproducible from the JSON files in [`results/`](results/).
 
@@ -116,7 +117,7 @@ python -m src.model.train
 python -m src.model.postprocess --model models/ocr-corrector \
                                 --data data/pairs/synthetic_test.json
 
-# 3. Token-level error categorization (Figure 5 in the paper)
+# 3. Token-level error categorization (Figure 6 in the paper)
 python -m src.model.error_analysis --predictions models/ocr-corrector/predictions.json
 ```
 

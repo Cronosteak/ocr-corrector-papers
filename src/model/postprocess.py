@@ -1,10 +1,3 @@
-"""
-postprocess.py — Post-training analysis: training curves, CER/WER/BLEU,
-per-noise-level breakdown, baselines (raw OCR + spellchecker),
-per-sample distribution, qualitative examples.
-All outputs are saved as PNG/JSON files (no display needed — cluster-safe).
-"""
-
 import argparse
 import json
 import logging
@@ -139,7 +132,7 @@ def plot_cer_wer_bar(overall: dict, out_dir: Path) -> None:
     x = list(range(len(metrics)))
     fig, ax = plt.subplots(figsize=(8, 5))
     w = 0.27
-    ax.bar([i - w for i in x], raw,   width=w, label="Raw OCR",       color="#e74c3c")
+    ax.bar([i - w for i in x], raw,   width=w, label="Noisy input",   color="#e74c3c")
     ax.bar(x,                  spell, width=w, label="Spellchecker",  color="#f39c12")
     ax.bar([i + w for i in x], model, width=w, label="Ours (flan-t5)", color="#2ecc71")
     ax.set_xticks(x)
@@ -174,7 +167,7 @@ def plot_per_noise_level(per_level: dict, out_dir: Path) -> None:
         (axes[0], raw_cer, spell_cer, model_cer, "CER vs noise level"),
         (axes[1], raw_wer, spell_wer, model_wer, "WER vs noise level"),
     ]:
-        ax.plot(rates, raw,   marker="o", label="Raw OCR",      color="#e74c3c", linewidth=2)
+        ax.plot(rates, raw,   marker="o", label="Noisy input",  color="#e74c3c", linewidth=2)
         ax.plot(rates, spell, marker="s", label="Spellchecker", color="#f39c12", linewidth=2)
         ax.plot(rates, model, marker="^", label="Ours (flan-t5)", color="#2ecc71", linewidth=2)
         ax.set_xlabel("Noise rate")
@@ -195,7 +188,7 @@ def plot_cer_distribution(ocr_texts, gt_texts, corrected_texts, out_dir: Path) -
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 4), sharey=True)
     axes[0].hist(baseline_cer_per,  bins=20, color="#e74c3c", edgecolor="white")
-    axes[0].set_title("CER distribution — Baseline (raw OCR)")
+    axes[0].set_title("CER distribution — Noisy input")
     axes[0].set_xlabel("CER")
     axes[0].set_ylabel("Number of samples")
     axes[1].hist(corrected_cer_per, bins=20, color="#2ecc71", edgecolor="white")
