@@ -132,9 +132,13 @@ def plot_cer_wer_bar(overall: dict, out_dir: Path) -> None:
     x = list(range(len(metrics)))
     fig, ax = plt.subplots(figsize=(8, 5))
     w = 0.27
-    ax.bar([i - w for i in x], raw,   width=w, label="Noisy input",   color="#e74c3c")
-    ax.bar(x,                  spell, width=w, label="Spellchecker",  color="#f39c12")
-    ax.bar([i + w for i in x], model, width=w, label="Ours (flan-t5)", color="#2ecc71")
+    # Hatching keeps the series distinguishable when printed in black and white
+    ax.bar([i - w for i in x], raw,   width=w, label="Noisy input",    color="#e74c3c",
+           hatch="//", edgecolor="black", linewidth=0.8)
+    ax.bar(x,                  spell, width=w, label="Spellchecker",   color="#f39c12",
+           hatch="..", edgecolor="black", linewidth=0.8)
+    ax.bar([i + w for i in x], model, width=w, label="Ours (flan-t5)", color="#2ecc71",
+           hatch="\\\\", edgecolor="black", linewidth=0.8)
     ax.set_xticks(x)
     ax.set_xticklabels(metrics, fontsize=13)
     ax.set_ylabel("Error rate (lower is better)")
@@ -167,9 +171,12 @@ def plot_per_noise_level(per_level: dict, out_dir: Path) -> None:
         (axes[0], raw_cer, spell_cer, model_cer, "CER vs noise level"),
         (axes[1], raw_wer, spell_wer, model_wer, "WER vs noise level"),
     ]:
-        ax.plot(rates, raw,   marker="o", label="Noisy input",  color="#e74c3c", linewidth=2)
-        ax.plot(rates, spell, marker="s", label="Spellchecker", color="#f39c12", linewidth=2)
-        ax.plot(rates, model, marker="^", label="Ours (flan-t5)", color="#2ecc71", linewidth=2)
+        ax.plot(rates, raw,   marker="o", label="Noisy input",    color="#e74c3c",
+                linewidth=2, linestyle="-")
+        ax.plot(rates, spell, marker="s", label="Spellchecker",   color="#f39c12",
+                linewidth=2, linestyle="--")
+        ax.plot(rates, model, marker="^", label="Ours (flan-t5)", color="#2ecc71",
+                linewidth=2, linestyle=":")
         ax.set_xlabel("Noise rate")
         ax.set_ylabel("Error rate")
         ax.set_title(title)

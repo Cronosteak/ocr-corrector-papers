@@ -96,6 +96,8 @@ def plot_error_categories(summary: dict, out_dir: Path) -> None:
     methods = ["ocr", "spellcheck", "corrected"]
     labels = {"ocr": "Noisy input", "spellcheck": "Spellchecker", "corrected": "Ours (flan-t5)"}
     colors = {"ocr": "#e74c3c", "spellcheck": "#f39c12", "corrected": "#2ecc71"}
+    # Hatching keeps the series distinguishable when printed in black and white
+    hatches = {"ocr": "//", "spellcheck": "..", "corrected": "\\\\"}
 
     x = list(range(len(cats)))
     w = 0.27
@@ -103,7 +105,8 @@ def plot_error_categories(summary: dict, out_dir: Path) -> None:
     for i, m in enumerate(methods):
         vals = [summary["total_errors_by_method"][m].get(c, 0) for c in cats]
         ax.bar([xi + (i - 1) * w for xi in x], vals, width=w,
-               label=labels[m], color=colors[m])
+               label=labels[m], color=colors[m], hatch=hatches[m],
+               edgecolor="black", linewidth=0.8)
     ax.set_xticks(x)
     ax.set_xticklabels(cats, rotation=20, ha="right")
     ax.set_ylabel("Number of missed tokens (lower is better)")
